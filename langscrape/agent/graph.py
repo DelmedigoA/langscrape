@@ -1,7 +1,10 @@
-from state import AgentState
-from .nodes.call_model import call_model
+from .state import AgentState
+from ..nodes.call_model import call_model
 from langgraph.graph import StateGraph, START, END
 from langgraph.prebuilt import ToolNode, tools_condition
+from .tools import store_xpath
+
+tools = [store_xpath]
 
 graph = StateGraph(AgentState)
 
