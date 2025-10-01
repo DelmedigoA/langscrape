@@ -1,5 +1,6 @@
 from langchain_core.messages import HumanMessage
-from .html.xpath_extractor import extract_by_xpath_map_from_html
+from ..html.xpath_extractor import extract_by_xpath_map_from_html
+from ..agent.state import AgentState
 
 def call_model(state: AgentState) -> AgentState:
     global global_state, expected_fields
