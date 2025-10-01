@@ -21,7 +21,6 @@ global_state = {"article_body": None, "title": None, "author": None, "datetime":
 expected_fields = list(global_state.keys())
 
 LLM_NAME = "gpt-4o-mini"
-OPENAI_API_KEY=""
 
 store_xpath = make_store_xpath(global_state)
 tools = [store_xpath]
