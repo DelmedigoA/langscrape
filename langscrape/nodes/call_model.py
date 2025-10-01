@@ -3,10 +3,10 @@ from ..html.xpath_extractor import extract_by_xpath_map_from_html
 from ..agent.state import AgentState
 
 def call_model(state: AgentState) -> AgentState:
-    global global_state, expected_fields
+    global global_state, expected_fields, html_content
 
     # Recompute current extractions from the HTML
-    current_extracts = extract_by_xpath_map_from_html(cleaned_html, global_state)
+    current_extracts = extract_by_xpath_map_from_html(html_content, global_state)
 
     # Build a concise summary (length + short preview) for each field
     lines = []
@@ -65,7 +65,7 @@ CURRENT EXTRACTIONS SUMMARY:
 {formatted_extracts}
 
 HTML:
-{cleaned_html}
+{html_content}
 """
     )
 
