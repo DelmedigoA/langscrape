@@ -6,7 +6,7 @@ def call_model(state: AgentState) -> AgentState:
     global global_state, expected_fields, html_content
 
     # Recompute current extractions from the HTML
-    current_extracts = extract_by_xpath_map_from_html(html_content, global_state)
+    current_extracts = extract_by_xpath_map_from_html(state['html_content'], state['global_state'])
 
     # Build a concise summary (length + short preview) for each field
     lines = []
@@ -59,13 +59,13 @@ Example:
 ❌ /html/body/main/article/section/article-details-body-container/article-body
 
 CURRENT XPATH MAP:
-{global_state}
+{state['global_state']}
 
 CURRENT EXTRACTIONS SUMMARY:
 {formatted_extracts}
 
 HTML:
-{html_content}
+{state['html_content']}
 """
     )
 
@@ -75,7 +75,7 @@ HTML:
     print("\n=== END OF PROMPT ===\n")
 
     # Invoke LLM (it will call tools or stop if all valid)
-    response = llm_with_tools.invoke([system_prompt] + state["messages"])
+    response = state['llm_with_tools'].invoke([system_prompt] + state["messages"])
     print("DEBUG tool_calls:", getattr(response, "tool_calls", None))
 
     return {"messages": [response]}

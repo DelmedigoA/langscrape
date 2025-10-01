@@ -1,29 +1,46 @@
 import asyncio
 from langscrape import fetch_html_patchright
-from langscrape.agent.graph import graph, tools
+from langscrape.agent.graph import get_graph
 from IPython.display import Image
 from langchain_openai import ChatOpenAI
 from langscrape.html.xpath_extractor import extract_by_xpath_map_from_html
 from langchain_core.messages import HumanMessage
+from langscrape.html.utils import clean_html_for_extraction3
+from langscrape.agent.tools import make_store_xpath
 
 async def fetch_url(url):
     result = await fetch_html_patchright(url)
-    print(result[:2000])
+    return result
 
-some_url = "https://www.ynet.co.il/news/article/s1j00pj9nge"
-html_content = "<html><title>hello world</title>"#asyncio.run(fetch_url(some_url))
+some_url = "https://www.gov.il/en/pages/spoke-start080924"
 
+html_content = asyncio.run(fetch_url(some_url))
+html_content = clean_html_for_extraction3(html_content)
+print("len cleaned:", len(html_content))
 global_state = {"article_body": None, "title": None, "author": None, "datetime": None}
 expected_fields = list(global_state.keys())
 
 LLM_NAME = "gpt-4o-mini"
-OPENAI_API_KEY="Your-API-Key-Here"
+OPENAI_API_KEY="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"
+
+store_xpath = make_store_xpath(global_state)
+tools = [store_xpath]
+graph = get_graph(tools=tools)
+llm = ChatOpenAI(model=LLM_NAME, api_key=OPENAI_API_KEY, temperature=0)
+llm_with_tools = llm.bind_tools(tools)
+
+# 4) pass the SAME dict reference into the graph state
+initial_state = {
+    "messages": [HumanMessage(content=f"Please inspect the HTML and set correct XPath for all expected fields: {expected_fields}")],
+    "html_content": html_content,
+    "global_state": global_state,  
+    "llm_with_tools": llm_with_tools,
+}
 
 llm = ChatOpenAI(model=LLM_NAME, api_key=OPENAI_API_KEY, temperature=0, top_p=1)
 llm_with_tools = llm.bind_tools(tools)
-from html import escape
 
-initial_state = {"messages": [HumanMessage(content=f"Please inspect the HTML and set correct XPath for all expected fields: {expected_fields}")]}
+
 final_state = graph.invoke(initial_state)
 
 # 🎨 ANSI color codes
