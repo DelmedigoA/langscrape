@@ -25,7 +25,7 @@ LLM_NAME = "gpt-4o-mini"
 store_xpath = make_store_xpath(global_state)
 tools = [store_xpath]
 graph = get_graph(tools=tools)
-llm = ChatOpenAI(model=LLM_NAME, api_key = "", temperature=0)
+llm = ChatOpenAI(model=LLM_NAME, temperature=0)
 llm_with_tools = llm.bind_tools(tools)
 
 # 4) pass the SAME dict reference into the graph state
