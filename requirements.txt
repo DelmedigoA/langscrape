@@ -1,0 +1,7 @@
+html5lib
+lxml
+langchain
+langgraph
+langchain_openai
+beautifulsoup4
+patchright
