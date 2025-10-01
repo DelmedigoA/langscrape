@@ -13,9 +13,9 @@ async def fetch_url(url):
 
 some_url = "https://www.gov.il/en/pages/spoke-start080924"
 
-html_content = asyncio.run(fetch_url(some_url))
+html_content = asyncio.run(fetch_url(some_url_2))
 cleaned_html_content = clean_html_for_extraction3(html_content)
-print("len cleaned:", len(cleaned_html_content))
+print("len cleaned:", len(html_content))
 
 LLM_NAME = "gpt-4o-mini"
 
@@ -28,7 +28,7 @@ graph = get_graph(tools=tools)
 
 # 4) pass the SAME dict reference into the graph state
 
-llm = ChatOpenAI(model=LLM_NAME, api_key=OPENAI_API_KEY, temperature=0, top_p=1)
+llm = ChatOpenAI(model=LLM_NAME, api_key=OPENAI_API_KEY, temperature=0, top_p=1, seed=42)
 llm_with_tools = llm.bind_tools(tools)
 
 initial_state = {
