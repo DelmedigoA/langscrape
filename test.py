@@ -7,17 +7,6 @@ from langscrape.utils import load_config, get_llm
 
 config = load_config()
 
-async def fetch_url(url):
-    result = await fetch_html_patchright(url)
-    return result
-
-some_url = "https://www.gov.il/en/pages/spoke-start080924"
-
-html_content = asyncio.run(fetch_url(some_url))
-print("len before cleaning:", len(html_content))
-cleaned_html_content = clean_html_for_extraction3(html_content)
-print("len cleaned:", len(cleaned_html_content))
-
 global_state = {"article_body": None, "title": None, "author": None, "datetime": None}
 expected_fields = list(global_state.keys())
 
@@ -30,11 +19,11 @@ llm_with_tools = llm.bind_tools(tools)
 
 initial_state = {
     "messages": [],
-    "html_content": cleaned_html_content,
+    "url": "https://www.gov.il/en/pages/spoke-start080924",
     "global_state": global_state,  
     "llm_with_tools": llm_with_tools,
 }
 
 final_state = graph.invoke(initial_state)
 
-final_print(global_state, html_content)
+final_print(global_state, final_state['cleaned_html_content'])

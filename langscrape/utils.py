@@ -74,7 +74,7 @@ CURRENT EXTRACTIONS SUMMARY:
 {formatted_extracts}
 
 HTML:
-{state['html_content']}
+{state['cleaned_html_content']}
 """
     )
 
