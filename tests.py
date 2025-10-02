@@ -11,7 +11,7 @@ import os
 # Fetch from environment
 api_key = os.getenv("OPENAI_API_KEY")
 
-config = load_config('config/default_config.yaml')
+config = load_config()
 
 async def fetch_url(url):
     result = await fetch_html_patchright(url)

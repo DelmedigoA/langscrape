@@ -3,3 +3,7 @@ llm:
   name: "gpt-4o-mini"
   temperature: 0.0
   top_p: 1.0
+
+browser:
+  name: "chrome"
+  wait_for_timeout: 1000
