@@ -77,3 +77,17 @@ HTML:
 {state['html_content']}
 """
     )
+
+def get_formatted_extracts(current_extracts):
+    lines = []
+    for key, vals in current_extracts.items():
+        vals = vals or []
+        clean_vals = [str(v).strip() for v in vals if str(v).strip()]
+        if not all(c =="'Skipped: No XPath'" or c == "(Empty Result)" for c in clean_vals):
+            joined = " | ".join(clean_vals)
+            preview = joined[:200]  # optional truncation for readability
+            info = f"len={len(joined)}; preview={preview}"
+        else:
+            info = "XPATH not found or empty; Try a different one."
+        lines.append(f"{key}: {info}")
+    return "\n".join(lines)
