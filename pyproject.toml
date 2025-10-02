@@ -17,6 +17,7 @@ dependencies = [
     "patchright",
     "IPython",
     "tokenizers",
+    "langchain_deepseek",
 ]
 
 [tool.setuptools.packages.find]

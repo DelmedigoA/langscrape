@@ -44,7 +44,7 @@ Ensure each field has the correct extracted TEXT from the HTML.
 XPath is just a tool; the objective is accurate content.
 
 Reasoning Rules:
-- **author** → should look like a human name.
+- **author** → should look like a human name, max 3-4 words.
 - **article_body** → should be a long coherent article.
 - **title** → should be a the article title.
 - **datetime** → should look like a publication date or time.
