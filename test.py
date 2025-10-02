@@ -13,11 +13,12 @@ async def fetch_url(url):
     result = await fetch_html_patchright(url)
     return result
 
-some_url = "https://www.gov.il/en/pages/spoke-start080924"
+some_url = "https://www.ynet.co.il/news/article/sy22meq3gx#google_vignette"
 
 html_content = asyncio.run(fetch_url(some_url))
+print("len before cleaning:", len(html_content))
 cleaned_html_content = clean_html_for_extraction3(html_content)
-print("len cleaned:", len(html_content))
+print("len cleaned:", len(cleaned_html_content))
 
 global_state = {"article_body": None, "title": None, "author": None, "datetime": None}
 expected_fields = list(global_state.keys())
@@ -30,7 +31,7 @@ llm = get_llm(config)
 llm_with_tools = llm.bind_tools(tools)
 
 initial_state = {
-    "messages": [HumanMessage(content=f"Please extract the fields: {expected_fields}")],
+    "messages": [],
     "html_content": cleaned_html_content,
     "global_state": global_state,  
     "llm_with_tools": llm_with_tools,

@@ -15,7 +15,7 @@ def get_llm(config=None):
     if config is None:
         config = load_config()
 
-    if config["llm"]["type"] == "openai":
+    if config["llm"]["provider"] == "openai":
         api_key = os.getenv("OPENAI_API_KEY")
         return ChatOpenAI(
             model=config["llm"]["name"],
@@ -23,7 +23,7 @@ def get_llm(config=None):
             top_p=config["llm"]["top_p"],
             api_key=api_key
         )
-    elif config["llm"]["type"] == "deepseek":
+    elif config["llm"]["provider"] == "deepseek":
         api_key = os.getenv("DS_API_KEY")
         return ChatDeepSeek(
             model=config["llm"]["name"],

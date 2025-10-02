@@ -1,6 +1,6 @@
 llm:
-  type: "openai"
-  name: "gpt-4o-mini"
+  provider: "deepseek"
+  name: "deepseek-reasoner"
   temperature: 0.0
   top_p: 1.0
 
