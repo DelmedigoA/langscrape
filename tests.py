@@ -6,6 +6,10 @@ from langchain_core.messages import HumanMessage
 from langscrape.html.utils import clean_html_for_extraction3
 from langscrape.agent.tools import make_store_xpath
 from langscrape.utils import load_config
+import os
+
+# Fetch from environment
+api_key = os.getenv("OPENAI_API_KEY")
 
 config = load_config('config/default_config.yaml')
 
@@ -26,7 +30,7 @@ store_xpath = make_store_xpath(global_state)
 tools = [store_xpath]
 graph = get_graph(tools=tools)
 
-llm = ChatOpenAI(model=config['llm']['name'], api_key=OPENAI_API_KEY, temperature=config['llm']['temperature'], top_p=config['llm']['top_p'], seed=42)
+llm = ChatOpenAI(model=config['llm']['name'], api_key=api_key, temperature=config['llm']['temperature'], top_p=config['llm']['top_p'], seed=42)
 llm_with_tools = llm.bind_tools(tools)
 
 initial_state = {
