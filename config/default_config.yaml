@@ -10,8 +10,8 @@ fields:
   article_body:
     strategy: "xpath_extractor"
   title:
-    strategy: "xpath_extractor"
+    strategy: "lm_capabilities"
   author:
     strategy: "lm_capabilities"
   datetime:
-    strategy: "xpath_extractor"
+    strategy: "lm_capabilities"

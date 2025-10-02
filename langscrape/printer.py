@@ -21,7 +21,7 @@ def final_print(global_state, html_content):
             print(f"{BLUE}{k}{RESET}: {v}")
 
     print(f"\n{BOLD}{GREEN}=== FINAL EXTRACTED CONTENT ==={RESET}")
-    results = extract_by_xpath_map_from_html(html_content, xpath_map=global_state)
+    results = extract_by_xpath_map_from_html(html_content, field_state=global_state)
     for k, v in results.items():
         joined = " | ".join(v)
         print(f"{GREEN}{k}{RESET}: {joined}")
