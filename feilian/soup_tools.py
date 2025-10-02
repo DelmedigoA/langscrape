@@ -7,10 +7,8 @@ from copy import deepcopy, copy
 from tokenizers import Tokenizer
 from urllib.parse import unquote
 from collections import defaultdict
-
 from feilian.tools import find_most_repeated_sub_sequence_html
 from feilian.html_constants import INLINE_ELEMENTS, INTERACTIVE_ELEMENTS
-
 
 def _decode_url(element):
     if hasattr(element, "attrs"):

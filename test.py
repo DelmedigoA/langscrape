@@ -5,10 +5,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 from langscrape.html.utils import clean_html_for_extraction3
 from langscrape.agent.tools import make_store_xpath
-from langscrape.utils import load_config
-import os
-
-api_key = os.getenv("OPENAI_API_KEY")
+from langscrape.utils import load_config, get_llm
 
 config = load_config()
 
@@ -29,11 +26,11 @@ store_xpath = make_store_xpath(global_state)
 tools = [store_xpath]
 graph = get_graph(tools=tools)
 
-llm = ChatOpenAI(model=config['llm']['name'], api_key=api_key, temperature=config['llm']['temperature'], top_p=config['llm']['top_p'], seed=42)
+llm = get_llm(config)
 llm_with_tools = llm.bind_tools(tools)
 
 initial_state = {
-    "messages": [HumanMessage(content=f"Please inspect the HTML and set correct XPath for all expected fields: {expected_fields}")],
+    "messages": [HumanMessage(content=f"Please extract the fields: {expected_fields}")],
     "html_content": cleaned_html_content,
     "global_state": global_state,  
     "llm_with_tools": llm_with_tools,
