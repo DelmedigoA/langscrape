@@ -3,7 +3,15 @@ llm:
   name: "deepseek-reasoner"
   temperature: 0.0
   top_p: 1.0
-
 browser:
   name: "chrome"
   wait_for_timeout: 1000
+fields:
+  article_body:
+    strategy: "xpath_extractor"
+  title:
+    strategy: "xpath_extractor"
+  author:
+    strategy: "lm_capabilities"
+  datetime:
+    strategy: "xpath_extractor"

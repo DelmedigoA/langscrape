@@ -10,7 +10,15 @@ def final_print(global_state, html_content):
 
     print(f"\n{BOLD}{BLUE}=== FINAL XPATH STATE ==={RESET}")
     for k, v in global_state.items():
-        print(f"{BLUE}{k}{RESET}: {v}")
+        if isinstance(v, dict):
+            strategy = v.get("strategy", "xpath_extractor")
+            if strategy == "lm_capabilities":
+                detail = v.get("value")
+            else:
+                detail = v.get("xpath")
+            print(f"{BLUE}{k}{RESET} ({strategy}): {detail}")
+        else:
+            print(f"{BLUE}{k}{RESET}: {v}")
 
     print(f"\n{BOLD}{GREEN}=== FINAL EXTRACTED CONTENT ==={RESET}")
     results = extract_by_xpath_map_from_html(html_content, xpath_map=global_state)
