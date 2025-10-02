@@ -1,4 +1,4 @@
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import SystemMessage
 from ..html.xpath_extractor import extract_by_xpath_map_from_html
 from ..agent.state import AgentState
 
@@ -27,7 +27,7 @@ def call_model(state: AgentState) -> AgentState:
         lines.append(f"{key}: {info}")
     formatted_extracts = "\n".join(lines)
     # 3️⃣ Content-centric reasoning prompt (LLM decides correctness)
-    system_prompt = HumanMessage(
+    system_prompt = SystemMessage(
         content=f"""You are a ReAct-style HTML extraction agent.
 
 GOAL:
