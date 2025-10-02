@@ -4,6 +4,7 @@ from langscrape.agent.graph import get_graph
 from langscrape.html.utils import clean_html_for_extraction3
 from langscrape.agent.tools import make_store_xpath, make_store_value
 from langscrape.utils import load_config, get_llm, initialize_global_state
+import json
 
 config = load_config()
 
@@ -28,3 +29,6 @@ initial_state = {
 final_state = graph.invoke(initial_state)
 
 final_print(final_state['global_state'], final_state['cleaned_html_content'])
+
+with open("extracted_data.json", "w", encoding="utf-8") as f:
+    json.dump(final_state["result"], f, ensure_ascii=False, indent=2)
