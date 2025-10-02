@@ -1,8 +1,6 @@
 import asyncio
 from langscrape import fetch_html_patchright, final_print
 from langscrape.agent.graph import get_graph
-from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage
 from langscrape.html.utils import clean_html_for_extraction3
 from langscrape.agent.tools import make_store_xpath
 from langscrape.utils import load_config, get_llm
@@ -13,7 +11,7 @@ async def fetch_url(url):
     result = await fetch_html_patchright(url)
     return result
 
-some_url = "https://www.ynet.co.il/news/article/sy22meq3gx#google_vignette"
+some_url = "https://www.gov.il/en/pages/spoke-start080924"
 
 html_content = asyncio.run(fetch_url(some_url))
 print("len before cleaning:", len(html_content))
