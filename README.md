@@ -27,3 +27,15 @@ The flow of the system can be visualized as:
 
 4. **`output_formatter`**  
    Converts extracted data into clean, structured outputs (e.g., JSON or Python dicts; extensible to CSV or databases).
+
+## Installation
+
+```console
+git clone https://github.com/DelmedigoA/langscrape
+cd langscrape
+python -m venv .env
+source .env/bin/activate
+pip install -e .
+bash setup.sh
+python3 test.py
+```
