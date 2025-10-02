@@ -8,4 +8,4 @@ class AgentState(TypedDict):
     cleaned_html_content: str
     global_state: dict
     llm_with_tools: ChatOpenAI
-    results: dict
+    result: dict

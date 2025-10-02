@@ -26,4 +26,4 @@ initial_state = {
 
 final_state = graph.invoke(initial_state)
 
-final_print(global_state, final_state['cleaned_html_content'])
+final_print(final_state['global_state'], final_state['cleaned_html_content'])
