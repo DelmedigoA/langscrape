@@ -5,3 +5,4 @@ langgraph
 langchain_openai
 beautifulsoup4
 patchright
+IPython
