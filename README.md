@@ -24,7 +24,7 @@ The flow of the system can be visualized as:
 
 3. **`tools` (XPath Extractor)**  
    Based on the approach in  
-   [*Large Language Models as XPath Extractors* (arXiv:2502.15688v1)](https://arxiv.org/html/2502.15688v1).  
+   [*XPath Agent: An Efficient XPath Programming Agent Based on LLM for Web CrawlerXPath Agent: An Efficient XPath Programming Agent Based on LLM for Web Crawler* (arXiv:2502.15688v1)](https://arxiv.org/html/2502.15688v1).  
    In this method, the LLM proposes candidate XPath selectors,  
    we evaluate them against the DOM, and iteratively refine until the desired data is extracted.  
    This enables:
