@@ -28,7 +28,7 @@ The flow of the system can be visualized as:
 4. **`output_formatter`**  
    Converts extracted data into clean, structured outputs (e.g., JSON or Python dicts; extensible to CSV or databases).
 
-## Installation
+## 🚀 Quickstart
 
 ```console
 git clone https://github.com/DelmedigoA/langscrape
