@@ -18,6 +18,8 @@ dependencies = [
     "IPython",
     "tokenizers",
     "langchain_deepseek",
+    "pymupdf",
+    "requests"
 ]
 
 [tool.setuptools.packages.find]
