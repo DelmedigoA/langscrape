@@ -1,8 +1,7 @@
 import asyncio
-from langscrape import fetch_html_patchright
+from langscrape import fetch_html_patchright, final_print
 from langscrape.agent.graph import get_graph
 from langchain_openai import ChatOpenAI
-from langscrape.html.xpath_extractor import extract_by_xpath_map_from_html
 from langchain_core.messages import HumanMessage
 from langscrape.html.utils import clean_html_for_extraction3
 from langscrape.agent.tools import make_store_xpath
@@ -13,7 +12,7 @@ async def fetch_url(url):
 
 some_url = "https://www.gov.il/en/pages/spoke-start080924"
 
-html_content = asyncio.run(fetch_url(some_url_2))
+html_content = asyncio.run(fetch_url(some_url))
 cleaned_html_content = clean_html_for_extraction3(html_content)
 print("len cleaned:", len(html_content))
 
@@ -28,6 +27,8 @@ graph = get_graph(tools=tools)
 
 # 4) pass the SAME dict reference into the graph state
 
+OPENAI_API_KEY= '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'
+
 llm = ChatOpenAI(model=LLM_NAME, api_key=OPENAI_API_KEY, temperature=0, top_p=1, seed=42)
 llm_with_tools = llm.bind_tools(tools)
 
@@ -40,18 +41,4 @@ initial_state = {
 
 final_state = graph.invoke(initial_state)
 
-# 🎨 ANSI color codes
-BLUE = "\033[94m"  
-GREEN = "\033[92m"
-BOLD = "\033[1m"
-RESET = "\033[0m"
-
-print(f"\n{BOLD}{BLUE}=== FINAL XPATH STATE ==={RESET}")
-for k, v in global_state.items():
-    print(f"{BLUE}{k}{RESET}: {v}")
-
-print(f"\n{BOLD}{GREEN}=== FINAL EXTRACTED CONTENT ==={RESET}")
-results = extract_by_xpath_map_from_html(html_content, xpath_map=global_state)
-for k, v in results.items():
-    joined = " | ".join(v)
-    print(f"{GREEN}{k}{RESET}: {joined}")
+final_print(global_state, html_content)
