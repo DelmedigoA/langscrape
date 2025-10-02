@@ -46,7 +46,7 @@ XPath is just a tool; the objective is accurate content.
 Reasoning Rules:
 - **author** → should look like a human name.
 - **article_body** → should be a long coherent article.
-- **title** → should be a real article title.
+- **title** → should be a the article title.
 - **datetime** → should look like a publication date or time.
 
 ACTION POLICY:
