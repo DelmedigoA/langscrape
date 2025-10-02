@@ -40,3 +40,21 @@ Clone the repository:
 ```bash
 git clone https://github.com/DelmedigoA/langscrape.git
 cd langscrape
+
+## 🖥️ Interactive UI
+
+An experimental local UI is available for quickly testing batches of URLs and
+watching the extraction pipeline populate the desired fields in real time.
+
+1. Install the project dependencies and export the required LLM credentials
+   (e.g. `OPENAI_API_KEY` or `DS_API_KEY`).
+2. Launch the development server:
+
+   ```bash
+   python run_ui.py
+   ```
+
+3. Open <http://localhost:8000> in your browser, paste one URL per line into
+   the form, and press **Start Extraction**. The table begins with the URLs and
+   empty columns for the expected fields, then updates row-by-row as each
+   extraction finishes.

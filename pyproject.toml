@@ -18,6 +18,7 @@ dependencies = [
     "IPython",
     "tokenizers",
     "langchain_deepseek",
+    "flask",
 ]
 
 [tool.setuptools.packages.find]
