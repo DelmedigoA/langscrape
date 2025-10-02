@@ -8,7 +8,6 @@ from langscrape.agent.tools import make_store_xpath
 from langscrape.utils import load_config
 import os
 
-# Fetch from environment
 api_key = os.getenv("OPENAI_API_KEY")
 
 config = load_config()

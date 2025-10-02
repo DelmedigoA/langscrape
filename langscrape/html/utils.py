@@ -1,7 +1,7 @@
 import re
 from lxml import html as lxml_html, etree
 from bs4 import BeautifulSoup
-# from .feilian.soup_tools import clean_html as feilian_clean_html, extract_html_structure
+from feilian.soup_tools import clean_html as feilian_clean_html, extract_html_structure
 
 def clean_html_for_extraction3(html_content: str) -> str:
     """
@@ -37,7 +37,7 @@ def clean_html_for_extraction3(html_content: str) -> str:
     precleaned_html = etree.tostring(tree, encoding="unicode", pretty_print=False)
 
     soup = BeautifulSoup(precleaned_html, "html5lib")
-    # soup = feilian_clean_html(soup)
+    soup = feilian_clean_html(soup)
 
     # Convert back to string
     cleaned_html = str(soup)

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-xpath"
+version = "0.1.0"
+description = "XPath + scraping tools with LLMs"
+requires-python = ">=3.9"
+dependencies = [
+    "html5lib",
+    "lxml",
+    "langchain",
+    "langgraph",
+    "langchain_openai",
+    "beautifulsoup4",
+    "patchright",
+    "IPython",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["langscrape*", "feilian*"]
