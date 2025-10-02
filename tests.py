@@ -5,6 +5,9 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 from langscrape.html.utils import clean_html_for_extraction3
 from langscrape.agent.tools import make_store_xpath
+from langscrape.utils import load_config
+
+config = load_config('config/default_config.yaml')
 
 async def fetch_url(url):
     result = await fetch_html_patchright(url)
@@ -16,8 +19,6 @@ html_content = asyncio.run(fetch_url(some_url))
 cleaned_html_content = clean_html_for_extraction3(html_content)
 print("len cleaned:", len(html_content))
 
-LLM_NAME = "gpt-4o-mini"
-
 global_state = {"article_body": None, "title": None, "author": None, "datetime": None}
 expected_fields = list(global_state.keys())
 
@@ -25,11 +26,7 @@ store_xpath = make_store_xpath(global_state)
 tools = [store_xpath]
 graph = get_graph(tools=tools)
 
-# 4) pass the SAME dict reference into the graph state
-
-OPENAI_API_KEY= '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'
-
-llm = ChatOpenAI(model=LLM_NAME, api_key=OPENAI_API_KEY, temperature=0, top_p=1, seed=42)
+llm = ChatOpenAI(model=config['llm']['name'], api_key=OPENAI_API_KEY, temperature=config['llm']['temperature'], top_p=config['llm']['top_p'], seed=42)
 llm_with_tools = llm.bind_tools(tools)
 
 initial_state = {

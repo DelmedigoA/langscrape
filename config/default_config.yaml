@@ -1,0 +1,5 @@
+llm:
+  type: "openai"
+  name: "gpt-4o-mini"
+  temperature: 0.0
+  top_p: 1.0
