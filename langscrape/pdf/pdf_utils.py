@@ -35,7 +35,7 @@ def get_joined_text(pdf) -> str:
     return " ".join(texts)
 
 
-def pdfurl_to_text(url: str) -> str:
+def pdfurl_to_text(url: str, normalize: bool = True) -> str:
     """
     Download PDF from URL (in-memory), extract, normalize, and return text.
     """
@@ -46,4 +46,6 @@ def pdfurl_to_text(url: str) -> str:
     pdf = pymupdf.open(stream=r.content, filetype="pdf")
 
     text = get_joined_text(pdf)
-    return text_normalizer(text)
+    if normalize:
+        return text_normalizer(text)
+    return text
