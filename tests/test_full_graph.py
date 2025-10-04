@@ -9,11 +9,9 @@ from dotenv import load_dotenv
 
 def test_llm_extraction():
     load_dotenv("api_keys.env")
-
     config = load_config()
 
     global_state = initialize_global_state(config)
-    expected_fields = list(global_state.keys())
 
     store_xpath = make_store_xpath(global_state)
     store_field_value = make_store_value(global_state)

@@ -22,7 +22,7 @@ def get_extractor(config=None):
         api_key = os.getenv("OPENAI_API_KEY")
         return ChatOpenAI(
             model=config["extractor"]["name"],
-            temperature=config["llm"]["temperature"],
+            temperature=config["extractor"]["temperature"],
             top_p=config["extractor"]["top_p"],
             api_key=api_key
         )
@@ -45,7 +45,7 @@ def get_summarizer(config=None):
         api_key = os.getenv("OPENAI_API_KEY")
         return ChatOpenAI(
             model=config["summarizer"]["name"],
-            temperature=config["llm"]["temperature"],
+            temperature=config["summarizer"]["temperature"],
             top_p=config["summarizer"]["top_p"],
             api_key=api_key
         )
