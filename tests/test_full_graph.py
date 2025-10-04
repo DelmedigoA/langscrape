@@ -25,7 +25,7 @@ def test_llm_extraction():
 
     initial_state = {
         "messages": [],
-        "url": "https://www.gov.il/en/pages/spoke-start080924",
+        "url": "https://www.mekomit.co.il/ps/147895/",
         "global_state": global_state,  
         "llm_with_tools": llm_with_tools,
     }

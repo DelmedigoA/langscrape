@@ -495,13 +495,17 @@ ALLOWED_TAGS = [
 def get_prompt(state: AgentState):
     url = state["url"]
     extracted_data = state["result"]
-    url = "https://www.gov.il/en/pages/spoke-start080924"
+    url = state["url"]
     title = extracted_data["title"]
     content = extracted_data["article_body"]
+    author = extracted_data["author"]
+    datetime = extracted_data["datetime"]
     prompt_template = f"""Analyze this content and extract specific metadata.
-    
+
     URL: {url}
     Title: {title}
+    Author: {author}
+    Date: {datetime}
     Content: {content}
 
     Instructions:
@@ -538,6 +542,7 @@ def get_prompt(state: AgentState):
     - If no tags from the list apply, return an empty array
 
     Return a JSON object with these exact fields:
+    
     {{
         "summary": "One clear, informative sentence summarizing the main content",
         "date_published": "YYYY-MM-DD",
@@ -549,8 +554,10 @@ def get_prompt(state: AgentState):
         "author": "The content author or organization",
         "tags": ["relevant", "topic", "tags"]
     }}
-
-    Important:
+    - All string values (including "summary" and "tags") **must be in English**.
+    
+    Important
+    - Even if the content is in non-english language (e.g: Hebrew, French etc...) your output should be in *English*.
     - Extract information only from the provided content
     - Leave field empty ("") if information is not explicitly present
     - For platform, extract from the URL or content source

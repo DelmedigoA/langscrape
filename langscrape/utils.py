@@ -136,7 +136,7 @@ def get_formatted_extracts(current_extracts):
             for c in clean_vals
         ):
             joined = " | ".join(clean_vals)
-            preview = joined[:200]  # optional truncation for readability
+            preview = joined[:200]
             info = f"len={len(joined)}; preview={preview}"
         else:
             info = "XPATH not found or empty; Try a different one."
