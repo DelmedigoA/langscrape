@@ -98,7 +98,8 @@ For every field:
   to propose a **better XPath**.
 - If the field relies on LM Capabilities, store the final answer using:
     store_field_value(key, value)
-- If the extraction looks plausible and correct → do nothing.
+- If more than one cool tool is necessary, you should call multiple tools at a time.
+- If all of the extraction looks plausible and correct → do nothing.
 Stop when **all fields pass** these checks and LM fields have stored values.
 
 When proposing XPath, follow these strict rules:

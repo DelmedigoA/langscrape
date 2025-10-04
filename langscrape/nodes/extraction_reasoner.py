@@ -3,8 +3,7 @@ from ..html.xpath_extractor import extract_by_xpath_map_from_html
 from ..agent.state import AgentState
 from ..utils import get_system_prompt, get_formatted_extracts
 
-def call_model(state: AgentState) -> AgentState:
-    global global_state, expected_fields, html_content
+def extraction_reasoner(state: AgentState) -> AgentState:
     current_extracts = extract_by_xpath_map_from_html(state['cleaned_html_content'], state['global_state'])
     formatted_extracts = get_formatted_extracts(current_extracts)
     system_prompt = get_system_prompt(state, formatted_extracts)

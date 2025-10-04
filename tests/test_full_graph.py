@@ -21,7 +21,7 @@ def test_llm_extraction():
     graph = get_graph(tools=tools)
 
     llm = get_llm(config)
-    llm_with_tools = llm.bind_tools(tools)
+    llm_with_tools = llm.bind_tools(tools, parallel_tool_calls=True)
 
     initial_state = {
         "messages": [],
