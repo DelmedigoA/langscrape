@@ -31,8 +31,22 @@ def test_llm_extraction():
     }
 
     final_state = graph.invoke(initial_state)
+    print(final_state["summary"])
+    
+    import re
+    import json
 
-    final_print(final_state['global_state'], final_state['cleaned_html_content'])
+    def extract_json_block(text):
+        match = re.search(r"```json\n(.*?)```", text, re.DOTALL)
+        if match:
+            return json.loads(match.group(1))
+        return {}
 
-    # with open("extracted_data.json", "w", encoding="utf-8") as f:
-    #     json.dump(final_state["result"], f, ensure_ascii=False, indent=2)
+    summary_raw = final_state["summary"].content
+    summary_json = extract_json_block(summary_raw)
+
+    with open("summary.json", "w", encoding="utf-8") as f:
+        json.dump(summary_json, f, ensure_ascii=False, indent=2)
+
+if __name__ == "__main__":
+    test_llm_extraction()
