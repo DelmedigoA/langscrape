@@ -1,7 +1,7 @@
 from langchain_core.messages import SystemMessage
 from ..html.xpath_extractor import extract_by_xpath_map_from_html
 from ..agent.state import AgentState
-from ..utils import get_system_prompt, get_formatted_extracts, get_llm
+from ..utils import get_system_prompt, get_formatted_extracts
 from ..utils import load_config
 
 ALLOWED_TAGS = [
@@ -492,7 +492,7 @@ ALLOWED_TAGS = [
             ]   
             
 
-def get_prompt(state: AgentState):
+def get_summarizer_prompt(state: AgentState):
     url = state["url"]
     extracted_data = state["result"]
     url = state["url"]
@@ -571,7 +571,6 @@ def get_prompt(state: AgentState):
     return prompt_template
 
 def summarizer(state: AgentState) -> AgentState:
-    state["summarizer"] = get_llm()
-    prompt = get_prompt(state)
+    prompt = get_summarizer_prompt(state)
     state["summary"] = state["summarizer"].invoke(prompt)
     return state

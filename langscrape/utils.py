@@ -14,28 +14,51 @@ def load_config(path: str = "config/default_config.yaml") -> dict:
     with open(Path(path), "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
     
-def get_llm(config=None):
+def get_extractor(config=None):
     if config is None:
         config = load_config()
 
-    if config["llm"]["provider"] == "openai":
+    if config["extractor"]["provider"] == "openai":
         api_key = os.getenv("OPENAI_API_KEY")
         return ChatOpenAI(
-            model=config["llm"]["name"],
+            model=config["extractor"]["name"],
             temperature=config["llm"]["temperature"],
-            top_p=config["llm"]["top_p"],
+            top_p=config["extractor"]["top_p"],
             api_key=api_key
         )
-    elif config["llm"]["provider"] == "deepseek":
+    elif config["extractor"]["provider"] == "deepseek":
         api_key = os.getenv("DS_API_KEY")
         return ChatDeepSeek(
-            model=config["llm"]["name"],
-            temperature=config["llm"]["temperature"],
-            top_p=config["llm"]["top_p"],
+            model=config["extractor"]["name"],
+            temperature=config["extractor"]["temperature"],
+            top_p=config["extractor"]["top_p"],
             api_key=api_key
         )
     else:
-        raise NameError(f"{config['llm']['type']} is not supported. try")
+        raise NameError(f"{config['extractor']['type']} is not supported.")
+
+def get_summarizer(config=None):
+    if config is None:
+        config = load_config()
+
+    if config["summarizer"]["provider"] == "openai":
+        api_key = os.getenv("OPENAI_API_KEY")
+        return ChatOpenAI(
+            model=config["summarizer"]["name"],
+            temperature=config["llm"]["temperature"],
+            top_p=config["summarizer"]["top_p"],
+            api_key=api_key
+        )
+    elif config["summarizer"]["provider"] == "deepseek":
+        api_key = os.getenv("DS_API_KEY")
+        return ChatDeepSeek(
+            model=config["summarizer"]["name"],
+            temperature=config["summarizer"]["temperature"],
+            top_p=config["summarizer"]["top_p"],
+            api_key=api_key
+        )
+    else:
+        raise NameError(f"{config['summarizer']['type']} is not supported.")
 
 def initialize_global_state(config: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
     field_definitions = config.get("fields", {}) or {}
