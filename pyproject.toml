@@ -9,6 +9,7 @@ description = "XPath + scraping tools with LLMs"
 requires-python = ">=3.9"
 dependencies = [
     "html5lib",
+    "python-dotenv",
     "lxml",
     "langchain",
     "langgraph",
