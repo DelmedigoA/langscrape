@@ -20,7 +20,7 @@ The flow of the system can be visualized as:
    - Produce structured outputs for downstream use.
 
 3. **`tools` (XPath Extractor)**  
-   Based on the approach in [*XPath Agent: An Efficient XPath Programming Agent Based on LLM for Web Crawler*](https://arxiv.org/html/2502.15688v1). In this method, the LLM proposes candidate XPath selectors, we evaluate them against the DOM, and    iteratively refine until the desired data is extracted.  
+   Following the approach of [*XPath Agent: An Efficient XPath Programming Agent Based on LLM for Web Crawler*](https://arxiv.org/html/2502.15688v1), the LLM proposes candidate XPath selectors, we evaluate them against the DOM, and iteratively refine until the desired data is extracted.  
    This enables:
    - Minimal LLM token usage → **fast and cost-efficient**
    - Reduced hallucinations
