@@ -552,7 +552,8 @@ def get_prompt(state: AgentState):
         "language": "The primary language of the content",
         "platform": "The website or platform where content is published",
         "author": "The content author or organization",
-        "tags": ["relevant", "topic", "tags"]
+        "tags": ["relevant", "topic", "tags"],
+        "figures": "key inviduals. mentioned"
     }}
     - All string values (including "summary" and "tags") **must be in English**.
     

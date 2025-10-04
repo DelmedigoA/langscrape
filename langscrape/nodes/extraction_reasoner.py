@@ -8,7 +8,7 @@ def extraction_reasoner(state: AgentState) -> AgentState:
     formatted_extracts = get_formatted_extracts(current_extracts)
     system_prompt = get_system_prompt(state, formatted_extracts)
     print("\n=== 🧠 SYSTEM PROMPT (ITERATION) ===\n")
-    print(system_prompt.content)
+    print(system_prompt.content[:1000])
     print("\n=== END OF PROMPT ===\n")
     response = state['llm_with_tools'].invoke([system_prompt] + state["messages"])
     print("DEBUG tool_calls:", getattr(response, "tool_calls", None))

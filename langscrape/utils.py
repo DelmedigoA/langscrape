@@ -2,7 +2,6 @@ import json
 import os
 from pathlib import Path
 from typing import Any, Dict
-
 import yaml
 from langchain_deepseek import ChatDeepSeek
 from langchain_core.messages import SystemMessage
@@ -74,7 +73,6 @@ def _format_xpath_snapshot(global_state: Dict[str, Dict[str, Any]]) -> str:
         if isinstance(entry, dict) and entry.get("strategy") == "xpath_extractor":
             snapshot[field] = entry.get("xpath")
     return json.dumps(snapshot, ensure_ascii=False, indent=2)
-
 
 def get_system_prompt(state, formatted_extracts):
     return SystemMessage(

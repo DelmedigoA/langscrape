@@ -10,7 +10,7 @@ async def fetch_url(url):
     result = await fetch_html_patchright(url)
     return result
 
-def html_fetcher(state: AgentState) -> AgentState:
+def url_handler(state: AgentState) -> AgentState:
     url = state['url']
     html_content = asyncio.run(fetch_url(url))
     print("len before cleaning:", len(html_content))
