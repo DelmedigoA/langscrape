@@ -9,7 +9,7 @@ It combines **robust scraping** (via Patchright), **LLM reasoning**, and **XPath
 
 The flow of the system can be visualized as:
 
-![Pipeline Graph](assets/graph.png)
+![Pipeline Graph](assets/graph.svg)
 
 1. **`html_fetcher`**  
    A robust scraping node, using [Patchright](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright-python) (a stealthy Playwright fork) to fetch HTML from **any website**, passing anti-bot protection.
