@@ -25,7 +25,7 @@ def test_llm_extraction():
 
     initial_state = {
         "messages": [],
-        "url": "https://www.mekomit.co.il/ps/147895/",
+        "url": "https://www.youtube.com/watch?v=JEu-dQWOlL4",
         "global_state": global_state,  
         "llm_with_tools": llm_with_tools,
     }
