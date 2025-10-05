@@ -494,12 +494,11 @@ ALLOWED_TAGS = [
 
 def get_summarizer_prompt(state: AgentState):
     url = state["url"]
-    extracted_data = state["result"]
-    url = state["url"]
-    title = extracted_data["title"]
-    content = extracted_data["article_body"]
-    author = extracted_data["author"]
-    datetime = extracted_data["datetime"]
+    extracted_data = state["extracted_fields"]
+    title = extracted_data.get("title", "")
+    content = extracted_data.get("article_body", "")
+    author = extracted_data.get("author", "")
+    datetime = extracted_data.get("datetime", "")
     prompt_template = f"""Analyze this content and extract specific metadata.
 
     URL: {url}
@@ -572,5 +571,4 @@ def get_summarizer_prompt(state: AgentState):
 
 def summarizer(state: AgentState) -> AgentState:
     prompt = get_summarizer_prompt(state)
-    state["summary"] = state["summarizer"].invoke(prompt)
-    return state
+    return {"summary": state["summarizer"].invoke(prompt)}

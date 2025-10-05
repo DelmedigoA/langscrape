@@ -7,6 +7,12 @@ from langscrape.utils import load_config, initialize_global_state, get_extractor
 import json
 from dotenv import load_dotenv
 
+
+import os
+
+def beep():
+    os.system('afplay /System/Library/Sounds/Funk.aiff')  # or "Glass.aiff", "Submarine.aiff", etc.
+
 def test_llm_extraction():
     load_dotenv("api_keys.env")
     config = load_config()
@@ -24,30 +30,15 @@ def test_llm_extraction():
 
     initial_state = {
         "messages": [],
-        "url": "https://www.mekomit.co.il/תוצר-לוואי-ידוע-מראש-הגז-שהרג-חטופים-ו/",
+        "url": "https://www.middleeasteye.net/news/israel-soldier-boasted-running-over-dead-palestinian-man-tank",
         "global_state": global_state,  
         "extractor": extractor_with_tools,
         "summarizer": summarizer,
         "iterations": 0
     }
 
-    final_state = graph.invoke(initial_state)
-    print(final_state["summary"])
-    
-    import re
-    import json
-
-    def extract_json_block(text):
-        match = re.search(r"```json\n(.*?)```", text, re.DOTALL)
-        if match:
-            return json.loads(match.group(1))
-        return {}
-
-    summary_raw = final_state["summary"].content
-    summary_json = extract_json_block(summary_raw)
-
-    with open("summary.json", "w", encoding="utf-8") as f:
-        json.dump(summary_json, f, ensure_ascii=False, indent=2)
-
+    graph.invoke(initial_state)
 if __name__ == "__main__":
+    beep()  
     test_llm_extraction()
+    beep()

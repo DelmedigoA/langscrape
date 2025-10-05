@@ -6,14 +6,14 @@ extractor:
   allow_parallel_tool_calls: true
 
 summarizer:
-  provider: "deepseek"
-  name: "deepseek-chat"
-  temperature: 0.2
-  top_p: .95
+  provider: "openai"
+  name: "gpt-4o"
+  temperature: 0.0
+  top_p: 1.0
 
 browser:
   name: "chrome"
-  wait_for_timeout: 1000
+  wait_for_timeout: 3000
 
 fields:
   article_body:
@@ -24,3 +24,5 @@ fields:
     strategy: "lm_capabilities"
   datetime:
     strategy: "lm_capabilities"
+  
+output_dir: "data"
