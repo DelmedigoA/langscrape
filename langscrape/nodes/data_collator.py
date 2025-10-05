@@ -13,9 +13,11 @@ def extract_json_block(text):
         return json.loads(match.group(1))
     return {}
 
-def output_formatter(state: AgentState) -> AgentState:
+def data_collator(state: AgentState) -> AgentState:
+    final_json = {'meta_data': {'url': state.get("url", "")}}
+
     base_result = state.get("extracted_fields") or state.get("extracted_fields") or {}
-    result = dict(base_result)
+    final_json['extraction'] = dict(base_result)
 
     summary_message = state.get("summary")
     summary_raw = getattr(summary_message, "content", "")
@@ -25,15 +27,15 @@ def output_formatter(state: AgentState) -> AgentState:
         summary_json = {}
 
     if isinstance(summary_json, dict):
-        result.update(summary_json)
+        final_json['summary'] = summary_json
 
-    result.setdefault("url", state.get("url", ""))
+    
 
     output_dir = config.get("output_dir", "data")
     os.makedirs(output_dir, exist_ok=True)
     filename = state.get("url", "output").rstrip("/").split("/")[-1] or "output"
     output_path = os.path.join(output_dir, f"{filename}.json")
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
+        json.dump(final_json, f, ensure_ascii=False, indent=2)
 
-    return {"result": result}
+    return {"result": final_json}

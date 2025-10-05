@@ -5,7 +5,7 @@ from langgraph.prebuilt import ToolNode, tools_condition
 from ..nodes.url_handler import url_handler
 from ..nodes.feature_binder import feature_binder
 from ..nodes.summarizer_prompt_builder import summarizer
-from ..nodes.output_formatter import output_formatter
+from ..nodes.data_collator import data_collator
 
 
 def get_graph(tools):
@@ -16,7 +16,7 @@ def get_graph(tools):
     graph.add_node("tools", ToolNode(tools))
     graph.add_node("feature_binder", feature_binder)
     graph.add_node("summarizer", summarizer)
-    graph.add_node("output_formatter", output_formatter)
+    graph.add_node("data_collator", data_collator)
 
     graph.add_edge(START, "url_handler")
     graph.add_edge('url_handler', 'extraction_reasoner')
@@ -28,8 +28,8 @@ def get_graph(tools):
     graph.add_edge("tools", "extraction_reasoner")
     graph.add_edge("extraction_reasoner", 'feature_binder')
     graph.add_edge('feature_binder', 'summarizer')
-    graph.add_edge('summarizer', 'output_formatter')
-    graph.add_edge('output_formatter', END)
+    graph.add_edge('summarizer', 'data_collator')
+    graph.add_edge('data_collator', END)
     
     graph = graph.compile()
     
