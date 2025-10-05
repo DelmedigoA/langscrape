@@ -1,14 +1,19 @@
 from .html.xpath_extractor import extract_by_xpath_map_from_html
+from .logging import get_logger
+
+
+logger = get_logger(__name__)
+
 
 def final_print(global_state, html_content):
 
     # 🎨 ANSI color codes
-    BLUE = "\033[94m"  
+    BLUE = "\033[94m"
     GREEN = "\033[92m"
     BOLD = "\033[1m"
     RESET = "\033[0m"
 
-    print(f"\n{BOLD}{BLUE}=== FINAL XPATH STATE ==={RESET}")
+    logger.info("\n%s%s=== FINAL XPATH STATE ===%s", BOLD, BLUE, RESET)
     for k, v in global_state.items():
         if isinstance(v, dict):
             strategy = v.get("strategy", "xpath_extractor")
@@ -16,14 +21,14 @@ def final_print(global_state, html_content):
                 detail = v.get("value")
             else:
                 detail = v.get("xpath")
-            print(f"{BLUE}{k}{RESET} ({strategy}): {detail}")
+            logger.info("%s%s%s (%s): %s", BLUE, k, RESET, strategy, detail)
         else:
-            print(f"{BLUE}{k}{RESET}: {v}")
+            logger.info("%s%s%s: %s", BLUE, k, RESET, v)
 
-    print(f"\n{BOLD}{GREEN}=== FINAL EXTRACTED CONTENT ==={RESET}")
+    logger.info("\n%s%s=== FINAL EXTRACTED CONTENT ===%s", BOLD, GREEN, RESET)
     results = extract_by_xpath_map_from_html(html_content, field_state=global_state)
     for k, v in results.items():
         joined = " | ".join(v)
-        print(f"{GREEN}{k}{RESET}: {joined}")
-    
+        logger.info("%s%s%s: %s", GREEN, k, RESET, joined)
+
     return None
