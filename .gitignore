@@ -29,3 +29,6 @@ env/
 
 # Api Keys
 api_keys.env
+
+# Notebooks
+*.ipynb

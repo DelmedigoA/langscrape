@@ -46,7 +46,7 @@ if __name__ == "__main__":
     urls = [
        # 'https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01169-3/fulltext',
         'https://www.dropsitenews.com/p/how-gaza-health-ministry-counts-dead',
-        'https://theconversation.com/what-exactly-caused-the-explosion-at-a-hospital-in-gaza-without-an-independent-credible-investigation-it-will-be-hard-for-everyone-to-agree-216242'
+       # 'https://theconversation.com/what-exactly-caused-the-explosion-at-a-hospital-in-gaza-without-an-independent-credible-investigation-it-will-be-hard-for-everyone-to-agree-216242'
     ]
     results = {k:None for k in urls}
     for idx, url in enumerate(urls):
