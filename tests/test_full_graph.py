@@ -48,11 +48,14 @@ if __name__ == "__main__":
         'https://www.dropsitenews.com/p/how-gaza-health-ministry-counts-dead',
         'https://theconversation.com/what-exactly-caused-the-explosion-at-a-hospital-in-gaza-without-an-independent-credible-investigation-it-will-be-hard-for-everyone-to-agree-216242'
     ]
+    results = {k:None for k in urls}
     for idx, url in enumerate(urls):
         print(f"[{idx+1} / {len(urls)}]")
         print(f"working on {url.split('/')[-1]} from {url.split('/')[0]}...")
         try:
             test_llm_extraction(url)
-        except:
-            print("failed with {url}")
-
+            results[url] = "success"
+        except Exception as e:
+            print(f"failed with {url}: {e}")
+            results[url] = e
+    print(results)

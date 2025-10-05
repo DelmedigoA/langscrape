@@ -8,8 +8,8 @@ extractor:
   allow_parallel_tool_calls: true
 
 summarizer:
-  provider: "openai"
-  name: "gpt-4o"
+  provider: "deepseek"
+  name: "deepseek-chat"
   temperature: 0.0
   top_p: 1.0
 
@@ -28,3 +28,6 @@ fields:
     strategy: "lm_capabilities"
   
 output_dir: "data"
+
+exceptions:
+  min_html_length: 3000
