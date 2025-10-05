@@ -4,22 +4,22 @@ from langscrape.utils import load_config, initialize_global_state, get_extractor
 from dotenv import load_dotenv
 import os
 
-# def start_sound():
-#     os.system('afplay /System/Library/Sounds/Blow.aiff')
+def start_sound():
+    os.system('afplay /System/Library/Sounds/Blow.aiff')
 
-# def end_sound():
-#     os.system('afplay /System/Library/Sounds/Bottle.aiff')
+def end_sound():
+    os.system('afplay /System/Library/Sounds/Bottle.aiff')
 
-# def add_sound(func):
-#     def wrapper(*args, **kwargs):
-#         start_sound()
-#         try:
-#             return func(*args, **kwargs)
-#         finally:
-#             end_sound()
-#     return wrapper
+def add_sound(func):
+    def wrapper(*args, **kwargs):
+        start_sound()
+        try:
+            return func(*args, **kwargs)
+        finally:
+            end_sound()
+    return wrapper
 
-# @add_sound
+@add_sound
 def test_llm_extraction(url: str):
     config = load_config()
     load_dotenv(config["api_keys"])
@@ -44,7 +44,7 @@ def test_llm_extraction(url: str):
 
 if __name__ == "__main__":
     urls = [
-        'https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01169-3/fulltext',
+       # 'https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01169-3/fulltext',
         'https://www.dropsitenews.com/p/how-gaza-health-ministry-counts-dead',
         'https://theconversation.com/what-exactly-caused-the-explosion-at-a-hospital-in-gaza-without-an-independent-credible-investigation-it-will-be-hard-for-everyone-to-agree-216242'
     ]

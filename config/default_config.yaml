@@ -31,3 +31,6 @@ output_dir: "data"
 
 exceptions:
   min_html_length: 3000
+
+warnings:
+  min_article_body: 100
