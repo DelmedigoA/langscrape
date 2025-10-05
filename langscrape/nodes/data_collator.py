@@ -31,11 +31,6 @@ def data_collator(state: AgentState) -> AgentState:
 
     
 
-    output_dir = config.get("output_dir", "data")
-    os.makedirs(output_dir, exist_ok=True)
-    filename = state.get("url", "output").rstrip("/").split("/")[-1] or "output"
-    output_path = os.path.join(output_dir, f"{filename}.json")
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(final_json, f, ensure_ascii=False, indent=2)
+
 
     return {"result": final_json}
