@@ -163,3 +163,43 @@ def get_formatted_extracts(current_extracts):
             info = "XPATH not found or empty; Try a different one."
         lines.append(f"{key}: {info}")
     return "\n".join(lines)
+
+
+def coerce_model_content_to_str(content: Any) -> str:
+    """Normalize structured model responses into a plain string."""
+
+    if content is None:
+        return ""
+
+    if isinstance(content, str):
+        return content
+
+    if isinstance(content, list):
+        parts = []
+        for item in content:
+            if isinstance(item, str):
+                parts.append(item)
+            elif isinstance(item, dict):
+                text = item.get("text")
+                if isinstance(text, str):
+                    parts.append(text)
+                elif isinstance(text, list):
+                    parts.append(coerce_model_content_to_str(text))
+                elif isinstance(item.get("content"), (str, list)):
+                    parts.append(coerce_model_content_to_str(item["content"]))
+                else:
+                    parts.append(json.dumps(item, ensure_ascii=False))
+            else:
+                parts.append(str(item))
+        return "".join(parts)
+
+    if isinstance(content, dict):
+        text = content.get("text")
+        if isinstance(text, (str, list)):
+            return coerce_model_content_to_str(text)
+        content_value = content.get("content")
+        if isinstance(content_value, (str, list)):
+            return coerce_model_content_to_str(content_value)
+        return json.dumps(content, ensure_ascii=False)
+
+    return str(content)
