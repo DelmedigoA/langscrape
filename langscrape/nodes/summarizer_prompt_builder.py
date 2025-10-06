@@ -86,6 +86,7 @@ def get_html_summarizer_user_prompt(state: AgentState) -> str:
     '''
     
     Please analyze carefully and return the JSON according to the system instructions.
+    - Return your final answer **only** inside a fenced code block using the `json` language 
     """
     return prompt
 

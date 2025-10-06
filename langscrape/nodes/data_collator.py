@@ -7,11 +7,41 @@ from ..utils import load_config
 
 config = load_config()
 
-def extract_json_block(text):
-    match = re.search(r"```json\n(.*?)```", text, re.DOTALL)
+def extract_json_block(text: str) -> dict:
+    """
+    Extract a JSON object from text.
+    Supports fenced ```json blocks and bare {…} JSON.
+    Returns {} if nothing valid found.
+    """
+    if not text or not isinstance(text, str):
+        return {}
+
+    text = text.strip()
+
+    # 1. fenced ```json blocks (case-insensitive)
+    match = re.search(r"```json\s*(.*?)```", text, re.DOTALL | re.IGNORECASE)
     if match:
-        return json.loads(match.group(1))
-    return {}
+        candidate = match.group(1).strip()
+        try:
+            return json.loads(candidate)
+        except json.JSONDecodeError:
+            pass  # try fallback
+
+    # 2. bare JSON object anywhere in the string
+    match = re.search(r"\{[\s\S]*\}", text)
+    if match:
+        candidate = match.group(0).strip()
+        try:
+            return json.loads(candidate)
+        except json.JSONDecodeError:
+            pass  # still malformed, fallback
+
+    # 3. final attempt: parse entire text
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        return {}
+
 
 def data_collator(state: AgentState) -> AgentState:
     final_json = {'meta_data': {'id': state['id'],'url': state.get("url", "")}}
