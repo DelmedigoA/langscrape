@@ -98,55 +98,78 @@ def _format_xpath_snapshot(global_state: Dict[str, Dict[str, Any]]) -> str:
             snapshot[field] = entry.get("xpath")
     return json.dumps(snapshot, ensure_ascii=False, indent=2)
 
-def get_system_prompt(state, formatted_extracts):
-    return SystemMessage(
-        content=f"""You are a ReAct-style HTML extraction agent.
 
-GOAL:
-Ensure each field has the correct extracted TEXT from the HTML.
-XPath is just a tool; the objective is accurate content.
+def get_system_prompt(state, formatted_extracts, iters):
+    if iters == 1:
+        return SystemMessage(
+            content=f"""You are a ReAct-style HTML extraction agent.
 
-Reasoning Rules:
-- **author** → should look like a human name, max 3-4 words.
-- **article_body** → should be a long coherent article.
-- **title** → should be a the article title.
-- **datetime** → should look like a publication date or time.
+    GOAL:
+    Ensure each field has the correct extracted TEXT from the HTML.
+    XPath is just a tool; the objective is accurate content.
 
-ACTION POLICY:
-For every field:
-- Follow the field strategy declared below.
-- If the field uses XPath and the extracted text is empty, irrelevant, too short, or violates the rules → call the tool:
-    store_xpath(key, new_xpath)
-  to propose a **better XPath**.
-- If the field relies on LM Capabilities, store the final answer using:
-    store_field_value(key, value)
-- If more than one cool tool is necessary, you should call multiple tools at a time.
-- If all of the extraction looks plausible and correct → do nothing.
-Stop when **all fields pass** these checks and LM fields have stored values.
+    Reasoning Rules:
+    - **author** → should look like a human name, max 3-4 words.
+    - **article_body** → should be a long coherent article.
+    - **title** → should be a the article title.
+    - **datetime** → should look like a publication date or time.
 
-When proposing XPath, follow these strict rules:
-- Always use real tag names (div, section, span, time, h1, p, etc.)
-- Never use class names as tag names.
-- Use `contains(@class, '...')` to target classes.
-- Always start with '//' or '/html' and separate each tag with '/'.
+    ACTION POLICY:
+    For every field:
+    - Follow the field strategy declared below.
+    - If the field uses XPath and the extracted text is empty, irrelevant, too short, or violates the rules → call the tool:
+        store_xpath(key, new_xpath)
+    to propose a **better XPath**.
+    - If the field relies on LM Capabilities, store the final answer using:
+        store_field_value(key, value)
+    - If more than one cool tool is necessary, you should call multiple tools at a time.
+    - If all of the extraction looks plausible and correct → do nothing.
+    Stop when **all fields pass** these checks and LM fields have stored values.
 
-Example:
-✅ //section[contains(@class, 'article-body')]//p/text()
-❌ /html/body/main/article/section/article-details-body-container/article-body
+    When proposing XPath, follow these strict rules:
+    - Always use real tag names (div, section, span, time, h1, p, etc.)
+    - Never use class names as tag names.
+    - Use `contains(@class, '...')` to target classes.
+    - Always start with '//' or '/html' and separate each tag with '/'.
 
-CURRENT XPATH MAP:
-{_format_xpath_snapshot(state['global_state'])}
+    Example:
+    ✅ //section[contains(@class, 'article-body')]//p/text()
+    ❌ /html/body/main/article/section/article-details-body-container/article-body
 
-FIELD STRATEGIES:
-{_format_field_strategies(state['global_state'])}
+    CURRENT XPATH MAP:
+    {_format_xpath_snapshot(state['global_state'])}
 
-CURRENT EXTRACTIONS SUMMARY:
-{formatted_extracts}
+    FIELD STRATEGIES:
+    {_format_field_strategies(state['global_state'])}
 
-HTML:
-{state['cleaned_content']}
-"""
-    )
+    CURRENT EXTRACTIONS SUMMARY:
+    {formatted_extracts}
+
+    HTML:
+    {state['cleaned_content']}
+    """
+        )
+    else:
+        return SystemMessage(content=f"""                  
+    Reasoning Rules Reminder:
+                             
+    - **author** → should look like a human name, max 3-4 words.
+    - **article_body** → should be a long coherent article.
+    - **title** → should be a the article title.
+    - **datetime** → should look like a publication date or time.
+                             
+    CURRENT XPATH MAP:
+    {_format_xpath_snapshot(state['global_state'])}
+
+    FIELD STRATEGIES:
+    {_format_field_strategies(state['global_state'])}
+
+    CURRENT EXTRACTIONS SUMMARY:
+    {formatted_extracts}
+
+    HTML:
+    USE THE PROVIDED HTML ABOVE.""")
+
 
 def get_formatted_extracts(current_extracts):
     lines = []
