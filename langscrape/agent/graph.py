@@ -27,7 +27,6 @@ def get_graph(tools):
         {"tools": "tools", "__end__": "feature_binder"}
         )
     graph.add_edge("tools", "extraction_reasoner")
-    graph.add_edge("extraction_reasoner", 'feature_binder')
     graph.add_edge('feature_binder', 'summarizer')
     graph.add_edge('summarizer', 'data_collator')
     graph.add_edge('data_collator', 'post_processor')

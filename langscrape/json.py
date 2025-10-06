@@ -56,6 +56,9 @@ class SchemeValidator:
         }
     
 JSON_SCHEME = {
+            "title": "the title of the content",
+            "author": "the content's author name",
+            "publication_date": "YYYY-MM-DD",
             "language": "The primary language of the content",
             "type": "One of the content types listed above",
             "media": "One of the media types listed above",

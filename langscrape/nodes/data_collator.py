@@ -29,7 +29,4 @@ def data_collator(state: AgentState) -> AgentState:
     if isinstance(summary_json, dict):
         final_json['summary'] = summary_json
 
-    
-
-
     return {"result": final_json}

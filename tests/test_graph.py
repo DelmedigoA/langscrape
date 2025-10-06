@@ -55,11 +55,20 @@ if __name__ == "__main__":
         print(f"working on {url.split('/')[-1]} from {url.split('/')[0]}...")
         try:
             state = test_llm_extraction(url, id)
-            results[id] = {"url": url, "result": "success", "e": None}
-            data = state['result']
+            results[id] = {
+                "url": url,
+                "result": "success",
+                "error": None
+            }
+            data = state.get("result", {})
         except Exception as e:
             print(f"failed with {url}: {e}")
-            results[id] = {"url": url, "result": "failure", "e": e}
+            # convert error object to string 
+            results[id] = {
+                "url": url,
+                "result": "failure",
+                "error": str(e) 
+        }
 
     with open("log.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
