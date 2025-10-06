@@ -25,7 +25,9 @@ env/
 .DS_Store
 
 # Data
+data/
 *.json
+*.csv
 
 # Api Keys
 api_keys.env

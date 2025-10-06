@@ -20,7 +20,9 @@ dependencies = [
     "tokenizers",
     "langchain_deepseek",
     "pymupdf",
-    "requests"
+    "requests",
+    "pandas",
+    "openpyxl"
 ]
 
 [tool.setuptools.packages.find]

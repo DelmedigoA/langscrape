@@ -4,8 +4,6 @@ import json
 import os
 from langscrape.utils import load_config
 
-
-
 def post_processor(state: AgentState) -> AgentState:
     """
     Validate the extracted summary against JSON_SCHEME and

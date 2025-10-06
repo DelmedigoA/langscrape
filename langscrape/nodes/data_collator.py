@@ -14,7 +14,7 @@ def extract_json_block(text):
     return {}
 
 def data_collator(state: AgentState) -> AgentState:
-    final_json = {'meta_data': {'url': state.get("url", "")}}
+    final_json = {'meta_data': {'id': state['id'],'url': state.get("url", "")}}
 
     base_result = state.get("extracted_fields") or state.get("extracted_fields") or {}
     final_json['extraction'] = dict(base_result)
@@ -30,7 +30,6 @@ def data_collator(state: AgentState) -> AgentState:
         final_json['summary'] = summary_json
 
     
-
 
 
     return {"result": final_json}

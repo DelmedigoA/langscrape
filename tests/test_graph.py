@@ -3,24 +3,26 @@ from langscrape.agent.tools import make_store_xpath, make_store_value
 from langscrape.utils import load_config, initialize_global_state, get_extractor, get_summarizer
 from dotenv import load_dotenv
 import os
+import pandas as pd
+import json
 
-def start_sound():
-    os.system('afplay /System/Library/Sounds/Blow.aiff')
+# def start_sound():
+#     os.system('afplay /System/Library/Sounds/Blow.aiff')
 
-def end_sound():
-    os.system('afplay /System/Library/Sounds/Bottle.aiff')
+# def end_sound():
+#     os.system('afplay /System/Library/Sounds/Bottle.aiff')
 
-def add_sound(func):
-    def wrapper(*args, **kwargs):
-        start_sound()
-        try:
-            return func(*args, **kwargs)
-        finally:
-            end_sound()
-    return wrapper
+# def add_sound(func):
+#     def wrapper(*args, **kwargs):
+#         start_sound()
+#         try:
+#             return func(*args, **kwargs)
+#         finally:
+#             end_sound()
+#     return wrapper
 
-@add_sound
-def test_llm_extraction(url: str):
+# @add_sound
+def test_llm_extraction(url: str, id: str):
     config = load_config()
     load_dotenv(config["api_keys"])
     global_state = initialize_global_state(config)
@@ -37,25 +39,27 @@ def test_llm_extraction(url: str):
         "global_state": global_state,  
         "extractor": extractor_with_tools,
         "summarizer": summarizer,
-        "iterations": 0
+        "iterations": 0,
+        "id": id
     }
     response = graph.invoke(initial_state)
     return response
 
 if __name__ == "__main__":
-    urls = [
-       # 'https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01169-3/fulltext',
-        'https://www.dropsitenews.com/p/how-gaza-health-ministry-counts-dead',
-       # 'https://theconversation.com/what-exactly-caused-the-explosion-at-a-hospital-in-gaza-without-an-independent-credible-investigation-it-will-be-hard-for-everyone-to-agree-216242'
-    ]
-    results = {k:None for k in urls}
-    for idx, url in enumerate(urls):
+    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(10)
+    urls = df.url.tolist()
+    ids = df.ID.tolist()
+    results = {}
+    for idx, (url, id) in enumerate(zip(urls, ids)):
         print(f"[{idx+1} / {len(urls)}]")
         print(f"working on {url.split('/')[-1]} from {url.split('/')[0]}...")
         try:
-            test_llm_extraction(url)
-            results[url] = "success"
+            state = test_llm_extraction(url, id)
+            results[id] = {"url": url, "result": "success", "e": None}
+            data = state['result']
         except Exception as e:
             print(f"failed with {url}: {e}")
-            results[url] = e
-    print(results)
+            results[id] = {"url": url, "result": "failure", "e": e}
+
+    with open("log.json", "wb") as f:
+         json.dumps(results ,f) 
