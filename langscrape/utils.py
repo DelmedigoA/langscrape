@@ -157,7 +157,7 @@ def get_formatted_extracts(current_extracts):
             c in {"'Skipped: No XPath'", "(Empty Result)", "(No stored value)"}
             for c in clean_vals
         ):
-            joined = " | ".join(clean_vals)
+            joined = " ".join(clean_vals)
             preview = joined[:200]
             info = f"len={len(joined)}; preview={preview}"
         else:

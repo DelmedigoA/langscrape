@@ -46,7 +46,7 @@ def test_llm_extraction(url: str, id: str):
     return response
 
 if __name__ == "__main__":
-    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(10)
+    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(3)
     urls = df.url.tolist()
     ids = df.ID.tolist()
     results = {}
@@ -61,5 +61,5 @@ if __name__ == "__main__":
             print(f"failed with {url}: {e}")
             results[id] = {"url": url, "result": "failure", "e": e}
 
-    with open("log.json", "wb") as f:
-         json.dumps(results ,f) 
+    with open("log.json", "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)

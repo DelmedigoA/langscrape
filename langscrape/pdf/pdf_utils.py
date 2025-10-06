@@ -2,23 +2,7 @@ import re
 import requests
 import pymupdf
 from urllib.parse import urlparse
-
-
-def _get_referer(url: str) -> str:
-    parsed = urlparse(url)
-    return f"{parsed.scheme}://{parsed.netloc}/"
-
-
-def _get_headers(url: str) -> dict:
-    return {
-        "User-Agent": (
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/140.0.0.0 Safari/537.36"
-        ),
-        "Referer": _get_referer(url),
-    }
-
+from ..browser.request import simple_url_to_html
 
 def collapse_dots(text: str) -> str:
     return re.sub(r"\.{2,}", ".", text)
@@ -39,11 +23,10 @@ def pdfurl_to_text(url: str, normalize: bool = True) -> str:
     """
     Download PDF from URL (in-memory), extract, normalize, and return text.
     """
-    headers = _get_headers(url)
-    r = requests.get(url, headers=headers)
 
+    content = simple_url_to_html(url)
     # open directly from bytes
-    pdf = pymupdf.open(stream=r.content, filetype="pdf")
+    pdf = pymupdf.open(stream=content, filetype="pdf")
 
     text = get_joined_text(pdf)
     if normalize:

@@ -7,7 +7,6 @@ def test_pdf_extraction():
 
     url = "https://gaza-projections.org/gaza_projections_report.pdf"
     text = pdfurl_to_text(url)
-
     # Basic validation
     assert isinstance(text, str)
     assert len(text) > 100  # ensure some content
