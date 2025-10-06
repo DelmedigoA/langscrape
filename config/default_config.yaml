@@ -27,7 +27,7 @@ fields:
   datetime:
     strategy: "lm_capabilities"
   
-output_dir: "data"
+output_dir: "data/jsons"
 
 exceptions:
   min_html_length: 3000

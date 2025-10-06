@@ -16,7 +16,7 @@ def apply_articlebody_logic(article_body: str, min_len: int = None) -> None:
 def feature_binder(state: AgentState) -> AgentState:
     """Extract features from cleaned HTML and validate article body length."""
     extracted_fields = extract_by_xpath_map_from_html(
-        state["cleaned_html_content"],
+        state["cleaned_content"],
         state["global_state"],
     )
 

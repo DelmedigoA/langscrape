@@ -9,11 +9,12 @@ class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], add_messages]
     extractor: Union[ChatOpenAI, ChatDeepSeek]
     summarizer: Union[ChatOpenAI, ChatDeepSeek]
+    url_is_pdf: bool
     invoke_time: datetime
     finish_time: datetime
     id: str
     url: str
-    cleaned_html_content: str
+    cleaned_content: str
     iterations: int
     global_state: Dict[str, Dict[str, Any]]
     extracted_fields: Dict[str, Any]

@@ -6,7 +6,7 @@ from ..utils import get_system_prompt, get_formatted_extracts
 def extraction_reasoner(state: AgentState) -> AgentState:
     iters = state["iterations"]
     iters += 1
-    current_extracts = extract_by_xpath_map_from_html(state['cleaned_html_content'], state['global_state'])
+    current_extracts = extract_by_xpath_map_from_html(state['cleaned_content'], state['global_state'])
     formatted_extracts = get_formatted_extracts(current_extracts)
     system_prompt = get_system_prompt(state, formatted_extracts)
     print(f"\n=== 🧠 SYSTEM PROMPT (ITERATION: {state["iterations"] + 1}) ===\n")

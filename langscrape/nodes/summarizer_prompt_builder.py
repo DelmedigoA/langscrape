@@ -69,7 +69,7 @@ def get_summarizer_system_prompt(state: AgentState) -> str:
     return prompt_template
 
 
-def get_summarizer_user_prompt(state: AgentState) -> str:
+def get_html_summarizer_user_prompt(state: AgentState) -> str:
     extracted_data = state["extracted_fields"]
     title = extracted_data.get("title", "")
     content = extracted_data.get("article_body", "")
@@ -89,11 +89,27 @@ def get_summarizer_user_prompt(state: AgentState) -> str:
     """
     return prompt
 
+def get_pdf_summarizer_user_prompt(state: AgentState) -> str:
+    prompt = f"""
+    URL: {state["url"]}
+    Content: 
+    '''
+    {state['cleaned_content']}
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    """
+    return prompt
+
 def summarizer(state: AgentState) -> AgentState:
     """Invoke the summarizer model with system + user prompts."""
+    get_user_prompt = (
+        get_pdf_summarizer_user_prompt if state.get("url_is_pdf", False)
+        else get_html_summarizer_user_prompt
+    )
     messages = [
         SystemMessage(content=get_summarizer_system_prompt(state)),
-        HumanMessage(content=get_summarizer_user_prompt(state)),
+        HumanMessage(content=get_user_prompt(state)),
     ]
     response = state["summarizer"].invoke(messages)
     return {"summary": response}
