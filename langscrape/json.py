@@ -32,7 +32,7 @@ class SchemeValidator:
 
     def get_keys_to_remove(self) -> list:
         """
-        🧹 Return keys in data that are NOT in scheme
+        Return keys in data that are NOT in scheme
         """
         return sorted(list(self.get_data_keys() - self.get_scheme_keys()))
 

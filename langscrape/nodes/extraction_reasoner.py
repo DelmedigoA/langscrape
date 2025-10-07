@@ -9,7 +9,7 @@ def extraction_reasoner(state: AgentState) -> AgentState:
     current_extracts = extract_by_xpath_map_from_html(state['cleaned_content'], state['global_state'])
     formatted_extracts = get_formatted_extracts(current_extracts)
     system_prompt = get_system_prompt(state, formatted_extracts, iters)
-    print(f"\n=== 🧠 SYSTEM PROMPT (ITERATION: {state["iterations"] + 1}) ===\n")
+    print(f"\n=== 🧠 SYSTEM PROMPT (ITERATION: {state["iterations"]}) ===\n")
     print(system_prompt.content)
     print("\n=== END OF PROMPT ===\n")
     response = state['extractor'].invoke([system_prompt] + state["messages"])

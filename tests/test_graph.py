@@ -39,14 +39,14 @@ def test_llm_extraction(url: str, id: str):
         "global_state": global_state,  
         "extractor": extractor_with_tools,
         "summarizer": summarizer,
-        "iterations": 0,
+        "iterations": 1,
         "id": id
     }
     response = graph.invoke(initial_state)
     return response
 
 if __name__ == "__main__":
-    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(1)
+    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(2)
     urls = df.url.tolist()
     ids = df.ID.tolist()
     results = {}

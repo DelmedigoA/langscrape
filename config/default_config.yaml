@@ -6,6 +6,7 @@ extractor:
   temperature: 0.0
   top_p: 1.0
   allow_parallel_tool_calls: true
+  max_iters: 7
 
 summarizer:
   provider: "deepseek"
@@ -21,7 +22,7 @@ fields:
   article_body:
     strategy: "xpath_extractor"
   title:
-    strategy: "lm_capabilities"
+    strategy: "xpath_extractor"
   author:
     strategy: "lm_capabilities"
   datetime:
