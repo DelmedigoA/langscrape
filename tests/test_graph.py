@@ -46,6 +46,7 @@ def test_llm_extraction(url: str, id: str):
     return response
 
 if __name__ == "__main__":
+    config = load_config()
     df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(1)
     urls = df.url.tolist()
     ids = df.ID.tolist()
@@ -59,7 +60,8 @@ if __name__ == "__main__":
                 "url": url,
                 "result": "success",
                 "error": None,
-                "response": str(state)
+                "token_usage": state.get("token_usage", {}),
+                "config": config
             }
             data = state.get("result", {})
         except Exception as e:
@@ -69,7 +71,8 @@ if __name__ == "__main__":
                 "url": url,
                 "result": "failure",
                 "error": str(e),
-                "response": None
+                "token_usage": None,
+                "config": config
         }
     if os.path.exists("log.json"):
         with open("log.json", "r", encoding="utf-8") as f:
@@ -82,3 +85,5 @@ if __name__ == "__main__":
     else:
         with open("log.json", "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
+    
+    print(state)

@@ -24,9 +24,9 @@ fields:
   title:
     strategy: "xpath_extractor"
   author:
-    strategy: "xpath_extractor"
+    strategy: "lm_capabilities"
   datetime:
-    strategy: "xpath_extractor"
+    strategy: "lm_capabilities"
   
 output_dir: "data/jsons"
 
