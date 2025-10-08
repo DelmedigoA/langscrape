@@ -1,8 +1,11 @@
-from ..agent.state import AgentState
-from ..tags import THEME_TAGS, COUNTRIES_AND_ORGANIZATIONS, LOCATIONS, FIGURES
-from ..json import JSON_SCHEME
-from langchain_core.messages import SystemMessage, HumanMessage
 import json
+
+from langchain_core.messages import HumanMessage, SystemMessage
+
+from ..agent.state import AgentState
+from ..json import JSON_SCHEME
+from ..tags import COUNTRIES_AND_ORGANIZATIONS, FIGURES, LOCATIONS, THEME_TAGS
+from ..utils import update_token_usage
 
 def get_summarizer_system_prompt(state: AgentState) -> str:
     prompt_template = f"""Your task is to analyze the provided contens.
@@ -113,4 +116,5 @@ def summarizer(state: AgentState) -> AgentState:
         HumanMessage(content=get_user_prompt(state)),
     ]
     response = state["summarizer"].invoke(messages)
-    return {"summary": response}
+    token_usage = update_token_usage(state, "summarizer", response)
+    return {"summary": response, "token_usage": token_usage}

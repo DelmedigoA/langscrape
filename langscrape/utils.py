@@ -1,5 +1,6 @@
 import json
 import os
+from copy import deepcopy
 from pathlib import Path
 from typing import Any, Dict
 import yaml
@@ -7,6 +8,11 @@ from langchain_deepseek import ChatDeepSeek
 from langchain_core.messages import SystemMessage
 from langchain_openai import ChatOpenAI
 from .html.xpath_extractor import extract_by_xpath_map_from_html
+
+TOKEN_USAGE_TEMPLATE = {
+    "extractor": {"input_tokens": 0, "output_tokens": 0},
+    "summarizer": {"input_tokens": 0, "output_tokens": 0},
+}
 
 def load_config(path: str = "config/default_config.yaml") -> dict:
     """
@@ -60,6 +66,55 @@ def get_summarizer(config=None):
         )
     else:
         raise NameError(f"{config['summarizer']['type']} is not supported.")
+
+
+def get_default_token_usage() -> Dict[str, Dict[str, int]]:
+    """Return a fresh token usage template for extractor and summarizer."""
+
+    return deepcopy(TOKEN_USAGE_TEMPLATE)
+
+
+def _extract_usage_dict(message: Any) -> Dict[str, int]:
+    """Safely extract token usage information from an LLM message."""
+
+    usage = getattr(message, "usage_metadata", None) or {}
+
+    if not usage and hasattr(message, "response_metadata"):
+        response_metadata = getattr(message, "response_metadata", {}) or {}
+        usage = response_metadata.get("token_usage") or response_metadata or {}
+
+    input_tokens = (
+        usage.get("input_tokens")
+        or usage.get("prompt_tokens")
+        or usage.get("prompt_tokens_total")
+        or 0
+    )
+    output_tokens = (
+        usage.get("output_tokens")
+        or usage.get("completion_tokens")
+        or usage.get("completion_tokens_total")
+        or 0
+    )
+
+    return {
+        "input_tokens": int(input_tokens or 0),
+        "output_tokens": int(output_tokens or 0),
+    }
+
+
+def update_token_usage(state: Dict[str, Any], agent: str, message: Any) -> Dict[str, Dict[str, int]]:
+    """Accumulate token usage for a given agent from an LLM message."""
+
+    current_usage = state.get("token_usage") or get_default_token_usage()
+    usage = deepcopy(current_usage)
+    agent_usage = usage.setdefault(agent, {"input_tokens": 0, "output_tokens": 0})
+
+    message_usage = _extract_usage_dict(message)
+    agent_usage["input_tokens"] += message_usage.get("input_tokens", 0)
+    agent_usage["output_tokens"] += message_usage.get("output_tokens", 0)
+
+    usage[agent] = agent_usage
+    return usage
 
 def initialize_global_state(config: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
     field_definitions = config.get("fields", {}) or {}

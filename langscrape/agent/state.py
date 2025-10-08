@@ -1,4 +1,4 @@
-from typing import TypedDict, Annotated, Sequence, Union, Dict, Any
+from typing import TypedDict, Annotated, Sequence, Union, Dict, Any, NotRequired
 from langchain_core.messages import BaseMessage
 from langgraph.graph.message import add_messages
 from langchain_openai import ChatOpenAI
@@ -20,3 +20,4 @@ class AgentState(TypedDict):
     extracted_fields: Dict[str, Any]
     summary: BaseMessage
     result: Dict[str, Any]
+    token_usage: NotRequired[Dict[str, Dict[str, int]]]
