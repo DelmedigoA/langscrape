@@ -57,5 +57,5 @@ def get_graph(tools):
     graph.add_edge("summarizer", "data_collator")
     graph.add_edge("data_collator", "post_processor")
     graph.add_edge("post_processor", END)
-
     return graph.compile()
+
