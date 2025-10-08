@@ -18,6 +18,9 @@ browser:
   name: "chrome"
   wait_for_timeout: 750
 
+graph:
+  timeout_seconds: 60
+
 fields:
   article_body:
     strategy: "xpath_extractor"

@@ -21,3 +21,4 @@ class AgentState(TypedDict):
     summary: BaseMessage
     result: Dict[str, Any]
     token_usage: NotRequired[Dict[str, Dict[str, int]]]
+    time_measurements: NotRequired[Dict[str, Dict[str, Any]]]
