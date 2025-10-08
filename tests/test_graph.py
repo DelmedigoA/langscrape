@@ -46,19 +46,20 @@ def test_llm_extraction(url: str, id: str):
     return response
 
 if __name__ == "__main__":
-    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(2)
+    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(1)
     urls = df.url.tolist()
     ids = df.ID.tolist()
     results = {}
     for idx, (url, id) in enumerate(zip(urls, ids)):
         print(f"[{idx+1} / {len(urls)}]")
-        print(f"working on {url.split('/')[-1]} from {url[:20]}...")
+        print(f"working on {url.split('/')[-1]} from {url} ...")
         try:
             state = test_llm_extraction(url, id)
             results[id] = {
                 "url": url,
                 "result": "success",
-                "error": None
+                "error": None,
+                "response": str(state)
             }
             data = state.get("result", {})
         except Exception as e:
@@ -67,8 +68,17 @@ if __name__ == "__main__":
             results[id] = {
                 "url": url,
                 "result": "failure",
-                "error": str(e) 
+                "error": str(e),
+                "response": None
         }
-
-    with open("log.json", "w", encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
+    if os.path.exists("log.json"):
+        with open("log.json", "r", encoding="utf-8") as f:
+            existing_results = json.load(f)
+        
+        existing_results.update(results)
+        
+        with open("log.json", "w", encoding="utf-8") as f:
+            json.dump(existing_results, f, ensure_ascii=False, indent=2)
+    else:
+        with open("log.json", "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)

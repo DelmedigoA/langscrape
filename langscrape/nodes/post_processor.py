@@ -3,6 +3,41 @@ from ..json import SchemeValidator, JSON_SCHEME
 import json
 import os
 from langscrape.utils import load_config
+from ..tags import LOCATIONS, FIGURES, COUNTRIES_AND_ORGANIZATIONS, THEME_TAGS
+from typing import List
+
+from typing import List
+
+
+
+def clean_tags(summary: dict, TAGS: List[str] = LOCATIONS + FIGURES + COUNTRIES_AND_ORGANIZATIONS + THEME_TAGS) -> dict:
+    """
+    Clean each tag list in summary by keeping only tags that appear in TAGS.
+
+    Args:
+        summary (dict): A dictionary with keys like 'locational_tags', 'figures_tags', etc.
+        TAGS (List[str]): Allowed tags.
+
+    Returns:
+        dict: Updated summary with cleaned tag lists.
+    """
+    tag_keys = [
+        "locational_tags",
+        "figures_tags",
+        "countries_and_organizations_tags",
+        "theme_tags",
+    ]
+
+    for key in tag_keys:
+        tags = summary.get(key, [])
+        if isinstance(tags, list):
+            summary[key] = [tag for tag in tags if tag in TAGS]
+        else:
+            summary[key] = []  # ensure consistent type
+
+    return summary
+
+
 
 def post_processor(state: AgentState) -> AgentState:
     """
@@ -17,7 +52,7 @@ def post_processor(state: AgentState) -> AgentState:
              if isinstance(state.get("result", {}).get("summary", {}), dict)
              else {}
     )
-
+    cleaned_summary = clean_tags(summary)
     scheme_validator = SchemeValidator(
         scheme=JSON_SCHEME,
         data=summary,
@@ -41,6 +76,7 @@ def post_processor(state: AgentState) -> AgentState:
             "meta_data": {
                 "is_valid_scheme": is_valid,
                 "validation_report": validation_report,
-            }
+            },
+            'summary': cleaned_summary
         }
     }

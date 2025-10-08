@@ -42,4 +42,5 @@ def url_handler(state: AgentState) -> AgentState:
             cleaned_html = clean_html_for_extraction3(html_content)
             apply_html_logic(cleaned_html)
         cleaned_html = clean_html_for_extraction3(html_content)
+        print("html len:", len(cleaned_html))
         return {"cleaned_content": cleaned_html, "url_is_pdf": url_is_pdf}
