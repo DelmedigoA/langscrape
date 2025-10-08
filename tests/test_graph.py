@@ -6,16 +6,23 @@ import os
 import pandas as pd
 import json
 from datetime import datetime
-import concurrent.futures
 
-def run_with_timeout(func, *args, timeout=60, **kwargs):
-    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
-        future = executor.submit(func, *args, **kwargs)
-        try:
-            return future.result(timeout=timeout)
-        except concurrent.futures.TimeoutError:
-            raise TimeoutError(f"Function '{func.__name__}' timed out after {timeout}s")
+# def start_sound():
+#     os.system('afplay /System/Library/Sounds/Blow.aiff')
 
+# def end_sound():
+#     os.system('afplay /System/Library/Sounds/Bottle.aiff')
+
+# def add_sound(func):
+#     def wrapper(*args, **kwargs):
+#         start_sound()
+#         try:
+#             return func(*args, **kwargs)
+#         finally:
+#             end_sound()
+#     return wrapper
+
+# @add_sound
 def test_llm_extraction(url: str, id: str):
     config = load_config()
     load_dotenv(config["api_keys"])
@@ -41,19 +48,24 @@ def test_llm_extraction(url: str, id: str):
 
 if __name__ == "__main__":
     config = load_config()
-    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(3)
+    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(50)
     urls = df.url.tolist()
     ids = df.ID.tolist()
-    results = {}
-    TIMEOUT_SECONDS = 1
+    log_path = "log.json"
+
+    # initialize log file if not exists
+    if not os.path.exists(log_path):
+        with open(log_path, "w", encoding="utf-8") as f:
+            json.dump({}, f, ensure_ascii=False, indent=2)
+
     for idx, (url, id) in enumerate(zip(urls, ids)):
         start = datetime.now()
         print(f"[{idx+1} / {len(urls)}]")
         print(f"working on {url.split('/')[-1]} from {url} ...")
         try:
-            state = run_with_timeout(test_llm_extraction, url, id, timeout=TIMEOUT_SECONDS)
+            state = test_llm_extraction(url, id)
             end = datetime.now()
-            results[id] = {
+            entry = {
                 "url": url,
                 "result": "success",
                 "error": None,
@@ -62,19 +74,9 @@ if __name__ == "__main__":
                 "config": config
             }
             data = state.get("result", {})
-        except TimeoutError as e:
-            print(f"timeout on {url}")
-            results[id] = {
-                "url": url,
-                "result": "timeout",
-                "error": str(e),
-                "token_usage": None,
-                "time": None,
-                "config": config
-            }
         except Exception as e:
             print(f"failed with {url}: {e}")
-            results[id] = {
+            entry = {
                 "url": url,
                 "result": "failure",
                 "error": str(e),
@@ -82,13 +84,12 @@ if __name__ == "__main__":
                 "time": None,
                 "config": config
             }
-    if os.path.exists("log.json"):
-        with open("log.json", "r", encoding="utf-8") as f:
+
+        # 🔹 Live logging per ID
+        with open(log_path, "r", encoding="utf-8") as f:
             existing_results = json.load(f)
-        existing_results.update(results)
-        with open("log.json", "w", encoding="utf-8") as f:
+
+        existing_results[str(id)] = entry
+
+        with open(log_path, "w", encoding="utf-8") as f:
             json.dump(existing_results, f, ensure_ascii=False, indent=2)
-    else:
-        with open("log.json", "w", encoding="utf-8") as f:
-            json.dump(results, f, ensure_ascii=False, indent=2)
-    print(state)
