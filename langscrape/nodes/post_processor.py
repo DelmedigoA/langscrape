@@ -13,14 +13,14 @@ def clean_tags(summary: dict, TAGS: List[str] = LOCATIONS + FIGURES + COUNTRIES_
     Clean each tag list in summary by keeping only tags that appear in TAGS.
 
     Args:
-        summary (dict): A dictionary with keys like 'locational_tags', 'figures_tags', etc.
+        summary (dict): A dictionary with keys like 'location_tags', 'figures_tags', etc.
         TAGS (List[str]): Allowed tags.
 
     Returns:
         dict: Updated summary with cleaned tag lists.
     """
     tag_keys = [
-        "locational_tags",
+        "location_tags",
         "figures_tags",
         "countries_and_organizations_tags",
         "theme_tags",

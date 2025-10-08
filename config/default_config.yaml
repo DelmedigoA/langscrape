@@ -7,12 +7,14 @@ extractor:
   top_p: 1.0
   allow_parallel_tool_calls: true
   max_iters: 7
+  time_out: 60
 
 summarizer:
   provider: "deepseek"
   name: "deepseek-chat"
   temperature: 0.0
   top_p: 1.0
+  time_out: 60
 
 browser:
   name: "chrome"

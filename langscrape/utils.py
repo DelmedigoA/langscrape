@@ -31,6 +31,7 @@ def get_extractor(config=None):
             model=config["extractor"]["name"],
             temperature=config["extractor"]["temperature"],
             top_p=config["extractor"]["top_p"],
+            timeout = config['extractor']['time_out'],
             api_key=api_key
         )
     elif config["extractor"]["provider"] == "deepseek":
@@ -39,6 +40,7 @@ def get_extractor(config=None):
             model=config["extractor"]["name"],
             temperature=config["extractor"]["temperature"],
             top_p=config["extractor"]["top_p"],
+            timeout = config['extractor']['time_out'],
             api_key=api_key
         )
     else:
