@@ -59,7 +59,9 @@ def get_summarizer_system_prompt(state: AgentState) -> str:
     - All string values (including "summary" and "tags") **must be in English**.
     
     Important
-    - Even if the content is in non-english language (e.g: Hebrew, French etc...) your output should be in *English*.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic), including authors' names, titles, etc.
+    - **Do not include any Hebrew, Arabic, or non-English words** in any field.
+    - If translation is required, translate accurately into English.
     - Extract information only from the provided content
     - Leave field empty ("") if information is not explicitly present
     - For platform, extract from the URL or content source
@@ -89,6 +91,7 @@ def get_html_summarizer_user_prompt(state: AgentState) -> str:
     '''
     
     Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
     - Return your final answer **only** inside a fenced code block using the `json` language 
     """
     return prompt
@@ -102,6 +105,8 @@ def get_pdf_summarizer_user_prompt(state: AgentState) -> str:
     '''
     
     Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
     """
     return prompt
 
