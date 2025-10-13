@@ -33,4 +33,4 @@ data/
 api_keys.env
 
 # Other
-log_summary.py
+logsummary.py
