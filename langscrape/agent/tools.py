@@ -35,7 +35,12 @@ def make_store_value(state_dict: dict):
         """Store a natural-language value for a field managed by the LLM."""
 
         entry = _normalize_state_entry(state_dict, key)
-        entry["strategy"] = "lm_capabilities"
+        strategy = entry.get("strategy", "xpath_extractor")
+        if strategy != "lm_capabilities":
+            return (
+                f"Field '{key}' is configured for '{strategy}', so `store_field_value` is disabled. "
+                "Update the configuration if you want to handle this field with LM capabilities."
+            )
 
         if isinstance(value, str):
             values: List[str] = [value]

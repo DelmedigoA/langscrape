@@ -48,7 +48,7 @@ def test_llm_extraction(url: str, id: str):
 
 if __name__ == "__main__":
     config = load_config()
-    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(50)
+    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/links.csv").sample(1)
     urls = df.url.tolist()
     ids = df.ID.tolist()
     log_path = "log.json"

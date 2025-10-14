@@ -34,3 +34,4 @@ api_keys.env
 
 # Other
 logsummary.py
+old_extractor/
