@@ -22,7 +22,9 @@ dependencies = [
     "pymupdf",
     "requests",
     "pandas",
-    "openpyxl"
+    "openpyxl",
+    "lxml_html_clean",
+    "newspaper4k"
 ]
 
 [tool.setuptools.packages.find]
