@@ -56,18 +56,20 @@ class SchemeValidator:
         }
     
 JSON_SCHEME = {
-            "title": "the title of the content",
-            "author": "the content's author name",
-            "publication_date": "YYYY-MM-DD",
-            "language": "The primary language of the content",
-            "type": "One of the content types listed above",
-            "media": "One of the media types listed above",
-            "platform": "The website or platform where content is published",
-            "summary": "One clear, informative sentence summarizing the main content",
-            "event_start_date": "YYYY-MM-DD",
-            "event_end_date": "YYYY-MM-DD",
-            "theme_tags": ["relevant", "theme", "tags"],
-            "countries_and_organizations_tags": ["relevant", "countries_and_organizations", "tags"],
-            "location_tags": ["relevant", "location", "tags"],
-            "figures_tags": ["relevant", "figures", "tags"]
-        }
+    "title": "The title of the content",
+    "author": "The content's author name (string, empty if unknown)",
+    "publication_date": "YYYY-MM-DD",
+    "language": "The primary language of the content",
+    "type": "One of the content types listed above",
+    "media": "One of the media types listed above",
+    "platform": "The website or platform where the content is published",
+    "source": "The original issuer of the information (e.g., UN, IDF, MoH). If the publisher is the original issuer, match platform",
+    "reference": "Canonical link to the primary document or official source cited (string, empty if none)",
+    "summary": "One clear, informative sentence summarizing the main content",
+    "event_start_date": "YYYY-MM-DD",
+    "event_end_date": "YYYY-MM-DD",
+    "theme_tags": ["relevant", "theme", "tags"],
+    "countries_and_organizations_tags": ["relevant", "countries_and_organizations", "tags"],
+    "location_tags": ["relevant", "location", "tags"],
+    "figures_tags": ["relevant", "figures", "tags"]
+}

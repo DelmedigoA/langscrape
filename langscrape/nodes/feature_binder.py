@@ -26,8 +26,8 @@ def get_article_traditional(url):
     except:
         return None
     
-def _is_empty(content):
-    return content == "(Empty Result)"
+def _is_empty(c):
+    return c == ["(Empty Result)"] or c == "(Empty Result)"
 
 def feature_binder(state: AgentState) -> AgentState:
     """Extract features from cleaned HTML and validate article body length."""

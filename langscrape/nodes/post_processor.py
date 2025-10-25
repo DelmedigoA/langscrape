@@ -86,7 +86,7 @@ def post_processor(state: AgentState) -> AgentState:
     logging_data[str(log_key)] = {
         "id": state.get("id"),
         "url": state.get("url"),
-        "traditional_falgs": state.get("traditional_flags", []),
+        "traditional_flag": state.get("traditional_flag", []),
         "token_usage": token_usage,
     }
 

@@ -69,7 +69,9 @@ def get_summarizer_system_prompt(state: AgentState) -> str:
     - Tags should ONLY be from the provided list, do not create new ones
     - Search for publication date in the content's metadata
     - If no publication date is found, use the creation date of the content
-    - Always return content processed in English
+    - Source: the original issuer of the information) 
+    - Reference: a canonical link to the primary document or official source cited
+    - **Always return content processed in English**
     """
     return prompt_template
 
