@@ -46,6 +46,6 @@ def test_llm_extraction(url: str):
     return response
 
 if __name__ == "__main__":
-    url = "https://reliefweb.int/report/occupied-palestinian-territory/briefing-note-gaza-spokesperson-un-high-commissioner-human-rights-ravina-shamdasani-enar"
+    url = "https://www.democracynow.org/2024/5/17/amira_hass_israel_palestine_gaza"
 
     print(test_llm_extraction(url))

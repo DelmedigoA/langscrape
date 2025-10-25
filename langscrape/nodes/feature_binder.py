@@ -6,9 +6,10 @@ from ..utils import load_config
 import newspaper
 import nltk
 
-nltk.download('punkt_tab')
+# newspaper3k requires 'punkt' (not 'punkt_tab')
+nltk.download('punkt')
 
-def apply_articlebody_logic(article_body: str, min_len: int = None) -> None:
+def apply_articlebody_logic(article_body: str, min_len: int = None) -> bool:
     """Check article body length and emit a warning if too short."""
     if min_len is None:
         min_len = load_config()['warnings']['min_article_body']
@@ -19,11 +20,14 @@ def apply_articlebody_logic(article_body: str, min_len: int = None) -> None:
         return False
     return True
 
-def get_article_body_traditional(url):
+def get_article_traditional(url):
     try:
-        return newspaper.article(url).text
+        return newspaper.article(url)
     except:
-        return ""
+        return None
+    
+def _is_empty(content):
+    return content == "(Empty Result)"
 
 def feature_binder(state: AgentState) -> AgentState:
     """Extract features from cleaned HTML and validate article body length."""
@@ -31,11 +35,33 @@ def feature_binder(state: AgentState) -> AgentState:
         state["cleaned_content"],
         state["global_state"],
     )
-
+    traditional_flag_updates = []
     article_body = " ".join(extracted_fields.get("article_body", "")) or ""
     articlebody_len_ok = apply_articlebody_logic(article_body)
-    if not articlebody_len_ok:
-        article_body = get_article_body_traditional(state["url"])
-        apply_articlebody_logic(article_body)
-        extracted_fields["article_body"] = article_body
-    return {"extracted_fields": extracted_fields}
+    article = get_article_traditional(state["url"])
+
+    if not articlebody_len_ok and article:
+        try:
+            traditional_flag_updates.append("article_body")
+            article_body = article.text
+            extracted_fields["article_body"] = article_body
+            apply_articlebody_logic(article_body)
+        except:
+            pass
+
+    empty_checks = {k: _is_empty(v) for k, v in extracted_fields.items()}
+    if article:
+        for k, empty in empty_checks.items():
+            try:
+                if empty and k == "title":
+                    traditional_flag_updates.append("title")
+                    extracted_fields["title"] = article.title
+                elif empty and k == "author":
+                    traditional_flag_updates.append("author")
+                    extracted_fields["author"] = article.authors
+                elif empty and k == "datetime":
+                    traditional_flag_updates.append("datetime")
+                    extracted_fields["datetime"] = article.publish_date
+            except:
+                pass
+    return {"extracted_fields": extracted_fields, "traditional_flag": traditional_flag_updates}

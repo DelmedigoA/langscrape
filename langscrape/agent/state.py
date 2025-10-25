@@ -1,4 +1,4 @@
-from typing import TypedDict, Annotated, Sequence, Union, Dict, Any, NotRequired
+from typing import TypedDict, Annotated, Sequence, Union, Dict, Any, NotRequired, List
 from langchain_core.messages import BaseMessage
 from langgraph.graph.message import add_messages
 from langchain_openai import ChatOpenAI
@@ -21,3 +21,4 @@ class AgentState(TypedDict):
     summary: BaseMessage
     result: Dict[str, Any]
     token_usage: NotRequired[Dict[str, Dict[str, int]]]
+    traditional_flag: List[str] = []

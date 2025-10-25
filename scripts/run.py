@@ -49,7 +49,7 @@ def extract(url: str, id: str):
 if __name__ == "__main__":
 
     config = load_config()
-    df = pd.read_csv("/Users/delmedigo/Dev/langtest/langscrape/data/tests/test_links.csv").sample(1)
+    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/data/production_21_10_2025/real_links_21_10_25.xlsx").sample(2)
     urls = df.url.tolist()
     ids = df.ID.tolist()
     log_path = "log.json"
@@ -71,6 +71,7 @@ if __name__ == "__main__":
                 "result": "success",
                 "error": None,
                 "token_usage": extraction.get("token_usage", {}),
+                "traditional_flag": extraction.get("traditional_flag", []),
                 "time": (end-start).seconds,
                 "config": config
             }
