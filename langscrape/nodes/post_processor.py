@@ -3,80 +3,54 @@ from ..json import SchemeValidator, JSON_SCHEME
 import json
 import os
 from langscrape.utils import load_config, get_default_token_usage
-from ..tags import TAGS_DICT, df
+from ..tags import keys, LOCATIONS, LANGUAGES, FIGURES, COUNTRIES_AND_ORGANIZATIONS, THEMES, PLATFORMS, TYPES, MEDIAS
 from typing import List
 
-from typing import Dict, List
-
-# Build once from your DataFrame
-keys = df.columns.tolist()
-TAGS_DICT = {key: df[key].dropna().tolist() for key in keys}
-
-def _normalizer(allowed: List[str]) -> Dict[str, str]:
-    """lowercased -> canonical string mapping"""
-    return {str(a).strip().casefold(): str(a).strip() for a in allowed}
-
-# Canon maps for ALL lists you provided
-CANON = {
-    "THEMES": _normalizer(TAGS_DICT.get("THEMES", [])),
-    "COUNTRIES_AND_ORGANIZATIONS": _normalizer(TAGS_DICT.get("COUNTRIES_AND_ORGANIZATIONS", [])),
-    "LOCATIONS": _normalizer(TAGS_DICT.get("LOCATIONS", [])),
-    "FIGURES": _normalizer(TAGS_DICT.get("FIGURES", [])),
-    "TYPES": _normalizer(TAGS_DICT.get("TYPES", [])),
-    "MEDIAS": _normalizer(TAGS_DICT.get("MEDIAS", [])),
-    "LANGUAGES": _normalizer(TAGS_DICT.get("LANGUAGES", [])),
-    "PLATFORMS": _normalizer(TAGS_DICT.get("PLATFORMS", [])),
+JSON_SCHEME = {
+    "title_in_english": "The title of the content in english",
+    "title_in_hebrew": "The title of the content in hebrew",
+    "author_in_english": "The content's author name (string, empty if unknown) in english",
+    "author_in_hebrew": "The content's author name (string, empty if unknown) in hebrew",
+    "publication_date": "YYYY-MM-DD",
+    "language": "The primary language of the content",
+    "type": "One of the content types listed above",
+    "media": "One of the media types listed above",
+    "platform": "The website or platform where the content is published",
+    "source": "The original issuer of the information (e.g., UN, IDF, MoH). If the publisher is the original issuer, match platform",
+    "reference": "Canonical link to the primary document or official source cited (string, empty if none)",
+    "summary_in_enlgish": "One clear, informative sentence summarizing the main content, in english",
+    "summary_in_hebrew": "One clear, informative sentence summarizing the main content, in hebrew",
+    "event_start_date": "YYYY-MM-DD",
+    "event_end_date": "YYYY-MM-DD",
+    "theme_tags": ["relevant", "theme", "tags"],
+    "countries_and_organizations_tags": ["relevant", "countries_and_organizations", "tags"],
+    "location_tags": ["relevant", "location", "tags"],
+    "figures_tags": ["relevant", "figures", "tags"]
 }
 
-def _clean_list(values: List[str], canon_map: Dict[str, str]) -> List[str]:
-    out = []
-    for v in values or []:
-        if not isinstance(v, str):
-            continue
-        k = v.strip().casefold()
-        if k in canon_map:               # keep only allowed, canonicalized
-            out.append(canon_map[k])
-    return out
-
-def _canon_or_keep(value: str, canon_map: Dict[str, str]) -> str:
-    """Canonicalize single value if known; else keep original (do NOT discard)."""
-    if not isinstance(value, str):
-        return value
-    k = value.strip().casefold()
-    return canon_map.get(k, value.strip())
 
 def clean_tags(summary: dict) -> dict:
-    """
-    - Filters *_tags lists to their allowed sets.
-    - Canonicalizes scalar fields (type, media, language, platform) if known; never discards.
-    - Example: 'HAMAS' in figures_tags is dropped unless present in FIGURES list.
-               'YouTube' in platform is kept; if it's known, it’s canonicalized to the sheet spelling.
-    """
-    s = dict(summary)  # shallow copy
+    tags = {
+            "location_tags": LOCATIONS,
+            "type": TYPES,
+            "platform": PLATFORMS, 
+            "media": MEDIAS,
+            "language": LANGUAGES,
+            "figures_tags": FIGURES,
+            "countries_and_organizations_tags": COUNTRIES_AND_ORGANIZATIONS,
+            "theme_tags": THEMES
+            }
 
-    # 1) Clean tag lists
-    tag_fields = {
-        "theme_tags": CANON["THEMES"],
-        "countries_and_organizations_tags": CANON["COUNTRIES_AND_ORGANIZATIONS"],
-        "location_tags": CANON["LOCATIONS"],
-        "figures_tags": CANON["FIGURES"],
-    }
-    for field, cmap in tag_fields.items():
-        current = s.get(field, [])
-        s[field] = _clean_list(current if isinstance(current, list) else [], cmap)
+    for key, TAGS in tags.items():
+        predicted_tags = summary.get(key, [])
+        if isinstance(predicted_tags, list):
+            summary[key] = [predicted_tag for predicted_tag in predicted_tags if predicted_tag in TAGS]
+        else:
+            predicted_tags = [predicted_tags]
+            summary[key] = [predicted_tag for predicted_tag in predicted_tags if predicted_tag in TAGS]
+    return summary
 
-    # 2) Canonicalize single-value fields (no dropping)
-    scalar_fields = {
-        "type": CANON["TYPES"],
-        "media": CANON["MEDIAS"],
-        "language": CANON["LANGUAGES"],
-        "platform": CANON["PLATFORMS"],
-    }
-    for field, cmap in scalar_fields.items():
-        if field in s and isinstance(s[field], str):
-            s[field] = _canon_or_keep(s[field], cmap)
 
-    return s
 
 def post_processor(state: AgentState) -> AgentState:
     """
