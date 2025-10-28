@@ -56,8 +56,10 @@ class SchemeValidator:
         }
     
 JSON_SCHEME = {
-    "title": "The title of the content",
-    "author": "The content's author name (string, empty if unknown)",
+    "title_in_english": "The title of the content in english",
+    "title_in_hebrew": "The title of the content in hebrew",
+    "author_in_english": "The content's author name (string, empty if unknown) in english",
+    "author_in_hebrew": "The content's author name (string, empty if unknown) in hebrew",
     "publication_date": "YYYY-MM-DD",
     "language": "The primary language of the content",
     "type": "One of the content types listed above",
@@ -65,7 +67,8 @@ JSON_SCHEME = {
     "platform": "The website or platform where the content is published",
     "source": "The original issuer of the information (e.g., UN, IDF, MoH). If the publisher is the original issuer, match platform",
     "reference": "Canonical link to the primary document or official source cited (string, empty if none)",
-    "summary": "One clear, informative sentence summarizing the main content",
+    "summary_in_enlgish": "One clear, informative sentence summarizing the main content, in english",
+    "summary_in_hebrew": "One clear, informative sentence summarizing the main content, in hebrew",
     "event_start_date": "YYYY-MM-DD",
     "event_end_date": "YYYY-MM-DD",
     "theme_tags": ["relevant", "theme", "tags"],
