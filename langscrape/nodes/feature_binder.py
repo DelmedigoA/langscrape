@@ -61,7 +61,11 @@ def feature_binder(state: AgentState) -> AgentState:
                     extracted_fields["author"] = article.authors
                 elif empty and k == "datetime":
                     traditional_flag_updates.append("datetime")
-                    extracted_fields["datetime"] = article.publish_date
+                    publish_date = article.publish_date
+                    if publish_date:
+                        extracted_fields["datetime"] = publish_date.isoformat()
+                    else:
+                        extracted_fields["datetime"] = ""
             except:
                 pass
     return {"extracted_fields": extracted_fields, "traditional_flag": traditional_flag_updates}

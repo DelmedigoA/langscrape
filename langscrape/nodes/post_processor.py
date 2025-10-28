@@ -3,39 +3,80 @@ from ..json import SchemeValidator, JSON_SCHEME
 import json
 import os
 from langscrape.utils import load_config, get_default_token_usage
-from ..tags import LOCATIONS, FIGURES, COUNTRIES_AND_ORGANIZATIONS, THEME_TAGS
+from ..tags import TAGS_DICT, df
 from typing import List
 
+from typing import Dict, List
 
+# Build once from your DataFrame
+keys = df.columns.tolist()
+TAGS_DICT = {key: df[key].dropna().tolist() for key in keys}
 
-def clean_tags(summary: dict, TAGS: List[str] = LOCATIONS + FIGURES + COUNTRIES_AND_ORGANIZATIONS + THEME_TAGS) -> dict:
+def _normalizer(allowed: List[str]) -> Dict[str, str]:
+    """lowercased -> canonical string mapping"""
+    return {str(a).strip().casefold(): str(a).strip() for a in allowed}
+
+# Canon maps for ALL lists you provided
+CANON = {
+    "THEMES": _normalizer(TAGS_DICT.get("THEMES", [])),
+    "COUNTRIES_AND_ORGANIZATIONS": _normalizer(TAGS_DICT.get("COUNTRIES_AND_ORGANIZATIONS", [])),
+    "LOCATIONS": _normalizer(TAGS_DICT.get("LOCATIONS", [])),
+    "FIGURES": _normalizer(TAGS_DICT.get("FIGURES", [])),
+    "TYPES": _normalizer(TAGS_DICT.get("TYPES", [])),
+    "MEDIAS": _normalizer(TAGS_DICT.get("MEDIAS", [])),
+    "LANGUAGES": _normalizer(TAGS_DICT.get("LANGUAGES", [])),
+    "PLATFORMS": _normalizer(TAGS_DICT.get("PLATFORMS", [])),
+}
+
+def _clean_list(values: List[str], canon_map: Dict[str, str]) -> List[str]:
+    out = []
+    for v in values or []:
+        if not isinstance(v, str):
+            continue
+        k = v.strip().casefold()
+        if k in canon_map:               # keep only allowed, canonicalized
+            out.append(canon_map[k])
+    return out
+
+def _canon_or_keep(value: str, canon_map: Dict[str, str]) -> str:
+    """Canonicalize single value if known; else keep original (do NOT discard)."""
+    if not isinstance(value, str):
+        return value
+    k = value.strip().casefold()
+    return canon_map.get(k, value.strip())
+
+def clean_tags(summary: dict) -> dict:
     """
-    Clean each tag list in summary by keeping only tags that appear in TAGS.
-
-    Args:
-        summary (dict): A dictionary with keys like 'location_tags', 'figures_tags', etc.
-        TAGS (List[str]): Allowed tags.
-
-    Returns:
-        dict: Updated summary with cleaned tag lists.
+    - Filters *_tags lists to their allowed sets.
+    - Canonicalizes scalar fields (type, media, language, platform) if known; never discards.
+    - Example: 'HAMAS' in figures_tags is dropped unless present in FIGURES list.
+               'YouTube' in platform is kept; if it's known, it’s canonicalized to the sheet spelling.
     """
-    tag_keys = [
-        "location_tags",
-        "figures_tags",
-        "countries_and_organizations_tags",
-        "theme_tags",
-    ]
+    s = dict(summary)  # shallow copy
 
-    for key in tag_keys:
-        tags = summary.get(key, [])
-        if isinstance(tags, list):
-            summary[key] = [tag for tag in tags if tag in TAGS]
-        else:
-            summary[key] = []  # ensure consistent type
+    # 1) Clean tag lists
+    tag_fields = {
+        "theme_tags": CANON["THEMES"],
+        "countries_and_organizations_tags": CANON["COUNTRIES_AND_ORGANIZATIONS"],
+        "location_tags": CANON["LOCATIONS"],
+        "figures_tags": CANON["FIGURES"],
+    }
+    for field, cmap in tag_fields.items():
+        current = s.get(field, [])
+        s[field] = _clean_list(current if isinstance(current, list) else [], cmap)
 
-    return summary
+    # 2) Canonicalize single-value fields (no dropping)
+    scalar_fields = {
+        "type": CANON["TYPES"],
+        "media": CANON["MEDIAS"],
+        "language": CANON["LANGUAGES"],
+        "platform": CANON["PLATFORMS"],
+    }
+    for field, cmap in scalar_fields.items():
+        if field in s and isinstance(s[field], str):
+            s[field] = _canon_or_keep(s[field], cmap)
 
-
+    return s
 
 def post_processor(state: AgentState) -> AgentState:
     """

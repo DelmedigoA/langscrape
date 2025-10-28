@@ -50,7 +50,7 @@ def extract(url: str, id: str):
 if __name__ == "__main__":
     global_start = time.perf_counter()
     config = load_config()
-    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/data/production_21_10_2025/real_links_21_10_25.xlsx")
+    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/data/experiment_08_10_2025 copy/real_links_21_10_25.xlsx").sample(3)
     urls = df.url.tolist()
     ids = df.ID.tolist()
     log_path = "log.json"
