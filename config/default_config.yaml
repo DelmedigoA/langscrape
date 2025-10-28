@@ -7,7 +7,7 @@ extractor:
   top_p: 1.0
   allow_parallel_tool_calls: true
   max_iters: 7
-  time_out: 60
+  time_out: 90
 
 summarizer:
   provider: "deepseek"
@@ -30,7 +30,7 @@ fields:
   datetime:
     strategy: "xpath_extractor"
   
-output_dir: "data/jsons"
+output_dir: "data/production_21_10_2025/jsons"
 
 exceptions:
   min_html_length: 3000

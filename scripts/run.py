@@ -6,23 +6,24 @@ import os
 import pandas as pd
 import json
 from datetime import datetime
+import time
 
-def start_sound():
-    os.system('afplay /System/Library/Sounds/Blow.aiff')
+# def start_sound():
+#     os.system('afplay /System/Library/Sounds/Blow.aiff')
 
-def end_sound():
-    os.system('afplay /System/Library/Sounds/Bottle.aiff')
+# def end_sound():
+#     os.system('afplay /System/Library/Sounds/Bottle.aiff')
 
-def add_sound(func):
-    def wrapper(*args, **kwargs):
-        start_sound()
-        try:
-            return func(*args, **kwargs)
-        finally:
-            end_sound()
-    return wrapper
+# def add_sound(func):
+#     def wrapper(*args, **kwargs):
+#         start_sound()
+#         try:
+#             return func(*args, **kwargs)
+#         finally:
+#             end_sound()
+#     return wrapper
 
-@add_sound
+# @add_sound
 def extract(url: str, id: str):
     config = load_config()
     load_dotenv(config["api_keys"])
@@ -47,9 +48,9 @@ def extract(url: str, id: str):
     return response
 
 if __name__ == "__main__":
-
+    global_start = time.perf_counter()
     config = load_config()
-    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/data/production_21_10_2025/real_links_21_10_25.xlsx").sample(5)
+    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/data/production_21_10_2025/real_links_21_10_25.xlsx")
     urls = df.url.tolist()
     ids = df.ID.tolist()
     log_path = "log.json"
@@ -95,3 +96,5 @@ if __name__ == "__main__":
 
         with open(log_path, "w", encoding="utf-8") as f:
             json.dump(existing_results, f, ensure_ascii=False, indent=2)
+    global_end = time.perf_counter()
+    print(f"Running took {global_end-global_start:.3} seconds")
