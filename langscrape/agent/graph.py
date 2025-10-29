@@ -16,12 +16,20 @@ def is_pdf_condition(state: AgentState) -> str:
     """
     return "pdf" if state.get("url_is_pdf", False) else "html"
 
-def tools_condition_with_iter_limit(
-    state,
-    messages_key: str = "messages",
-) -> Literal["tools", "__end__"]:
+def tools_condition_with_iter_limit(state, messages_key: str = "messages"):
     config = load_config()
-    return tools_condition(state, messages_key) if state["iterations"] <=  config['extractor']['max_iters'] else "__end__"
+    messages = state.get(messages_key) or []
+    last_msg = messages[-1] if messages else None
+
+    if getattr(last_msg, "tool_calls", None):
+        # Let ToolNode answer every call before we consider stopping.
+        return "tools"
+
+    if state["iterations"] > config["extractor"]["max_iters"]:
+        return "__end__"
+
+    return tools_condition(state, messages_key)
+
 
 
 def get_graph(tools):

@@ -30,7 +30,7 @@ fields:
   datetime:
     strategy: "xpath_extractor"
   
-output_dir: "data/experiment_08_10_2025 copy"
+output_dir: "data/jsons"
 
 exceptions:
   min_html_length: 3000
