@@ -46,11 +46,28 @@ def extract(url: str, id: str):
     }
     response = graph.invoke(initial_state)
     return response
+import os
+import json
+def get_id_list(dir="/Users/delmedigo/Dev/langtest/langscrape/data/jsons"):
+    paths = [os.path.join(dir, p) for p in os.listdir(dir)]
+    ids = []
+    for p in paths:
+        try:
+            ids.append(json.load(open(p, "r")).get("meta_data", {}).get("id", None))
+        except:
+            pass
+    ids = [str(e) for e in ids if e]
+    return ids
 
 if __name__ == "__main__":
     global_start = time.perf_counter()
+    ready_ids = get_id_list()
     config = load_config()
-    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/data/real_links_21_10_25.xlsx").sample(500)
+    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/data/real_links_21_10_25.xlsx")
+    print(len(df))
+    df = df[~df.ID.astype(str).isin(ready_ids)]
+    print(len(df))
+    df = df.sample(600)
     urls = df.url.tolist()
     ids = df.ID.tolist()
     log_path = "log.json"
