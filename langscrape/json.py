@@ -73,7 +73,8 @@ JSON_SCHEME = {
     "event_end_date": "YYYY-MM-DD",
     "theme_tags": ["relevant", "theme", "tags"],
     "countries_and_organizations_tags": ["relevant", "countries_and_organizations", "tags"],
-    "free_location_tags": ["relevant", "specific", "location", "tags", "not nessearily from the list of tags allowed."],
+    "free_location_tags_in_english": ["relevant", "specific", "location", "tags", "not nessearily from the list of tags allowed.", "in English"],
+    "free_location_tags_in_hebrew": ["relevant", "specific", "location", "tags", "not nessearily from the list of tags allowed.", "in Hebrew"],
     "location_tags": ["relevant", "location", "tags"],
     "figures_tags": ["relevant", "figures", "tags"]
 }
