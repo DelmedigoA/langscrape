@@ -49,12 +49,12 @@ if __name__ == "__main__":
     ready_ids = get_id_list()
     config = load_config()
     config["output_dir"] = "/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions"
-    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/summaries/data.xlsx")
+    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/summaries/data_24-11.xlsx")
     df.rename(columns={"Number": "ID", "Link": "url"}, inplace=True)
     print(len(df))
     df = df[~df.ID.astype(str).isin(ready_ids)]
     print(len(df))
-    df = df.sample(5)
+    df = df.sample(1)
     urls = df.url.tolist()
     ids = df.ID.tolist()
     log_path = "log.json"
