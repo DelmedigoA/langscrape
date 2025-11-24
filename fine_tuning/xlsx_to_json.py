@@ -2,27 +2,29 @@ from typing import Tuple
 import pandas as pd
 import math
 import datetime
+import os
+import json
 
-
-XLSX_PATH = "/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/summaries/data.xlsx"
-SHEET_NAME = "MASTER Production"
+XLSX_PATH = "/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/summaries/data_24-11.xlsx"
+SHEET_NAME = "For_Fine_Tune"
 OUTPUT_DIR = "/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/summaries"
-SAMPLES = 100
-SEED = 88
 
 MAPPING = {
-    "Title": "summary.title",
-    "Description*": "summary.summary",
+    "Title": "summary.title_in_english",
+    "Title (Hebrew)": "summary.title_in_hebrew",
+    "Description": "summary.summary_in_english",
+    "Description (Hebrew)": "summary.summary_in_hebrew",
     "published Date": "summary.publication_date",
     "Event date from": "summary.event_start_date",
     "Event date to": "summary.event_end_date",
     "Platform": "summary.platform",
-    "Author": "summary.author",
+    "Author": "summary.author_in_english",
+    "Author (Hebrew)": "summary.author_in_hebrew",
     "Source": "summary.source",
     "Reference": "summary.reference",
     "Language": "summary.language",
-    "Location": "summary.location_tags",
-    "Locations (tag)": "summary.location_tags",
+    "Location (Hebrew)": "summary.free_location_tags_in_english",
+    "Locations (tag)": "summary.free_location_tags_in_hebrew",
     "Type": "summary.type",
     "Media": "summary.media",
     "Theme (tag)": "summary.theme_tags",
@@ -47,19 +49,43 @@ def dfid_to_json(id):
     return data
 
 df = pd.read_excel(XLSX_PATH, sheet_name=SHEET_NAME)
-df = df.sample(n=SAMPLES, random_state=SEED)
 
+# lines = []
+# for row in range(len(df)):
+#     data = {"summary": {}}
+#     for key in MAPPING.keys():
+#         k1, k2 = get_key_1_2(MAPPING[key])
+#         value = df.iloc[row][key]
+#         if isinstance(value, datetime.datetime):
+#             value = value.strftime("%Y-%m-%d")
+#         elif isinstance(value, float):
+#             value = None if math.isnan(value) else value
+#         data[k1][k2] = value
+#     lines.append(data)
+
+root = "/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions"
+unique_ids = list(set([p.split("_")[0] for p in os.listdir(root)]))
 lines = []
-for row in range(len(df)):
-    data = {"summary": {}}
-    for key in MAPPING.keys():
-        k1, k2 = get_key_1_2(MAPPING[key])
-        value = df.iloc[row][key]
-        if isinstance(value, datetime.datetime):
-            value = value.strftime("%Y-%m-%d")
-        elif isinstance(value, float):
-            value = None if math.isnan(value) else value
-        data[k1][k2] = value
-    lines.append(data)
+for id in unique_ids:
+    system = open(os.path.join(root, id + "_system.txt")).read()
+    user = open(os.path.join(root, id + "_user.txt")).read()
+    assistant = dfid_to_json(int(id))
+    line = {"messages":[{"role":"system","content":system},{"role":"user","content":user},{"role":"assistant","content":assistant}]}
+    lines.append(line)
+final_path = "/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/finetuning_ready_data/data.jsonl"
+with open(final_path, "w") as f:
+    for l in lines:
+        json_line = json.dumps(l, ensure_ascii=False)
+        f.write(json_line + "\n")
 
-print(lines[0])
+import json
+
+rows = []
+with open(final_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = line.strip()
+        if not line:
+            continue
+        rows.append(json.loads(line))
+
+print(rows[0]["messages"][0])

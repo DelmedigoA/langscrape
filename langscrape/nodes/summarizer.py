@@ -104,10 +104,19 @@ def summarizer(state: AgentState) -> AgentState:
         get_pdf_summarizer_user_prompt if state.get("url_is_pdf", False)
         else get_html_summarizer_user_prompt
     )
+    system_message = get_summarizer_system_prompt(state)
+    human_message = get_user_prompt(state)
+
     messages = [
-        SystemMessage(content=get_summarizer_system_prompt(state)),
-        HumanMessage(content=get_user_prompt(state)),
+        SystemMessage(content=system_message),
+        HumanMessage(human_message),
     ]
+    with open(f"/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions/{state["id"]}_system.txt", "w") as f:
+        f.write(system_message)
+
+    with open(f"/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions/{state["id"]}_user.txt", "w") as f:
+        f.write(human_message)
+
     response = state["summarizer"].invoke(messages)
     token_usage = update_token_usage(state, "summarizer", response)
     return {"summary": response, "token_usage": token_usage}

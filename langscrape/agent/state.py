@@ -22,3 +22,4 @@ class AgentState(TypedDict):
     result: Dict[str, Any]
     token_usage: NotRequired[Dict[str, Dict[str, int]]]
     traditional_flag: List[str] = []
+    summarizer_data_perepation_for_fine_tune: bool = False

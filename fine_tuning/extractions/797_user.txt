@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ytirawi/status/1793756431881294035
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Younis Tirawi | يونس', '@ytirawi', '"A 1000 books we burned in Gaza. Proud of you, my brother” Israeli soldier Roey Oz, literally from same unit as Itzhak who burned the Quran, backed him up, proudly stating that they burned 1,000 Quran books, commenting on a report that IDF opened an investigation against him', 'Quote', 'Younis Tirawi | يونس', '@ytirawi', '·', 'For the ICJ: Israeli soldier Izhak Buznah from the Rotem 435 Battalion of the Givati Brigade is the one who recorded himself burning the Quran inside a mosque in East Rafah last night. He has removed his profile picture and locked his account. This is the account before:', 'x.com/ytirawi/status…', '·', '125.9K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: ['Younis Tirawi | يونس', 'Younis Tirawi | يونس']
+    Publication Date: ['May 22, 2024', '12:30 AM · May 24, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Younis Tirawi | يونس', '@ytirawi', '"A 1000 books we burned in Gaza. Proud of you, my brother” Israeli soldier Roey Oz, literally from same unit as Itzhak who burned the Quran, backed him up, proudly stating that they burned 1,000 Quran books, commenting on a report that IDF opened an investigation against him', 'Quote', 'Younis Tirawi | يونس', '@ytirawi', '·', 'For the ICJ: Israeli soldier Izhak Buznah from the Rotem 435 Battalion of the Givati Brigade is the one who recorded himself burning the Quran inside a mosque in East Rafah last night. He has removed his profile picture and locked his account. This is the account before:', 'x.com/ytirawi/status…', '·', '125.9K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    
