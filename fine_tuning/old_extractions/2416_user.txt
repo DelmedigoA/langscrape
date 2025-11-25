@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/news/politi/2024-11-13/ty-article/.premium/00000193-24ee-d76b-afd7-a7ff70930000
+    Title: ['אושר בטרומית: המשטרה תוכל לחדור למחשב או לטלפון אישי בלא ידיעת בעליו']
+    Author: ['נעה שפיגל']
+    Publication Date: ['13 בנובמבר 2024']
+    Content: 
+    '''
+    ['מליאת הכנסת אישרה היום (שלישי) בקריאה טרומית הצעת חוק שלפיה קצין משטרה בדרגת ניצב־משנה ומעלה יוכל לבקש אישור מנשיא בית המשפט המחוזי או מסגנו לצו חדירה למחשב אישי או מכשיר סלולרי. החוק שיזם ח"כ צביקה פוגל (עוצמה יהודית), אושר ברוב של 58 תומכים מול מתנגד אחד, והוא יאפשר למשטרה גם להעתיק חומרים מהמחשב בלא עדים ובלא נוכחותו או ידיעתו של בעליו. לפני ההצבעה הוסר החוק מסדר היום של המליאה, אך למרות זאת הועלה בסופו של דבר להצבעה. בשל כך, חברי הכנסת מהאופוזיציה סירבו להצביע על החוק וטענו לפני יו"ר הכנסת משה רוט (יהדות התורה) כי ההליך אינו תקין, וכי לפני ההצבעה יש לבדוק את העניין עם הייעוץ המשפטי.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

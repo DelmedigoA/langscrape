@@ -1,0 +1,14 @@
+
+    URL: https://x.com/PatrickQuinnTV/status/1783532600637681964
+    Title: ['Patrick Quinn on X: "WATCH: Among those arrested today were Noelle McAfee, Chair of the Philosophy Department at Emory University. I’ve asked for a comment from Emory on this arrest, no word yet. This video provided to us by an #Emory PHD student. You can hear him in this video. @ATLNewsFirst https://t.co/86aJgb7NUX" / X']
+    Author: ['Patrick Quinn']
+    Publication Date: ['7:24 PM · Apr 25, 2024']
+    Content: 
+    '''
+    ['WATCH: Among those arrested today were Noelle McAfee, Chair of the Philosophy Department at Emory University. I’ve asked for a comment from Emory on this arrest, no word yet. This video provided to us by an']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

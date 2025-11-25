@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/RamAbdu/status/1771195504883339683
+    Title: ['Ramy Abdu| رامي عبده on X: "🚨This is the oppressive colonization weighing on the chests of Palestinians for over 76 years, yet they wonder why Palestinians resist &amp; fight back with their very flesh. Scenes from Loffredo Jeremy\'s report reveal Israelis blocking humanitarian aid to Gaza. @KhaledYousry22 https://t.co/FPU5WssUJU" / X']
+    Author: ['Ramy Abdu| رامي عبده']
+    Publication Date: ['5:21 PM · Mar 22, 2024']
+    Content: 
+    '''
+    ["This is the oppressive colonization weighing on the chests of Palestinians for over 76 years, yet they wonder why Palestinians resist & fight back with their very flesh. Scenes from Loffredo Jeremy's report reveal Israelis blocking humanitarian aid to Gaza."]
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

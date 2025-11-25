@@ -1,0 +1,14 @@
+
+    URL: https://x.com/GhassanAbuSitt1/status/1788570484981858793
+    Title: ['Ghassan Abu Sitta on X: "These monsters manufacture the Quadcopter drone with a sniper gun. One night we had 30 injuries when they were sent to shoot at people trying to get to Ahli hospital. One was a 9 year boy shot in the neck. He bled-out in the ER. Germany hasn\'t banned them from Europe https://t.co/Yv4xlQw6Cd" / X']
+    Author: ['Ghassan Abu Sitta']
+    Publication Date: ['5:03 PM · May 9, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Ghassan Abu Sitta', '@GhassanAbuSitt1', "These monsters manufacture the Quadcopter drone with a sniper gun. One night we had 30 injuries when they were sent to shoot at people trying to get to Ahli hospital. One was a 9 year boy shot in the neck. He bled-out in the ER. Germany hasn't banned them from Europe", '·', '1.1M', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

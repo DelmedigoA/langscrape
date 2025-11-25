@@ -1,0 +1,22 @@
+
+    URL: https://zeteo.com/p/the-myth-of-human-shields-israel-gaza
+    Title: ["The Myth of 'Human Shields'"]
+    Author: ['Muhammad Shehada']
+    Publication Date: 2024-09-30T13:03:47+00:00
+    Content: 
+    '''
+    Having lived through 10 Israeli military operations in Gaza, including three wars and two full-scale ground invasions, I’ve repeatedly heard the same justification from Israel every time the military kills a loved one: "human shields." That dehumanizing buzzword has always worked like magic to absolve Israel – in its own eyes and that of much of the international community – of any responsibility after it pulls the trigger.
+
+Yet, in all my life, I have never once witnessed or heard of a single incident when Hamas or any other militant group in Gaza forced residents to stay inside or around buildings used by fighters or directed the movement of civilians to shield military operations from attacks. Amnesty International, Human Rights Watch, the BBC’s Jeremy Bowen, the Independent, and many others reached the same conclusion in the very wars Israel used that “human shield” claim incessantly.
+
+Israel, however, continues to rely on this accusation, deploying a far broader and more self-serving interpretation beyond its legal meaning. In June, when Israel massacred 274 Gazans during a rescue operation of four hostages in Nuseirat, Israel repeatedly justified its operations by saying those killed were being used as “human shields.” Everyone in that town, not just in the buildings where the hostages were kept, was, in Israel’s eyes, fair game.
+
+When Israel bombed Gaza’s Taba’een school in August, killing more than 100 Palestinians, many of whom were hacked into scattered pieces, the Israeli military again called all civilian victims “human shields” and said without evidence that it targeted Hamas members at the school – a claim that was refuted. The twisted logic here is that the mere presence of alleged Hamas members, even if they were there as displaced refugees themselves, renders everyone in that overcrowded school a legitimate target.
+
+If a Hamas member lives in a multi-story apartment building, everyone in that building is, in Israel’s eyes, a “human shield.” The Israeli military bombs the building “without hesitation as a first option.” This is despite Israel having demonstrated capabilities of surgically striking a specific target with minimal losses to civilians around when it wants to.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

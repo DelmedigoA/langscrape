@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.com/israel-news/2024-10-31/ty-article/.premium/haaretz-publisher-clarifies-hamas-remarks-as-netanyahu-govt-threatens-sanctions/00000192-e326-df50-a1bf-fbeef3fc0000
+    Title: Haaretz Publisher Clarifies Remarks, Netanyahu Government Threatens to Sanction Newspaper - Israel News
+    Author: ['Ido David Cohen']
+    Publication Date: ['October 31, 2024']
+    Content: 
+    '''
+    ["Israel's Communications Minister Shlomo Karhi has launched a renewed campaign urging a government boycott of Haaretz following remarks made by Haaretz publisher Amos Schocken at a conference in London on Sunday.", 'Subscribe now for on-the-ground reporting and analysis', 'Already signed up?', 'Log in', 'Or', 'Register', 'to get up to 6 articles per month']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

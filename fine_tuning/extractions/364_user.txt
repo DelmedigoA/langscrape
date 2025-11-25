@@ -1,0 +1,16 @@
+
+    URL: https://x.com/ytirawi/status/1795129920902873557
+    Title: ['Younis Tirawi | يونس on X: "First Publication | The Israeli military is using the Noura Kaabi Dialysis Hospital in the Jabalia Refugee Camp as a military base and operational center amid the ongoing invasion. This is the second hospital that they hide behind, following Tika Hospital in Netzarim. https://t.co/RlhOBsCNqo" / X']
+    Author: []
+    Publication Date: ['7:28 PM · May 27, 2024']
+    Content: 
+    '''
+    JavaScript is not available.
+
+We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/gallery/media/2024-03-13/ty-article/.premium/0000018e-38a2-d21d-a3ef-3be6160f0000
+    Title: ['המנכ"ל החדש של ערוץ 13: נתאחד על ידי בידור והסברה']
+    Author: ['עידו דוד כהן']
+    Publication Date: ['13 במרץ 2024']
+    Content: 
+    '''
+    ['"אנחנו צריכים לסייע ולאחד. אנחנו לא צריכים להתייחס למה שהתעשייה חושבת או אומרת על רשת 13. לרוב האנשים לא אכפת. אנחנו עושים טלוויזיה לכל הישראלים. המשימה שלנו היא להיות מספר 1 ולהפוך את ישראל לטובה וחזקה יותר", כתב המנכ"ל החדש של ערוץ 13, אמיליאנו קלמזוק, במייל ששלח היום (רביעי) לעובדי הערוץ וחברת החדשות. "זו המטרה שלנו. אנחנו לא כאן כדי לשחק משחק פוליטי או ללבות מחלוקת בעם ישראל. אנחנו כאן כדי להתאחד על ידי בידור, השראה והסברה, במיוחד כאשר ארצנו עומדת בפני אחד המשברים הגדולים בהיסטוריה. אנחנו צריכים לחשוב רק על הצופה בבית; זו צריכה להיות האובססיה שלנו".', 'מינוי לאתר החל מ-4.90 ש"ח בחודש הראשון', 'לקריאת עד 6 כתבות בחודש']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

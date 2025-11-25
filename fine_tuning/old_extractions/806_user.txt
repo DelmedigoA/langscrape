@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ytirawi/status/1795114456936063484
+    Title: ['Younis Tirawi | يونس on X: "رفح | الفيديو تم التقاطه قبل عدة ساعات جنود الإحتلال يهدمون منزلاً لعائلة فلسطينية و يبتهجون بعد انتهاءهم من ذلك. يقول الجندي الارهابي لزميله بالعبرية : "يا قائد، يا طيار، يا مخطط. أوبااااااا، أيوا هيك" https://t.co/GRJsndJpW0" / X']
+    Author: ['Younis Tirawi | يونس', 'Younis Tirawi | يونس']
+    Publication Date: ['6:26 PM · May 27, 2024']
+    Content: 
+    '''
+    ['رفح | الفيديو تم التقاطه قبل عدة ساعات جنود الإحتلال يهدمون منزلاً لعائلة فلسطينية و يبتهجون بعد انتهاءهم من ذلك. يقول الجندي الارهابي لزميله بالعبرية : "يا قائد، يا طيار، يا مخطط. أوبااااااا، أيوا هيك"']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

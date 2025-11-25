@@ -1,0 +1,14 @@
+
+    URL: https://www.inss.org.il/he/publication/august-2024/
+    Title: ['ממצאי סקר "חרבות ברזל" - אוגוסט 2024']
+    Author: ['מורן דיטש', 'רבקה מלר', 'עידית שפרן גיטלמן', 'ענת שפירא']
+    Publication Date: ['סקר, 18 באוגוסט 2024']
+    Content: 
+    '''
+    ['עם פריצתה של מלחמת חרבות ברזל, המכון למחקרי ביטחון לאומי עורך באופן תדיר סקרי דעת קהל המבקשים לבחון עמדות כלפי החוסן הלאומי ואמון הציבור.', '_________________', 'סקר חרבות ברזל לחודש אוגוסט נערך בין התאריכים 07-11.8.24 בהובלת הדסק לאיסוף וניתוח נתונים במכון למחקרי ביטחון לאומי. עבודת השדה בוצעה על ידי מכון "iPanel" במהלכה רואיינו באינטרנט ובטלפון 772 איש ואישה בשפה העברית ו-200 בשפה הערבית, המהווים מדגם מייצג של האוכלוסייה הישראלית הבוגרת בישראל בגילאי 18 ומעלה. טעות הדגימה המרבית לכלל המדגם 3.5% ± ברמת ביטחון של 95%.', '.', '.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

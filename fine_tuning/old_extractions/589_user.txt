@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ytirawi/status/1763708246227865971
+    Title: ['Younis Tirawi | يونس on X: "2/14 I will try to highlight some of the important incidents that haven’t been reported on before. I urge you to read very throughly A reserve soldier from Owl Yanshuf Battalion published this on YouTube as part of his vlog in Gaza. He is seen displaying lingerie of Gaza women. https://t.co/Dq0CjgWV4m" / X']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['1:29 AM · Mar 2, 2024']
+    Content: 
+    '''
+    ['2/14 I will try to highlight some of the important incidents that haven’t been reported on before. I urge you to read very throughly A reserve soldier from Owl Yanshuf Battalion published this on YouTube as part of his vlog in Gaza. He is seen displaying lingerie of Gaza women.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

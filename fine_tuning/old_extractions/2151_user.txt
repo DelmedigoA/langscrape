@@ -1,0 +1,14 @@
+
+    URL: https://x.com/DmodosCutter/status/1853435319384727784
+    Title: ['Daniella Modos - Cutter -SEN on X: "Breaking | A massacre against Palestinians has been reported, committed by the Israeli occupation as airstrikes targeted residential buildings in Beit Lahia, northern Gaza. According to local sources, more than 15 Palestinians have been killed, with dozens more trapped under the https://t.co/qjy6vLjWPT" / X']
+    Author: ['Daniella Modos - Cutter -SEN']
+    Publication Date: ['3:53 PM · Nov 4, 2024']
+    Content: 
+    '''
+    ['Breaking | A massacre against Palestinians has been reported, committed by the Israeli occupation as airstrikes targeted residential buildings in Beit Lahia, northern Gaza. According to local sources, more than 15 Palestinians have been killed, with dozens more trapped under the rubble, whom civil defense teams are unable to reach, rescue, or recover them.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

@@ -1,0 +1,14 @@
+
+    URL: https://x.com/KhaledYousry22/status/1795879315155910854
+    Title: ['Khaled Yousry on X: "Soldiers in the Israeli occupation army publish a video of themselves firing tank shells, captioning the video: “When you’re 21-year-old kids at war.” They fire shells randomly at Palestinians and their homes, not at specific targets as the Biden administration claims. They are https://t.co/291VD4hD5z" / X']
+    Author: ['Khaled Yousry']
+    Publication Date: ['9:06 PM · May 29, 2024']
+    Content: 
+    '''
+    ['Soldiers in the Israeli occupation army publish a video of themselves firing tank shells, captioning the video: “When you’re 21-year-old kids at war.” They fire shells randomly at Palestinians and their homes, not at specific targets as the Biden administration claims. They are playing with shells that cost $20,000-$30,000 each, paid by American taxpayers. You are not children. The real children were killed and burned by your shells. You are war criminals responsible for your actions and you will be held accountable. جنود في جيش الاحتلال الإسرائيلي ينشرون فيديو لهم وهم يطلقون قذائف الدبابات معلقين على الفيديو: “عندما تكونوا أطفالاً في عمر 21 عاماً في الحرب”. يطلقون القذائف عشوائياً على الفلسطينيين ومنازلهم وليس على أهداف محددة كما تدعي إدارة بايدن. يعبثون بالقذائف التي تساوي الواحدة منها 20-30 ألف دولار أمريكي من جيوب دافعي الضرائب الأمريكيين. أنتم لستم أطفالاً. الأطفال الحقيقيون قتلوا وحرقوا بسبب قذائفكم. أنتم مجرمو حرب مسؤولون عن أفعالكم وسيتم محاسبتكم.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

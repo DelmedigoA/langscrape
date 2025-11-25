@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/news/politics/2024-11-05/ty-article/.highlight/00000192-fd09-de0c-a7db-ff4d78930000
+    Title: ['ההרס שזורע צה"ל בצפון הרצועה מצביע על כוונת הממשלה: אנחנו כאן כדי להישאר']
+    Author: ['עמוס הראל', 'ויניב קובוביץ']
+    Publication Date: ['05 בנובמבר 2024']
+    Content: 
+    '''
+    ['שעות אחדות לפני פתיחת הקלפיות בבחירות לנשיאות ארצות הברית היום (שלישי), שוחח שר החוץ האמריקאי אנתוני בלינקן בטלפון עם שר הביטחון יואב גלנט. בהודעה הקצרה שהוציא משרד החוץ האמריקאי הוקדש רק משפט אחד למחויבותה של ארה"ב להגנת ישראל מפני המתקפה שבה מאיימת איראן. שאר הטקסט יוחד לבעיה שמעסיקה מאוד כרגע את ממשל ביידן במזרח התיכון – פעולת צה"ל בצפון רצועת עזה והשיבושים בהכנסת הציוד ההומניטרי לרצועה.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

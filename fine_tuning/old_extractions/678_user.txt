@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/magazine/on-the-line/2024-03-13/ty-article/.highlight/0000018e-32df-d897-a58f-b7dfad0b0000
+    Title: ['מה הבעיה שלכם עם העברת ילדים יתומים מעזה לגדה? אין לכם לב. "כל תנודה צריך לתאם"']
+    Author: ["ניר גונטז'"]
+    Publication Date: ['13 במרץ 2024']
+    Content: 
+    '''
+    
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

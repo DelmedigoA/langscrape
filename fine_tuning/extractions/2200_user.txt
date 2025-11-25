@@ -1,0 +1,14 @@
+
+    URL: https://x.com/HossamShabat/status/1848810576828305645
+    Title: ['I’m a reporter on the ground in North Gaza, and I’m here to tell you that no aid has entered the besieged area for the past 21 days. The Israeli and American governments are spreading inaccurate information.']
+    Author: []
+    Publication Date: 
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'حسام شبات', '@HossamShabat', 'I’m a reporter on the ground in North Gaza, and I’m here to tell you that no aid has entered the besieged area for the past 21 days. The Israeli and American governments are spreading inaccurate information.', '·', '1.1M', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

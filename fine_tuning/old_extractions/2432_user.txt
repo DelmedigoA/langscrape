@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/news/magazine/2024-12-17/ty-article-magazine/.premium/00000193-cf48-dcad-adfb-efeac1eb0000
+    Title: ['מקורב לבן גביר וחשוד בפלילים: מתברר שהאיש החזק במשטרה הוא נציב שב"ס קובי יעקובי']
+    Author: ["יהושע (ג'וש) בריינר"]
+    Publication Date: ['17 בדצמבר 2024']
+    Content: 
+    '''
+    ['בבוקר תשעה באב, באוגוסט השנה, התחוללה דרמה בלשכת השר לביטחון לאומי איתמר בן גביר. זה התעקש לעלות להר הבית בליווי פמליה גדולה, אך ממלא מקום מפקד מחוז ירושלים, תת־ניצב אמיר ארזני, סירב להיענות לבקשתו. ארזני הבין היטב שכל העיניים נשואות אליו. ואף שהיה מעוניין בתפקיד מפקד מחוז ירושלים, חששותיו מהידרדרות ומאובדן שליטה בהר הבית הכריעו את הכף — והוא סירב לבקשה.', 'מינוי לאתר החל מ-4.90 ש"ח בחודש הראשון', 'לקריאת עד 6 כתבות בחודש']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

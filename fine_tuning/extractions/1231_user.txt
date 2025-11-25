@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ytirawi/status/1771589516920238241
+    Title: ['Younis Tirawi | يونس on X: "Netzarim Checkpoint | Field Executions Date: 17 March 2024, 09:00-10:00 AM According to an account from a young man passing through the checkpoint en route to Rafah, he met a 65-year-old man, whose identity remained unknown. As they exited, Israeli forces shot the elderly in https://t.co/Jouh4IQ2Fk" / X']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['7:27 PM · Mar 23, 2024']
+    Content: 
+    '''
+    ['Netzarim Checkpoint | Field Executions Date: 17 March 2024,', '09:00', '-10:00 AM According to an account from a young man passing through the checkpoint en route to Rafah, he met a 65-year-old man, whose identity remained unknown. As they exited, Israeli forces shot the elderly in the stomach, causing his death. Subsequently, an Israeli bulldozer arrived and buried him in the dirt mounds near the checkpoint around', '10:00', 'AM on Sunday, March 17, 2024, the elderly was heading to his family in the south, carrying coffee and some clothes. Later, a tank informed bystanders that they could exit to the south at', '11:30', 'AM after the bulldozing over.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

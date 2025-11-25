@@ -1,0 +1,14 @@
+
+    URL: https://x.com/DropSiteNews/status/1850011191281652154
+    Title: ['Drop Site on X: "General Giora Eiland, whose ‘General’s Plan’ for northern Gaza calls for “conquering” the area and starving Palestinians who do not leave, suggests the IDF’s current approach is inflicting greater harm on civilians than his plan would have. “The IDF began the operation long https://t.co/qDQLVBplIV" / X']
+    Author: ['Drop Site']
+    Publication Date: ['6:06 AM · Oct 26, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Drop Site', '@DropSiteNews', 'General Giora Eiland, whose ‘General’s Plan’ for northern Gaza calls for “conquering” the area and starving Palestinians who do not leave, suggests the IDF’s current approach is inflicting greater harm on civilians than his plan would have. “The IDF began the operation long before it evacuated the population… The result is a lot of civilians will be killed. I wanted to save [them].” (Video: Channel 4 News)', '·', '67.9K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

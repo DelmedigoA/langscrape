@@ -1,0 +1,16 @@
+
+    URL: https://twitter.com/GLZRadio/status/1779764062433284213
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'גלצ', '@GLZRadio', 'השר', 'קורא אצל', ': "יש בעזה 2 מיליון נאצים שרוצים לשחוט, לאנוס ולרצוח כל יהודי. אם אוכלוסייה מקומית תשלוט שם זה יהיה ארגון טרור. מי שרוצה לשמור על הביטחון, אנחנו כרגע צריכים לשלוט שם מבצעית וצבאית עד שנוכל לפתח כוחות מקומיים מתונים שיחליפו"', '·', '72.4K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: []
+    Publication Date: 
+    Content: 
+    '''
+    JavaScript is not available.
+
+We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

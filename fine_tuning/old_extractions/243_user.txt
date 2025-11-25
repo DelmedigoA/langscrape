@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/NRC_MiddleEast/status/1741341343111110950
+    Title: ['NRC Middle East & North Africa on X: "Post-conflict analysis by the Shelter Cluster in #Gaza, led by @NRC_Norway, shows: - It will take at least a year just to clear the rubble. - Rebuilding the housing will take 7-10 years. - Cost is $3.5 billion, not including cost of temporary shelter. https://t.co/AdFVhwmqm9" / X']
+    Author: ['NRC Middle East & North Africa']
+    Publication Date: ['8:11 AM · Dec 31, 2023']
+    Content: 
+    '''
+    ['Post-conflict analysis by the Shelter Cluster in', '#Gaza', ', led by', '@NRC_Norway', ', shows: - It will take at least a year just to clear the rubble. - Rebuilding the housing will take 7-10 years. - Cost is $3.5 billion, not including cost of temporary shelter.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

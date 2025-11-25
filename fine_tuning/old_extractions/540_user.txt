@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ytirawi/status/1745427870216851736
+    Title: ['Younis Tirawi | يونس on X: "Nuseirat RC yesterday | Psychopathic perverts “Israeli soldiers undressed us completely naked including my 14 yo girl, gathered us in a hole and burned our underwear afront of our eyes. Soldiers released us naked and shouted on us, come one move you animals. They stole my money” https://t.co/6CLBlUgkbp" / X']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['2:50 PM · Jan 11, 2024']
+    Content: 
+    '''
+    ['Nuseirat RC yesterday | Psychopathic perverts “Israeli soldiers undressed us completely naked including my 14 yo girl, gathered us in a hole and burned our underwear afront of our eyes. Soldiers released us naked and shouted on us, come one move you animals. They stole my money”']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

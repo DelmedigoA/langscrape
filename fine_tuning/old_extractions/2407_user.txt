@@ -1,0 +1,50 @@
+
+    URL: https://www.nytimes.com/2024/11/19/world/middleeast/israel-5-million-dollars-hostage.html
+    Title: ['Netanyahu Offers $5 Million for Each Hostage Freed in Gaza']
+    Author: ['Ephrat Livni', 'www.nytimes.com', 'ephrat-livni']
+    Publication Date: ['Nov. 19, 2024']
+    Content: 
+    '''
+    Cease-fire talks to end the fighting in Gaza are stalled. Casualties in the enclave are mounting. And the families of hostages captured from Israel in the Hamas-led attack that ignited the war have grown increasingly desperate about the plight of their relatives in captivity.
+
+After all the sticks Israel has wielded, it has decided to find out if carrots can make a difference.
+
+Prime Minister Benjamin Netanyahu on Tuesday repeated his vow that Israel would hunt down and punish anyone who hurts a hostage, but he added a new promise: Israel will give a generous reward to anyone who returns a captive, paying $5 million and providing safe passage out of Gaza.
+
+“I want to say to those who are holding our hostages: Whoever dares to harm our hostages will pay the price. We will pursue you and we will find you,” Mr. Netanyahu told Israeli troops on a visit to the Gaza Strip.
+
+“To those who want to leave this entanglement I say: Whoever brings us a hostage, will find a safe way out for himself and his family,” he added. “We will also give $5 million for every hostage.”
+
+The reward offer comes as members of Mr. Netanyahu’s office are facing scrutiny for allegedly leaking classified documents to influence public opinion, quell a popular push for a cease-fire that would win the hostages’ release, and promote the prime minister’s negotiating positions.
+
+Many Israelis, including the families of hostages, have accused the prime minister of failing to prioritize the release of the captives and prolonging the war to hold together his fragile governing coalition, which includes members who oppose a cease-fire and have threatened to bring down Mr. Netanyahu’s government if he agrees to one.
+
+Even some leaders of Israel’s security apparatus — like Yoav Gallant, the defense minister Mr. Netanyahu fired earlier this month — have voiced criticism and frustration at the prime minister’s handling of negotiations with Hamas. In particular, the prime minister has set out new conditions after months of talks, like insisting that Israel maintain control of a strip of Gaza along the Egyptian border.
+
+Mr. Netanyahu’s comments on Tuesday confirmed Israeli media reports two weeks ago that the government would offer a reward for freed hostages. It was not clear if the prize he offered would apply to returning the body of a hostage who had died in captivity.
+
+A spokeswoman for the Hostages Families Forum, which has organized weekly protests in Tel Aviv for the release of the captives, declined to comment on the offer.
+
+On Monday, the group issued a statement addressing ongoing negotiations for a cease-fire between Israel and Hezbollah in Lebanon, demanding that “any effort to reach an agreement with Hezbollah to end the war in Lebanon must explicitly, directly and unequivocally include the immediate release of all hostages in a single deal.”
+
+The group, which represents the relatives of about 100 hostages in Gaza, about a third of whom are believed by Israeli authorities to be dead, argued in its statement that the two conflicts — in Gaza and Lebanon — are inextricably linked.
+
+In September, Israel sharply escalated its attacks on Hezbollah, and then launched a ground invasion into southern Lebanon, actions which it says are aimed at driving Hezbollah far from its northern border.
+
+Efforts to halt the two conflicts have diverged. On Tuesday, a top U.S. envoy to the Middle East, Amos Hochstein, said at a news conference in Beirut, Lebanon, that an end to the conflict between Israel and Hezbollah is “within our grasp.”
+
+He is expected to travel on to Israel to continue those discussions. But a potential agreement would be based on the basic framework of a 2006 United Nations Security Council resolution that quelled hostilities between Israel and Hezbollah previously, and which did not contemplate or address the plight of the hostages in Gaza.
+
+Mr. Netanyahu insisted on Tuesday that Hamas would no longer rule Gaza, saying Israel was making progress toward this goal. But Israeli troops have repeatedly returned to areas of Gaza to fight Hamas militants in places that it has previously said it had cleared.
+
+Fighting in the enclave has displaced about two million people, left much of it in ruins and killed nearly 44,000, according to local health authorities, who do not distinguish between civilians and combatants.
+
+Mr. Netanyahu also vowed that Israel would bring back the captives, whether or not Hamas members opt for the reward he offered.
+
+“Choose, the choice is yours but the result will be the same,” he said. “We will bring them all back.”
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

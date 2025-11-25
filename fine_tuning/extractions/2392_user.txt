@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/news/politics/2024-10-30/ty-article-magazine/.premium/00000192-de9d-d7b5-af97-ff9d2d0d0000
+    Title: ['"איך אפשר להפציץ בניין על כל יושביו?": בבית לאהיא מחפשים ניצולים']
+    Author: ["ג'קי חורי"]
+    Publication Date: ['30 באוקטובר 2024']
+    Content: 
+    '''
+    ['בידיים חשופות, תושבים ואנשי שירותי ההצלה, המשיכו לנסות ולאתר ניצולים בהריסות בניין בן חמש קומות שהופצץ אתמול (שלישי) לפנות בוקר בבית לאהיא, צפון הרצועה. תמונות וסרטונים מהזירה הראו גופות מרוטשות של נשים וילדים, בשעה שאנשים ניסו לאתר את יקיריהם הנעדרים שאולי עדיין נותרו בחיים.', 'מינוי לאתר החל מ-4.90 ש"ח בחודש הראשון', 'לקריאת עד 6 כתבות בחודש']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

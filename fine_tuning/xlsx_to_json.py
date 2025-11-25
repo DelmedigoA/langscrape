@@ -23,8 +23,9 @@ MAPPING = {
     "Source": "summary.source",
     "Reference": "summary.reference",
     "Language": "summary.language",
-    "Location (Hebrew)": "summary.free_location_tags_in_english",
-    "Locations (tag)": "summary.free_location_tags_in_hebrew",
+    "Location": "summary.free_location_tags_in_english",
+    "Location (Hebrew)": "summary.free_location_tags_in_hebrew",
+    "Locations (tag)": "summary.location_tags",
     "Type": "summary.type",
     "Media": "summary.media",
     "Theme (tag)": "summary.theme_tags",
@@ -35,8 +36,8 @@ MAPPING = {
 def get_key_1_2(key) -> Tuple[str, str]:
     return key.split(".")[0], key.split(".")[-1]
 
-def dfid_to_json(id):
-    row = df[df.Number == id].squeeze()
+def dfid_to_json(id, df):
+    row = df[df.Number.astype(str) == str(id)].squeeze()
     data = {"summary": {}}
     for key in MAPPING.keys():
         k1, k2 = get_key_1_2(MAPPING[key])
@@ -48,7 +49,7 @@ def dfid_to_json(id):
         data[k1][k2] = value
     return data
 
-df = pd.read_excel(XLSX_PATH, sheet_name=SHEET_NAME)
+
 
 # lines = []
 # for row in range(len(df)):
@@ -65,19 +66,26 @@ df = pd.read_excel(XLSX_PATH, sheet_name=SHEET_NAME)
 
 root = "/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions"
 unique_ids = list(set([p.split("_")[0] for p in os.listdir(root)]))
+df = pd.read_excel(XLSX_PATH, sheet_name=SHEET_NAME)
 lines = []
 for id in unique_ids:
     system = open(os.path.join(root, id + "_system.txt")).read()
     user = open(os.path.join(root, id + "_user.txt")).read()
-    assistant = dfid_to_json(int(id))
+    assistant = dfid_to_json(id, df)
     line = {"messages":[{"role":"system","content":system},{"role":"user","content":user},{"role":"assistant","content":assistant}]}
     lines.append(line)
+
 final_path = "/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/finetuning_ready_data/data.jsonl"
+errors = 0
 with open(final_path, "w") as f:
     for l in lines:
-        json_line = json.dumps(l, ensure_ascii=False)
-        f.write(json_line + "\n")
-
+        try:
+            json_line = json.dumps(l, ensure_ascii=False)
+            f.write(json_line + "\n")
+        except Exception as e:
+            print(e)
+            errors+=1
+            #print(l)
 import json
 
 rows = []
@@ -88,4 +96,5 @@ with open(final_path, "r", encoding="utf-8") as f:
             continue
         rows.append(json.loads(line))
 
-print(rows[0]["messages"][0])
+# print(rows[0]["messages"][0])
+print(f"total errors:", errors)

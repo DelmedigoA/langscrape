@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/news/politics/2024-05-28/ty-article/.premium/0000018f-bbb6-dc1f-abef-ffbf9de50000
+    Title: ['חקירת מותם של שני עצירים מהרצועה מעלה כי חיילים הכו אותם בדרכם למתקן שדה תימן']
+    Author: ['בר פלג', "ויהושע (ג'וש) בריינר"]
+    Publication Date: ['28 במאי 2024']
+    Content: 
+    '''
+    ['חקירת המשטרה הצבאית מגלה כי שני עזתים שמתו במרץ בדרכם למתקן המעצר שדה תימן הוכו בידי חיילים, ולא נחבלו בשל תנאי הדרך המשובשת כטענת חברי הכוח ששמר עליהם — כך אמרו שני מקורות ששוחחו עם "הארץ". עד כה נחקרו כמה חיילים באזהרה, ואיש מהם לא נעצר — כמו ב–33 מקרי מוות אחרים של תושבי הרצועה שנעצרו במלחמה והובאו לישראל.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

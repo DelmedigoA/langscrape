@@ -1,0 +1,14 @@
+
+    URL: https://www.nytimes.com/2024/04/26/world/middleeast/gaza-israel-hospitals-medical-system.html
+    Title: ['Israel’s Military Campaign Has Left Gaza’s Medical System Near Collapse']
+    Author: ['Abu Bakr Bashir']
+    Publication Date: 2024-04-26T00:00:00
+    Content: 
+    '''
+    ['Before Israel’s invasion of Gaza last year, Dr. Mahmoud Al-Reqeb worked in one of the Palestinian territory’s largest hospitals and had a private clinic, caring for women throughout their pregnancies.', 'Now, he lives in a plastic tent in', ', and treats patients for no charge in another tent. Living under Israeli bombardment, with shortages of food and clean water, the pregnant women he serves', ', let alone prenatal care.', 'Since the Israeli military began bombarding Gaza six months ago following the Hamas-led Oct. 7 attack, its forces have wrecked', ',', 'and killed or detained hundreds of health care workers. Israeli restrictions on goods entering Gaza have prevented lifesaving medical supplies from reaching patients, according to', '. And shortages of fuel, water and food have made it difficult for medical workers to provide basic services.', 'The result has been the near collapse of a health care system that once served Gaza’s population of more than two million. By late March, of the 36 large-scale hospitals across Gaza, only 10 were “minimally functional,” according to the World Health Organization.', 'Israeli officials say that medical centers have been targets because Hamas fighters embed themselves within and under the facilities, and that it is the only way to root out the armed group. Hamas and medical workers have denied this accusation.', ',', 'and', 'have increasingly been calling Israel’s dismantling of Gaza’s medical capacity “systematic.”']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

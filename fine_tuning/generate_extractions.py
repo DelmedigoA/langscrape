@@ -26,7 +26,8 @@ def extract(url: str, id: str):
         "extractor": extractor_with_tools,
         "summarizer": summarizer,
         "iterations": 1,
-        "id": id
+        "id": id,
+        "summarizer_data_perepation_for_fine_tune": True
     }
     response = graph.invoke(initial_state)
     return response
@@ -45,16 +46,14 @@ def get_id_list(dir="/Users/delmedigo/Dev/langtest/langscrape/data/jsons"):
     return ids
 
 if __name__ == "__main__":
+    SHEET_NAME = "For_Fine_Tune"
+    SAMPLES = 30
     global_start = time.perf_counter()
-    ready_ids = get_id_list()
     config = load_config()
     config["output_dir"] = "/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions"
-    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/summaries/data_24-11.xlsx")
+    df = pd.read_excel("/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/summaries/data_24-11.xlsx", sheet_name=SHEET_NAME)
     df.rename(columns={"Number": "ID", "Link": "url"}, inplace=True)
-    print(len(df))
-    df = df[~df.ID.astype(str).isin(ready_ids)]
-    print(len(df))
-    df = df.sample(1)
+    df = df.sample(SAMPLES)
     urls = df.url.tolist()
     ids = df.ID.tolist()
     log_path = "log.json"

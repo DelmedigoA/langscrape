@@ -1,0 +1,16 @@
+
+    URL: https://x.com/ytirawi/status/1795152167457751511
+    Title: ['Younis Tirawi | يونس on X: "🧵This is one of his least genocidal statements. Lt. Colonel Tal Bibi, a senior commander from Nahal Brigade, has been calling to flatten Gaza &amp; killing of civilians for months. Just yesterday, he called to cut off everything electricity, water, media and then wipe out Gaza -&gt; https://t.co/opYJsAgvrQ" / X']
+    Author: []
+    Publication Date: 
+    Content: 
+    '''
+    JavaScript is not available.
+
+We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

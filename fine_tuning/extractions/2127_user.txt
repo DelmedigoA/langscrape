@@ -1,0 +1,14 @@
+
+    URL: https://x.com/AbujomaaGaza/status/1859190079702405379
+    Title: ['Motasem A Dalloul on X: "Director of Kamal Odwan Hospital Dr Hussam abu Safiyeh: “During the past 24 hours, an elderly dehydrated to death and the hospital received 17 cases of malnutrition and dehydration among children!”" / X']
+    Author: ['Motasem A Dalloul']
+    Publication Date: ['1:00 PM · Nov 20, 2024']
+    Content: 
+    '''
+    ['Director of Kamal Odwan Hospital Dr Hussam abu Safiyeh: “During the past 24 hours, an elderly dehydrated to death and the hospital received 17 cases of malnutrition and dehydration among children!”']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

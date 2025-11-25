@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/RamAbdu/status/1766458940118769799
+    Title: ['Breaking: The Israeli army destroyed the historic "Barqouq Castle" in Khan Yunis. Israel has destroyed almost all archaeological sites in the Gaza Strip and burned libraries and the central history archive building.']
+    Author: ['Ramy Abdu| رامي عبده']
+    Publication Date: ['3:40 PM · Mar 9, 2024']
+    Content: 
+    '''
+    ['Breaking: The Israeli army destroyed the historic "Barqouq Castle" in Khan Yunis. Israel has destroyed almost all archaeological sites in the Gaza Strip and burned libraries and the central history archive building.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

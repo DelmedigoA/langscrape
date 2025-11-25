@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ytirawi/status/1796122820683891010
+    Title: 
+    Author: []
+    Publication Date: ["First Publication: Lt. Colonel Yair Maen of 252nd Division, a senior IDF commander, notably appointed as one of the chiefs overseeing Israeli airstrikes on Gaza. He disclosed that Operation Nir and Oz in Khan Younis aimed to wipe out the town of Khirbet Khaza'a as revenge ->>", '] (!): disturbing language Israeli military commanders and officers calling to “kill civilians”, “kill children”, “starve Gazans to death”, “erase Gaza”, & “spread diseases among civilians”. 1. Commander & Major. Avinoam Goelman, 98 divsion ->>', '© 2025 X Corp.']
+    Content: 
+    '''
+    ["First Publication: Lt. Colonel Yair Maen of 252nd Division, a senior IDF commander, notably appointed as one of the chiefs overseeing Israeli airstrikes on Gaza. He disclosed that Operation Nir and Oz in Khan Younis aimed to wipe out the town of Khirbet Khaza'a as revenge ->>", '] (!): disturbing language Israeli military commanders and officers calling to “kill civilians”, “kill children”, “starve Gazans to death”, “erase Gaza”, & “spread diseases among civilians”. 1. Commander & Major. Avinoam Goelman, 98 divsion ->>']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

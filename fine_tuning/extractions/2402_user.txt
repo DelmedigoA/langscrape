@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/news/magazine/2024-06-28/ty-article-magazine/.premium/00000190-5aa7-de5e-abd0-fbf704260000
+    Title: ['לילה עם יחידת רפאים של צה"ל, שנלחמת ברצועה כבר שמונה חודשים']
+    Author: ['יניב קובוביץ']
+    Publication Date: ['28 ביוני 2024']
+    Content: 
+    '''
+    ['זה יום שישי אחר הצהריים של היום הארוך בשנה, מעט לפני כניסת השבת. שיירת כלי רכב צבאיים ועליה מפקדים וחיילים ביחידת רפאים מסתדרת בטור סמוך לקיבוץ בארי. בעוד זמן קצר השיירה תעשה את דרכה לתוך רצועת עזה לקראת יציאה למבצע. אחרוני החיילים מגיעים למקום, ואיתם סרן י\', רב היחידה. "אין לי מושג למה מתעקשים פה לקרוא לי י\', אבל אני לא שואל שאלות", הוא מתנצל בתשובה לשאלה כיצד מאייתים את שמו. הרב נושא איתו ספר תורה קטן שנתרם לזכרו של תומר סטרוסטה, אחד הנרצחים במסיבה ברעים, ומסביר כי הוא "נכנס לחזק את החברה עם הספר הזה".', 'מינוי לאתר החל מ-4.90 ש"ח בחודש הראשון', 'לקריאת עד 6 כתבות בחודש']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

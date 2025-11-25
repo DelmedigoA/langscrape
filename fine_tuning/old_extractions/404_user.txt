@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ofercass/status/1799425838397395195
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Ofer Cassif עופר כסיף عوفر كسيف', '@ofercass', 'השחרור משמח, המחיר מחפיר, מזעזע ומחלחל. הרואיות ודאי שאין כאן. אפשר וצריך היה לחסוך בדם של אלפים - חטופים, אזרחים פלסטינים, ישראלים וחיילים - אם ממשלת הזוועות היתה מגיעה לעסקה מייד לאחר טבח אוקטובר ובאינספור ההזדמנויות שהיו מאז. אם רק היתה ממשלת הכהנאים אוהבת את אזרחיה יותר מאשר שונאת את הפלסטינים. עסקה עכשיו! סיום המלחמה עכשיו! נסיגה עכשיו!', '·', '197.2K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: ['Ofer Cassif עופר כסיף عوفر كسيف']
+    Publication Date: ['3:58 PM · Jun 8, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Ofer Cassif עופר כסיף عوفر كسيف', '@ofercass', 'השחרור משמח, המחיר מחפיר, מזעזע ומחלחל. הרואיות ודאי שאין כאן. אפשר וצריך היה לחסוך בדם של אלפים - חטופים, אזרחים פלסטינים, ישראלים וחיילים - אם ממשלת הזוועות היתה מגיעה לעסקה מייד לאחר טבח אוקטובר ובאינספור ההזדמנויות שהיו מאז. אם רק היתה ממשלת הכהנאים אוהבת את אזרחיה יותר מאשר שונאת את הפלסטינים. עסקה עכשיו! סיום המלחמה עכשיו! נסיגה עכשיו!', '·', '197.2K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

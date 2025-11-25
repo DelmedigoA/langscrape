@@ -1,0 +1,16 @@
+
+    URL: https://twitter.com/OwenJones84/status/1760640827720638639
+    Title: ['Owen Jones on X: "This is a straightforward fact. https://t.co/XD1YDqItYQ" / X']
+    Author: ['Owen Jones']
+    Publication Date: ['2:20 PM · Feb 22, 2024']
+    Content: 
+    '''
+    JavaScript is not available.
+
+We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

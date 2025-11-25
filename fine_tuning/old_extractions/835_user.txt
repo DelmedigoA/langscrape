@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ytirawi/status/1801625890633159060
+    Title: ['Younis Tirawi | يونس on X: "Rafah | Israeli soldiers a while ago from the homes of displaced Palestinian families. "Pre-purchase tour [another soldier’s name blurred for keeping him monitored] is giving me a tour of the property, really a complex for young couples” https://t.co/NO3Dy5NhFQ" / X']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['5:40 PM · Jun 14, 2024']
+    Content: 
+    '''
+    ['Rafah | Israeli soldiers a while ago from the homes of displaced Palestinian families. "Pre-purchase tour [another soldier’s name blurred for keeping him monitored] is giving me a tour of the property, really a complex for young couples”']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

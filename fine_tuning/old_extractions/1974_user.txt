@@ -1,0 +1,14 @@
+
+    URL: https://x.com/probablyreadit/status/1782569732538843267
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'katie smith', '@probablyreadit', 'NOW: NYPD arrests at least a dozen NYU faculty members in the ‘Liberated Zone’ at Gould Plaza Police deployed the LRAD while protesters were praying', '·', '4.2M', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: ['katie smith']
+    Publication Date: ['3:38 AM · Apr 23, 2024']
+    Content: 
+    '''
+    ['NOW: NYPD arrests at least a dozen NYU faculty members in the ‘Liberated Zone’ at Gould Plaza Police deployed the LRAD while protesters were praying']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

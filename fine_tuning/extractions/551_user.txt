@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ytirawi/status/1749795644532035602
+    Title: 
+    Author: []
+    Publication Date: ['4:06 PM · Jan 23, 2024']
+    Content: 
+    '''
+    ['Khan Younis | “Where are all of the neighbors?” Israeli soldier Adisu Avraham published this video making fun of how he now is alone in the Palestinian neighborhood after slaughtering and displacing the families who lived there']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

@@ -1,0 +1,16 @@
+
+    URL: https://x.com/ytirawi/status/1793032057649512671
+    Title: ['Younis Tirawi | يونس on X: "For the ICJ: Israeli soldier Izhak Buznah from the Rotem 435 Battalion of the Givati Brigade is the one who recorded himself burning the Quran inside a mosque in East Rafah last night. He has removed his profile picture and locked his account. This is the account before: https://t.co/4sAbw8TEF7" / X']
+    Author: ['Younis Tirawi | يونس', 'Younis Tirawi | يونس']
+    Publication Date: ['12:32 AM · May 22, 2024']
+    Content: 
+    '''
+    JavaScript is not available.
+
+We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

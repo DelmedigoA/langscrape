@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/opinions/2024-11-09/ty-article-opinion/.premium/00000193-06cf-d3a2-a3d7-4fcf3c7b0000
+    Title: ['להסברים של איילנד מטרה אחת: להתחמק מהפשעים שישראל מבצעת בעזה']
+    Author: ['דניאל בלטמן']
+    Publication Date: 2024-11-09T00:00:00
+    Content: 
+    '''
+    האלוף (במיל') גיורא איילנד הוא המייצג המובהק של הקריסה המוסרית של ישראל ושל חוסר יכולתה להבין את המציאות ההיסטורית בימים אלה. איילנד הוא איש משכיל, לא רדוף פנטזיות משיחיות וודאי לא קרימינל. אבל דווקא הניתוח הלכאורה מלומד שלו, והתעקשותו על הדרך הראויה לנהוג בעזה מלמדים על עומק המשבר.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

@@ -1,0 +1,14 @@
+
+    URL: https://www.amnesty.org/en/documents/mde15/5141/2022/en/
+    Title: ['Israel’s apartheid against Palestinians: Cruel system of domination and crime against humanity']
+    Author: []
+    Publication Date: ['1 February 2022']
+    Content: 
+    '''
+    ['Amnesty International has analysed Israel’s intent to create and maintain a system of oppression and domination over Palestinians and examined its key components: territorial fragmentation; segregation and control; dispossession of land and property; and denial of economic and social rights. It has concluded that this system amounts to apartheid. Israel must dismantle this cruel system and the international community must pressure it to do so. All those with jurisdiction over the crimes committed to maintain the system should investigate them.', '']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

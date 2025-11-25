@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ytirawi/status/1745491460525375587
+    Title: ['Younis Tirawi | يونس on X: "Gaza city | Perverts. Israeli soldiers are seen displaying women\'s underwear in videos distributed on social media, taken from civilian homes in Gaza. They mockingly claim it as their most significant discovery and findings. https://t.co/XOCBQvU6vD" / X']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['7:02 PM · Jan 11, 2024']
+    Content: 
+    '''
+    ["Gaza city | Perverts. Israeli soldiers are seen displaying women's underwear in videos distributed on social media, taken from civilian homes in Gaza. They mockingly claim it as their most significant discovery and findings."]
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

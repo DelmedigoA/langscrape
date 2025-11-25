@@ -1,0 +1,14 @@
+
+    URL: https://www.middleeasteye.net/live-blog/live-blog-update/66-killed-attack-near-kamal-adwan-hospital
+    Title: ['66 killed in attack near Kamal Adwan Hospital']
+    Author: ['Skipped: No XPath']
+    Publication Date: ['20 November 2024 23:14 GMT']
+    Content: 
+    '''
+    ["Al Jazeera's correspondent reports that at least 66 people, mostly women and children, were killed, and over 100 others injured when a residential neighborhood near Kamal Adwan Hospital in northern Gaza was destroyed by Israel."]
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

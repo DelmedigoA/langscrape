@@ -1,0 +1,14 @@
+
+    URL: https://www.nytimes.com/2024/10/14/world/middleeast/israel-gaza-military-human-shields.html
+    Title: ['How Israel’s Army Uses Palestinians as Human Shields in Gaza']
+    Author: ['Natan Odenheimer', 'Bilal Shbair', 'Patrick Kingsley']
+    Publication Date: ['Oct. 14, 2024']
+    Content: 
+    '''
+    ['After Israeli soldiers found Mohammed Shubeir hiding with his family in early March, they detained him for roughly 10 days before releasing him without charge, he said.', 'During that time, Mr. Shubeir said, the soldiers used him as a human shield.', 'Mr. Shubeir, then 17, said he was forced to walk handcuffed through the empty ruins of his hometown, Khan Younis, in southern Gaza, searching for explosives set by Hamas. To avoid being blown up themselves, the soldiers made him go ahead, Mr. Shubeir said.', 'In one wrecked building, he stopped in his tracks: Running along the wall, he said, was a series of wires attached to explosives.', '“The soldiers sent me like a dog to a booby-trapped apartment,” said Mr. Shubeir, a high school student. “I thought these would be the last moments of my life.”', 'An investigation by The New York Times found that Israeli soldiers and intelligence agents, throughout the war in Gaza, have regularly forced captured Palestinians like Mr. Shubeir to conduct life-threatening reconnaissance missions to avoid putting Israeli soldiers at risk on the battlefield.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ytirawi/status/1790893499115606334
+    Title: ['Younis Tirawi | يونس on X: "🧵 Gaza city | Warning ( ⚠️) Extremely shocking footage showing the execution of unarmed civilians by Israeli forces. I obtained the scenes from a social media account of an Israeli soldier from the paratroopers brigade. Execution of a civilian trying to recover a dead boy -&gt; https://t.co/uq6tY3P2O1" / X']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['2:54 AM · May 16, 2024']
+    Content: 
+    '''
+    ['Gaza city | Warning (', ') Extremely shocking footage showing the execution of unarmed civilians by Israeli forces. I obtained the scenes from a social media account of an Israeli soldier from the paratroopers brigade. Execution of a civilian trying to recover a dead boy ->']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

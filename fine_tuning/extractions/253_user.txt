@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/RamAbdu/status/1786005107986841626
+    Title: ['B', 'r', 'e', 'a', 'k', 'i', 'n', 'g', ':', '', 'T', 'h', 'e', '', 'I', 's', 'r', 'a', 'e', 'l', 'i', '', 'a', 'r', 'm', 'y', '', 'd', 'e', 'm', 'o', 'l', 'i', 's', 'h', 'e', 's', '', 'b', 'u', 'i', 'l', 'd', 'i', 'n', 'g', 's', '', 'a', 't', '', 'a', 'l', '-', 'A', 'z', 'h', 'a', 'r', '', 'U', 'n', 'i', 'v', 'e', 'r', 's', 'i', 't', 'y', '', 'i', 'n', '', 'c', 'e', 'n', 't', 'r', 'a', 'l', '', 'G', 'a', 'z', 'a', ',', '', 'd', 'e', 's', 't', 'r', 'o', 'y', 'i', 'n', 'g', '', 'a']
+    Author: []
+    Publication Date: 
+    Content: 
+    '''
+    ['Breaking: The Israeli army demolishes buildings at al-Azhar University in central Gaza, destroying all higher education institutions in Gaza. This scene should be a guiding message to American university students.', 'prior press release:']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

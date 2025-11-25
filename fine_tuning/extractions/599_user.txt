@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ytirawi/status/1766016416371630284
+    Title: ['Gaza city | Israeli soldiers displaying lingerie belonging to killed/displaced Palestinian women in the city All are sergeants (or rank above) from the special recon unit of the Golani brigade']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['10:21 AM · Mar 8, 2024']
+    Content: 
+    '''
+    ['Gaza city | Israeli soldiers displaying lingerie belonging to killed/displaced Palestinian women in the city All are sergeants (or rank above) from the special recon unit of the Golani brigade']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

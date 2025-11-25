@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ytirawi/status/1798797098801824165
+    Title: ['Khan Younis | Israeli soldiers from the 94 battalion wearing underwear belonging to killed/displaced Palestinian women in the city.']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['10:20 PM · Jun 6, 2024']
+    Content: 
+    '''
+    ['Khan Younis | Israeli soldiers from the 94 battalion wearing underwear belonging to killed/displaced Palestinian women in the city.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

@@ -1,0 +1,14 @@
+
+    URL: https://x.com/Morpheus1099/status/1799407973791645979
+    Title: 
+    Author: []
+    Publication Date: 
+    Content: 
+    '''
+    ["הילה אלרואי מחדשות 13 מודה (בטעות) כי ישנה הנחיה שלא להראות את תוצאות ההפצצות של צה''ל בעזה. מי נתן את ההנחיה שלא לחשוף את אזרחי ישראל לתוצאות המלחמה של ישראל בעזה?"]
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

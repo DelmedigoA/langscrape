@@ -1,0 +1,14 @@
+
+    URL: https://x.com/HossamShabat/status/1862168815045394848
+    Title: ['حسام شبات on X: "life of a journalist in North Gaza: In order to film everything you see I need to put in my blood , sweat and tears . First , I need to charge my phone. To charge my phone, I have to walk miles to find electricity for both my phone and power bank. After filming, I need to find" / X']
+    Author: ['حسام شبات']
+    Publication Date: ['6:16 PM · Nov 28, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'حسام شبات', '@HossamShabat', 'life of a journalist in North Gaza: In order to film everything you see I need to put in my blood , sweat and tears . First , I need to charge my phone. To charge my phone, I have to walk miles to find electricity for both my phone and power bank. After filming, I need to find specific areas to upload my footage where I can get a good signal. With very limited transportation options, I also have to find a way to reach bombed locations, whether by car, ambulance, or even running. At the end of the day, I often find myself starving, with my stomach growling. To keep moving, I need to find food. I scout the market for hours to find canned goods (if I’m lucky) and ingredients, but I’m unable to cook them. Most days, I just eat bread to sustain my energy. The most complicated part is finding a place to sleep. Ever since the IDF put a hit list on me, I’m careful about where I sleep to avoid endangering those around me. Every day, I move from one location to another, finding any empty spot I can as my bed for the night. Every report you see reflects my blood, sweat, and dedication to bringing you this content. Please amplify our message.', '·', '493.8K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

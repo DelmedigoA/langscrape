@@ -1,0 +1,16 @@
+
+    URL: https://x.com/KhaledYousry22/status/1793359108147728835
+    Title: ['Khaled Yousry on X: "I found a video published on February 21 from inside the Salah al-Din Boys\' Preparatory School (A+B) for refugees in the Al-Rimal neighborhood, which shows the Israeli occupation forces turning it into a detention center in violation of international laws. The conversation https://t.co/MwX7Peh6Ok" / X']
+    Author: []
+    Publication Date: ['10:11 PM · May 22, 2024']
+    Content: 
+    '''
+    JavaScript is not available.
+
+We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

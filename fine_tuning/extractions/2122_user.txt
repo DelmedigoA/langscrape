@@ -1,0 +1,14 @@
+
+    URL: https://x.com/AbujomaaGaza/status/1849732808333287510
+    Title: ['Motasem A Dalloul on X: "Updates on one of the bloodiest nights since the start of ongoing genocide: At about 10pm, 150 people killed and wounded in Israeli bombing of 11 homes in Al Hawajja Street in Jabalia refugee camp. Paramedic and civil defence are still unable to give precise numbers of" / X']
+    Author: ['Motasem A Dalloul']
+    Publication Date: ['11:40 AM · Oct 25, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Motasem A Dalloul', '@AbujomaaGaza', 'Updates on one of the bloodiest nights since the start of ongoing genocide: At about 10pm, 150 people killed and wounded in Israeli bombing of 11 homes in Al Hawajja Street in Jabalia refugee camp. Paramedic and civil defence are still unable to give precise numbers of casualties because of the Israeli ban on their entry to area. The night before, Israeli quadcopter drone called on ambulance and civil defence crews to leave their vehicles and turn themselves in to Israeli military stationed near the Indonesian Hospital in the northeast of Jabalya refugee camp. MoH has announced that 38 civilians, most of them children, were killed and tens of wounded and missing in Israeli bombing of homes in east and south of Khan Younis. Three others killed in Israeli bombing of tents of displaced persons west of the city. Just an hour ago, 20 civilians were killed and tens wounded in Israeli bombing of homes in Beit Lahiya Housing City, northwest of Jabalia refugee camp. Director of of Kamal Odwan Hospital, Dr Hussam abu Safiyeh, said: “Israeli occupation forces have surrounded the hospital, started gathering the wounded, patients and medics in the hospital yards. Israeli occupation tanks struck the only oxygen plant in the hospital leading to death of a number of patients in critical conditions mainly children. Others are dying.” Hospitals Director General Dr Moneer al Borsh said: “We appealed for the immediate delivery of medicines and food to Kamal Odwan Hospital, but we only had Israeli tanks.”', '·', '26.1K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

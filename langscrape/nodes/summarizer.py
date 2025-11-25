@@ -111,11 +111,15 @@ def summarizer(state: AgentState) -> AgentState:
         SystemMessage(content=system_message),
         HumanMessage(human_message),
     ]
-    with open(f"/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions/{state["id"]}_system.txt", "w") as f:
-        f.write(system_message)
+    if state["summarizer_data_perepation_for_fine_tune"]:
+        print("finetune mode.")
+        with open(f"/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions/{state["id"]}_system.txt", "w") as f:
+            f.write(system_message)
 
-    with open(f"/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions/{state["id"]}_user.txt", "w") as f:
-        f.write(human_message)
+        with open(f"/Users/delmedigo/Dev/langtest/langscrape/fine_tuning/extractions/{state["id"]}_user.txt", "w") as f:
+            f.write(human_message)
+        
+        raise KeyError()
 
     response = state["summarizer"].invoke(messages)
     token_usage = update_token_usage(state, "summarizer", response)

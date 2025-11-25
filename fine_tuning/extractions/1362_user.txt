@@ -1,0 +1,14 @@
+
+    URL: https://x.com/HossamShabat/status/1796550174111645766
+    Title: ['حسام شبات on X: "Since the early morning in Jabalia refugee camp, we have retrieved around 70 decomposed bodies. Most of them were children and women who were killed by Israeli snipers while attempting to flee the camp from bombs." / X']
+    Author: ['حسام شبات']
+    Publication Date: ['5:31 PM · May 31, 2024']
+    Content: 
+    '''
+    ['Since the early morning in Jabalia refugee camp, we have retrieved around 70 decomposed bodies. Most of them were children and women who were killed by Israeli snipers while attempting to flee the camp from bombs.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

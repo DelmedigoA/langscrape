@@ -1,0 +1,14 @@
+
+    URL: https://x.com/KhaledYousry22/status/1798729352412319874
+    Title: ['Khaled Yousry on X: "Itamar Ben-Gvir, Minister of National Security of Israel, explicitly announces the Israeli occupation’s intention to fully occupy Gaza, establish settlements, and displace Palestinians, which constitutes war crimes under all international laws. It is worth noting that this https://t.co/yhX5U8fORi" / X']
+    Author: ['Khaled Yousry']
+    Publication Date: ['5:51 PM · Jun 6, 2024']
+    Content: 
+    '''
+    ['Itamar Ben-Gvir, Minister of National Security of Israel, explicitly announces the Israeli occupation’s intention to fully occupy Gaza, establish settlements, and displace Palestinians, which constitutes war crimes under all international laws. It is worth noting that this government is supported by the US administration with unlimited military aid funded by taxpayer money. During the war and up to this moment, all spokespersons for the US administration declare that they find “no indications” of Israel violating international or American laws. إيتمار بن غفير وزير الأمن القومي الإسرائيلي يعلن بشكل صريح نية الإحتلال الإسرائيلي في إحتلال غزة بالكامل وإقامة مستوطنات وتهجير الفلسطينيين وهو ما يعتبر جرائم حرب في كل القوانين الدولية. جدير بالذكر أن هذه الحكومة مدعومة من الإدارة الأمريكية بدعم غير محدود بالمساعدات العسكرية التي تدفع من أموال دافعي الضرائب، وخلال فترة الحرب وحتى اللحظة يعلن كل المتحدثين بإسم الإدارة الأميركية أنهم لا يجدوا “أي مؤشرات” على مخالفة إسرائيل للقانون الدولي أو للقوانين الأميركية.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

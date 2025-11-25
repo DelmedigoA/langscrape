@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/news/politics/2024-04-04/ty-article/.premium/0000018e-9ac3-dd2b-ad9f-dadb900f0000
+    Title: ['רופא במתקן שדה תימן לשרים וליועמ"שית: "כולנו הופכים שותפים להפרת חוק"']
+    Author: ['הגר שיזף', 'ומיכאל האוזר טוב']
+    Publication Date: ['04 באפריל 2024']
+    Content: 
+    '''
+    ['במכתב שהועבר בשבוע שעבר לשר הביטחון, שר הבריאות וליועצת המשפטית לממשלה, מתאר רופא בבית חולים שדה במתקן שדה תימן, שבו מוחזקים עצורים עזתים, את התנאים במקום. לדבריו, אלה מסכנים את בריאותם של העצורים והמדינה עצמה מסתכנת בהפרת חוק. "רק השבוע עברו שני מטופלים קטיעה של רגל מפציעה שהחלה מאיזוק. לצערי — מדובר באירוע שגרתי", ציין במכתבו. לדבריו, בבית חולים שדה מתקיימים האכלה בקשית, עשיית צרכים בחיתול ואיזוק מתמיד — תופעות המנוגדות לסטנדרטים הרפואיים ולחוק.', 'מינוי לאתר החל מ-4.90 ש"ח בחודש הראשון', 'לקריאת עד 6 כתבות בחודש']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

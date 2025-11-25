@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ytirawi/status/1772925436231598415
+    Title: ['Younis Tirawi | يونس on X: "Exclusive- Field Executions in Gaza city: Date: Last Night Place: Shalihat Area, West Gaza city Title: “He was forced to abandon his father’s dead and naked body on Gaza’s Coastal Road” On 24.04, Israeli forces launched an all home-to-home invasion in southern Rimal https://t.co/a8BkZgdgD8" / X']
+    Author: []
+    Publication Date: 
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

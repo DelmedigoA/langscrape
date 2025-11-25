@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ireallyhateyou/status/1794351306028839298
+    Title: ['B.M. on X: ""I tried something crazy at a party, you gotta hear it" An Israeli DJ uploaded to TikTok a clip of him playing the melody to the genocidal chant "May your village burn" and the whole crowd chanting and dancing. Sickening. https://t.co/b5Q772XoGW" / X']
+    Author: ['B.M.']
+    Publication Date: ['3:54 PM · May 25, 2024']
+    Content: 
+    '''
+    ['"I tried something crazy at a party, you gotta hear it" An Israeli DJ uploaded to TikTok a clip of him playing the melody to the genocidal chant "May your village burn" and the whole crowd chanting and dancing. Sickening.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

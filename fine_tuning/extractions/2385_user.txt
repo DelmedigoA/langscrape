@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/opinions/2024-12-22/ty-article-opinion/.premium/00000193-ea47-d35c-a79f-fae7bf390000
+    Title: ['השקפת העולם של תא"ל ואך ידועה. למרות זאת הופקד על גזרה רגישה בעזה']
+    Author: ['יגיל לוי']
+    Publication Date: ['22 בדצמבר 2024']
+    Content: 
+    '''
+    ['כתבתו של יניב קובוביץ\', על הבנאליות של ההרג לאורך ציר נצרים בעזה ("הארץ", 18.12), משרטטת, בין השאר, את דמותו של מפקד הגזרה ומפקד אוגדה 252, תא"ל יהודה ואך. לפי הכתבה, הוראות פתיחה באש גמישות מאפשרות לירות גם באזרחים, הנכנסים לשטח ההרג של נצרים. ואך הביע תמיכה בגירוש אוכלוסייה, כ"שמבחינתו אין חפים מפשע בעזה".', 'מינוי לאתר החל מ-4.90 ש"ח בחודש הראשון', 'לקריאת עד 6 כתבות בחודש']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

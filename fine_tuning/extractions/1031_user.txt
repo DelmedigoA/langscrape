@@ -1,0 +1,14 @@
+
+    URL: https://x.com/jeremyscahill/status/1841486527693459872
+    Title: ['jeremy scahill on X: "UN Secretary General António Guterres, who was just banned from Israel, calls Israel\'s war against Gaza "the most deadly and destructive military campaign in my years as Secretary General. The suffering endured by the Palestinian people in Gaza is beyond imagination."" / X']
+    Author: ['jeremy scahill']
+    Publication Date: ['5:32 PM · Oct 2, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'jeremy scahill', '@jeremyscahill', 'UN Secretary General António Guterres, who was just banned from Israel, calls Israel\'s war against Gaza "the most deadly and destructive military campaign in my years as Secretary General. The suffering endured by the Palestinian people in Gaza is beyond imagination."', '·', '204.2K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ireallyhateyou/status/1790909070708285910
+    Title: ['B.M. on X: ""We have to erase them. Rafah, Khan Younis, the northern strip, the southern strip. Not to leave any trace of them." An Israeli resident of Be\'er Sheva, whose home was damaged in a rocket attack from Gaza 5 days ago, expresses the extremely popular genocidal state of mind that https://t.co/bAlQinsVfR" / X']
+    Author: ['B.M.']
+    Publication Date: ['3:56 AM · May 16, 2024']
+    Content: 
+    '''
+    ['"We have to erase them. Rafah, Khan Younis, the northern strip, the southern strip. Not to leave any trace of them." An Israeli resident of Be\'er Sheva, whose home was damaged in a rocket attack from Gaza 5 days ago, expresses the extremely popular genocidal state of mind that rules the State of Israel these days. Be\'er Sheva (Bir al-Sab\'a), by the way, is a town that was completely ethnically cleansed in 1948, and the original Palestinian Arab inhabitants were replaced with Jews.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

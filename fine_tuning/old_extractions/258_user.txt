@@ -1,0 +1,16 @@
+
+    URL: https://twitter.com/YakiAdamker/status/1787846143096828303
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'יקי אדמקר', '@YakiAdamker', 'בית כנסת ראשון בקדמת רפיח (במפקדת אוגדה 162)', '·', '210.3K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: ['יקי אדמקר']
+    Publication Date: ['5:05 PM · May 7, 2024']
+    Content: 
+    '''
+    JavaScript is not available.
+
+We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

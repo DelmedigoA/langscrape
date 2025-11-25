@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/news/politics/2024-04-14/ty-article/.premium/0000018e-de16-deb6-afee-ded71d110000
+    Title: ['הצעת חמאס: שחרור החטופים יחל לאחר הפסקת אש של שישה שבועות']
+    Author: ["ג'קי חורי,", 'יהונתן ליס', 'ובן סמואלס']
+    Publication Date: ['14 באפריל 2024']
+    Content: 
+    '''
+    ['חמאס הציע למתווכות עסקה עם ישראל שבמרכזה שחרור החטופים לאחר הפסקת אש של 42 ימים. מקורות פלסטינים וערבים המעורים בפרטי המשא ומתן אמרו הערב (ראשון) כי המתווה המוצע כולל שלושה שלבים עד להשבת כל החטופים והסרת המצור מעל הרצועה.', 'מינוי לאתר החל מ-4.90 ש"ח בחודש הראשון', 'לקריאת עד 6 כתבות בחודש']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

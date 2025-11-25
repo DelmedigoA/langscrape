@@ -1,0 +1,38 @@
+
+    URL: https://www.nytimes.com/2024/03/22/world/middleeast/us-cease-fire-resolution-vetoes.html
+    Title: ['A Look at the Three Previous U.N. Cease-Fire Resolutions the U.S. Vetoed']
+    Author: ['Shashank Bengali', 'www.nytimes.com', 'shashank-bengali']
+    Publication Date: 2024-03-22T00:00:00
+    Content: 
+    '''
+    Before the United States presented a resolution at the United Nations Security Council on Friday calling for an “immediate and sustained cease-fire” in Gaza, it had vetoed three previous ones demanding a halt to the fighting.
+
+The United States has long used its veto power as a permanent Security Council member to block measures that Israel, its close ally, opposes. But the Biden administration has become increasingly vocal in criticizing Israel’s approach to the war against Hamas, and the resolution offered on Friday reflected that, using the strongest language the United States has supported at the U.N. in an effort to pause the war. (The resolution failed after Russia and China vetoed it.)
+
+Here is a look at the three previous resolutions and how the U.S. position has changed:
+
+October
+
+Less than two weeks after the war began in response to the Hamas-led attacks on Israel on Oct. 7, Brazil put forward a resolution that condemned the attacks while calling for humanitarian access and protection of civilians in Gaza and the immediate release of hostages captured in the incursion. The United States was the only no vote; Russia and Britain abstained, and the two other permanent members of the Council, France and China, joined with the remaining 10 members in voting for passage.
+
+Linda Thomas-Greenfield, the American ambassador to the United Nations, said the United States couldn’t support the resolution without a mention of Israel’s right to self-defense.
+
+December
+
+The United States cast the lone dissenting vote against a resolution calling for an immediate cease-fire, one that the U.N. secretary general, António Guterres, and some U.S. allies including France supported. The vote was 13 to 1, with Britain abstaining.
+
+By this point, the Biden administration had begun to express concern about the war’s toll on Gazan civilians. A day before the Security Council vote, Secretary of State Antony J. Blinken said, “It is imperative — it remains imperative — that Israel put a premium on civilian protection.”
+
+But Robert A. Wood, the U.S. representative at the Security Council, said the United States could not support a resolution that did not include an endorsement of Israel’s right to self-defense. He said after the vote that demanding an unconditional and immediate cease-fire “was not only unrealistic, but dangerous — it would simply leave Hamas in place, able to regroup and repeat what it did on Oct. 7.”
+
+February
+
+With Israel coming under growing international pressure over the scope and intensity of its war effort, and the death toll in Gaza nearing 30,000 people, the United States again cast the sole vote against a cease-fire resolution. Thirteen Council members voted in favor of the resolution, which was drafted by Algeria, while Britain again abstained.
+
+Ms. Thomas-Greenfield said at the time that the resolution would have jeopardized negotiations to broker a deal that would release hostages in exchange for a temporary humanitarian cease-fire. “Demanding an immediate unconditional cease-fire without an agreement requiring Hamas to release the hostages will not bring endurable peace,” she said.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

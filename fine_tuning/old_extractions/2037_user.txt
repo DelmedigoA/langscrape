@@ -1,0 +1,14 @@
+
+    URL: https://www.haaretz.co.il/news/security/2024-11-24/ty-article-magazine/.premium/00000193-3eab-d5cd-a3bf-7eff92f00000
+    Title: ["תצלומי לוויין מג'באליה חושפים: מחנה הפליטים הגדול ברצועה"]
+    Author: ['אבי שרף,', "ג'קי חורי", 'ויניב קובוביץ']
+    Publication Date: ['24 בנובמבר 2024']
+    Content: 
+    '''
+    ['מחנה הפליטים ג\'באליה ספג בחודשים האחרונים הרס נרחב כתוצאה מפעילות צה"ל באזור. המחנה שנחשב לגדול ביותר ברצועת עזה, שבו חיה בצפיפות רבה אוכלוסייה של יותר מ-116 אלף פליטים, נהרס כמעט לחלוטין, והמצב ההומניטרי באזור מוסיף להחמיר. מתמונות הלוויין שפורסמו בימים האחרונים ממחנה הפליטים שבצפון הרצועה, ניכר שהאזור כבר לא מתאים למגורים — עשרות אלפי בתים נהרסו לחלוטין או שספגו נזק כבד, והתשתיות הוחרבו.', 'מינוי לאתר החל מ-4.90 ש"ח בחודש הראשון', 'לקריאת עד 6 כתבות בחודש']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

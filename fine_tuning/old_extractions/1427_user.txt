@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/AssalRad/status/1764752005673984066
+    Title: ['Assal Rad on X: "After the controversy over its sexual abuse story—coauthored by a former Israeli intel official with no reporting experience, who liked genocidal posts against Palestinians—this was an NYT push notification. The headline ignores abuse against Palestinian women cited in the text. https://t.co/1GCXObVIVo" / X']
+    Author: ['Assal Rad']
+    Publication Date: ['10:37 PM · Mar 4, 2024']
+    Content: 
+    '''
+    ['After the controversy over its sexual abuse story—coauthored by a former Israeli intel official with no reporting experience, who liked genocidal posts against Palestinians—this was an NYT push notification. The headline ignores abuse against Palestinian women cited in the text.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

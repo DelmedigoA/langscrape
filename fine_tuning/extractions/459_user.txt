@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/QudsNen/status/1760426342753935765
+    Title: ['Quds News Network on X: ""I held the hand of my husband; he\'s old. They told me to throw him away and go with them... They stripped me of my clothes and held me standing for four hours." A testimony by an old woman from Gaza confirming that Israeli soldiers used sexual violations to humiliate her. https://t.co/ZoqAta0QRq" / X']
+    Author: ['Quds News Network']
+    Publication Date: ['12:08 AM · Feb 22, 2024']
+    Content: 
+    '''
+    ['"I held the hand of my husband; he\'s old. They told me to throw him away and go with them... They stripped me of my clothes and held me standing for four hours." A testimony by an old woman from Gaza confirming that Israeli soldiers used sexual violations to humiliate her.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

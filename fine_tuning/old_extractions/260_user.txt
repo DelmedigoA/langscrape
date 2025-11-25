@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ireallyhateyou/status/1743588216630919271
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'B.M.', '@ireallyhateyou', 'Process of re-settling Israelis in Gaza has, in practice, already begun: This video - "Inauguration of a Torah scroll in Katif region (formerly Sheikh Radwan)" - shows soldiers celebrating in a school turned synagogue, alongside banners calling to rebuild Gush Katif settlements.', '·', '24.6K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: ['B.M.']
+    Publication Date: ['12:59 PM · Jan 6, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'B.M.', '@ireallyhateyou', 'Process of re-settling Israelis in Gaza has, in practice, already begun: This video - "Inauguration of a Torah scroll in Katif region (formerly Sheikh Radwan)" - shows soldiers celebrating in a school turned synagogue, alongside banners calling to rebuild Gush Katif settlements.', '·', '24.6K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

@@ -1,0 +1,16 @@
+
+    URL: https://x.com/_selftitled_/status/1851698751733404138
+    Title: ['סוף on X: "בשלב הזה זה כבר די פשוט: אם אתם משרתים בעזה, אם אתם ממשיכים להתנדב למילואים, אם אתם תומכים במלחמה, זה מה שאתם תומכים בו - טיהור אתני. אתם לא ״שומרים על הביטחון״ או ״מחסלים את הטרור״ - אתם שותפים לפשע ומבטיחים שהשכנים שלו ינטרו לנו טינה עוד דורות קדימה. ביטחון זה בטח לא יביא לנו. https://t.co/ItWzHeWmlo" / X']
+    Author: ['סוף']
+    Publication Date: ['8:52 PM · Oct 30, 2024']
+    Content: 
+    '''
+    JavaScript is not available.
+
+We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

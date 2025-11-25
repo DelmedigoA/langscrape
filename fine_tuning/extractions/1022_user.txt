@@ -1,0 +1,14 @@
+
+    URL: https://x.com/HindRFoundation/status/1858485122263093445
+    Title: ['The Hind Rajab Foundation on X: "🚨Breaking: Israeli media confirms that the Israeli state directly ordered and assisted an Israeli reserve officer to leave Cyprus, fearing his arrest for war crimes. This followed a formal complaint filed by the Hind Rajab Foundation https://t.co/3ZsZO1rgPV" / X']
+    Author: ['The Hind Rajab Foundation']
+    Publication Date: ['2:19 PM · Nov 18, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'The Hind Rajab Foundation', '@HindRFoundation', 'Breaking: Israeli media confirms that the Israeli state directly ordered and assisted an Israeli reserve officer to leave Cyprus, fearing his arrest for war crimes. This followed a formal complaint filed by the Hind Rajab Foundation', '·', '54.6K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

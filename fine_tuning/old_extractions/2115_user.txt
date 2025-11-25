@@ -1,0 +1,14 @@
+
+    URL: https://x.com/AbuLocation/status/1859513065697374658
+    Title: ['Abu Location أبو لوكيشن on X: "Geolocation #104: Rubble of 2 buildings in the block just across the street to the West of Kamal Adwan Hospital in Beit Lahia, North Gaza that got struck last night. Attack killed at least 30 Palestinians. 31.539042, 34.500735 https://t.co/oKCocKBgpS" / X']
+    Author: ['Abu Location أبو لوكيشن']
+    Publication Date: ['Nov 21, 2024', '10:23 AM · Nov 21, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Abu Location أبو لوكيشن', '@AbuLocation', 'Geolocation #104: Rubble of 2 buildings in the block just across the street to the West of Kamal Adwan Hospital in Beit Lahia, North Gaza that got struck last night. Attack killed at least 30 Palestinians. 31.539042, 34.500735', 'Quote', 'المركز الفلسطيني للإعلام', '@PalinfoAr', '·', '#صور', '| دمار هائل وكبير من موقع مجزرة الاحتلال المرعبة التي ارتقى على إثرها عشرات الشهداء بعد قصف مربع سكني في مشروع بيت لاهيا شمال القطاع.', '·', '9,804', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

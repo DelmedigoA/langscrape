@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/Mistaclim/status/1777360030380986803
+    Title: ['מסתכלים לכיבוש בעיניים on X: "בזמן שחשבתם שהמדינה נלחמת למען החזרת החטופים והשבת הביטחון, במשרדי הממשלה גיבשו תכניות להעמקת הכיבוש ברצועת עזה. לא שיקום יישובי העוטף מטריד את הימין המשיחי אלא הקמת התנחלויות ברצועת עזה. אסור שההזיה המשיחית תנהל כאן המדינה. רק פתרון מדיני יביא שקט ושלום לנו ולפלסטינים. https://t.co/cSrMwjfoq3" / X']
+    Author: ['מסתכלים לכיבוש בעיניים']
+    Publication Date: ['6:37 PM · Apr 8, 2024']
+    Content: 
+    '''
+    ['בזמן שחשבתם שהמדינה נלחמת למען החזרת החטופים והשבת הביטחון, במשרדי הממשלה גיבשו תכניות להעמקת הכיבוש ברצועת עזה. לא שיקום יישובי העוטף מטריד את הימין המשיחי אלא הקמת התנחלויות ברצועת עזה. אסור שההזיה המשיחית תנהל כאן המדינה. רק פתרון מדיני יביא שקט ושלום לנו ולפלסטינים.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

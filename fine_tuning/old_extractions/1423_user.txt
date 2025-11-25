@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/AssalRad/status/1762992473067130934
+    Title: ['The overwhelming majority of the world has called for an actual ceasefire, what’s being rejected is a temporary pause, supported by the U.S. and Israel.']
+    Author: ['Assal Rad']
+    Publication Date: ['2:05 AM · Feb 29, 2024']
+    Content: 
+    '''
+    ['The overwhelming majority of the world has called for an actual ceasefire, what’s being rejected is a temporary pause, supported by the U.S. and Israel.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

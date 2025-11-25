@@ -1,0 +1,14 @@
+
+    URL: https://x.com/AnasAlSharif0/status/1859730966820028489
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'أنس الشريف Anas Al-Sharif', '@AnasAlSharif0', 'Breaking: In a dangerous escalation, Israeli drones target Al-Awda Hospital and its medical staff, following the bombing of Kamal Adwan Hospital, amid the absence of civil defense and ambulance services in northern Gaza.', '·', '39.3K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: ['أنس الشريف Anas Al-Sharif']
+    Publication Date: ['12:49 AM · Nov 22, 2024']
+    Content: 
+    '''
+    ['Breaking: In a dangerous escalation, Israeli drones target Al-Awda Hospital and its medical staff, following the bombing of Kamal Adwan Hospital, amid the absence of civil defense and ambulance services in northern Gaza.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

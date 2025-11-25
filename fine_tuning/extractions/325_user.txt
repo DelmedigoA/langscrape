@@ -1,0 +1,14 @@
+
+    URL: https://www.nytimes.com/2024/02/09/world/middleeast/israel-gaza-settlers.html
+    Title: ['Israeli Settlers Left Gaza in 2005. They Now See a Chance to Return.']
+    Author: ['Natan Odenheimer']
+    Publication Date: 2024-02-09T00:00:00
+    Content: 
+    '''
+    ['A group of Israelis hoping to live in Gaza at the war’s end has already published maps imagining Jewish-majority towns dotting the territory. Far-right Israeli lawmakers have drafted plans to make such settlements legal. And Israel’s national security minister has called for Arab residents to leave Gaza so that Jews can populate the coastal strip.', 'After four months of war and a death toll that Gazan officials say exceeds 27,000 killed, international pressure is mounting on Israel to withdraw from Gaza. But a small group of Israelis is pushing for the opposite: They want Israel to retain control of the territory, from which Hamas launched the deadliest attack in Israeli history, and re-establish the Jewish settlements that were dismantled in Israel’s', '2005 withdrawal', 'from Gaza.', '“The minute the war is over, we’ll build our homes there,” said Yair Cohen, 23, a reserve soldier, who said his family was evicted from Gaza in 2005. “The question isn’t whether we will return when the fighting is over, but if there will be a Gaza.”', 'To Palestinians, the settlers’ plans would most likely end in mass displacement and an end to their dream of a Palestinian state — a dream that much of the world would like to see realized. “Israel wants the Palestinian people to choose between destruction and displacement,” the Palestinian ambassador to the United Nations, Riyad Mansour,', 'told the body', 'last month.', 'But unlikely as resettlement seems to outsiders, the idea is being promoted at a time when Israel has yet to decide how postwar Gaza should be governed.', 'Subscribe to The Times', 'to read as many articles as you like.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ytirawi/status/1801966059886399640
+    Title: ['Younis Tirawi | يونس on X: "“Why isn’t the light working” Destroying and torching homes in Gaza, then mocking the lack of electricity, is a persistent and disgusting trend by Israeli forces, even after months of bloodshed and destruction. https://t.co/0ZQte4eczg" / X']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['4:12 PM · Jun 15, 2024']
+    Content: 
+    '''
+    ['“Why isn’t the light working” Destroying and torching homes in Gaza, then mocking the lack of electricity, is a persistent and disgusting trend by Israeli forces, even after months of bloodshed and destruction.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

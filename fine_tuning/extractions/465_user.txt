@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/RamAbdu/status/1764759225241129162
+    Title: ['Ramy Abdu| رامي عبده on X: "Israel\'s brutal treatment of Palestinian civilian detainees has crossed all lines and nightmares. Israel acts with unprecedented cruelty, cowardice, and vile. They degrade and humiliate them, knowing well they are civilians. The world remains silent despite these recurring https://t.co/5Klcu8RhD8" / X']
+    Author: ['Ramy Abdu| رامي عبده']
+    Publication Date: ['11:06 PM · Mar 4, 2024']
+    Content: 
+    '''
+    ["Israel's brutal treatment of Palestinian civilian detainees has crossed all lines and nightmares. Israel acts with unprecedented cruelty, cowardice, and vile. They degrade and humiliate them, knowing well they are civilians. The world remains silent despite these recurring scenes."]
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

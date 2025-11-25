@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/QudsNen/status/1786857586098155534
+    Title: ['Quds News Network on X: ""They would bring dogs at night and make us lie on our bellies. They decide how many they want to take, then keep beating them until their bones break." An elderly man from Gaza, who has been recently released by Israel, speaks about the horror that he saw while in Israeli https://t.co/rP6plathVP" / X']
+    Author: ['Quds News Network']
+    Publication Date: ['11:37 PM · May 4, 2024']
+    Content: 
+    '''
+    ['"They would bring dogs at night and make us lie on our bellies. They decide how many they want to take, then keep beating them until their bones break." An elderly man from Gaza, who has been recently released by Israel, speaks about the horror that he saw while in Israeli detention.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

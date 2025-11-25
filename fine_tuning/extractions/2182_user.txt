@@ -1,0 +1,14 @@
+
+    URL: https://x.com/Dr_Muneer1/status/1860773982770716878
+    Title: ['Dr.Muneer Alboursh د.منيرالبرش on X: "من سريره في وحدة العناية المركزة بمستشفى كمال عدوان، محاطاً بطاقم طبي مصابين وآخرين واقفين، ألقى الدكتور حسام أبو صفية خطاباً مؤثراً. أدان فيه استهداف جيش الاحتلال الإسرائيلي المباشر للمستشفى لسبعة أيام متتالية واستخدام طائرات مسيرة متطورة لإصابة العاملين في المجال الصحي وتعطيل https://t.co/NbHk5uyoGl" / X']
+    Author: ['Dr.Muneer Alboursh د.منيرالبرش']
+    Publication Date: ['9:54 PM · Nov 24, 2024']
+    Content: 
+    '''
+    ['من سريره في وحدة العناية المركزة بمستشفى كمال عدوان، محاطاً بطاقم طبي مصابين وآخرين واقفين، ألقى الدكتور حسام أبو صفية خطاباً مؤثراً. أدان فيه استهداف جيش الاحتلال الإسرائيلي المباشر للمستشفى لسبعة أيام متتالية واستخدام طائرات مسيرة متطورة لإصابة العاملين في المجال الصحي وتعطيل الخدمات الأساسية. وطالب بالإفراج الفوري عن الطاقم الطبي المعتقل، ودعا المجتمع الدولي إلى وقف حمام الدم المستمر في شمال غزة، مؤكداً التزام فريقه الراسخ بتقديم الرعاية رغم التحديات الهائلة. From his hospital bed in the ICU at Kamal Adwan Hospital, surrounded by injured and standing medical staff, Dr. Hussam Abu Safiya delivered a powerful speech. He condemned the Israeli occupation army for directly targeting the hospital for seven consecutive days and using advanced drone bombs to injure healthcare workers and disrupt essential services. Dr. Abu Safiya called for the immediate release of detained medical staff and urged the international community to stop the ongoing bloodbath in northern Gaza, reaffirming the unwavering commitment of his team to provide care despite unimaginable challenges.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

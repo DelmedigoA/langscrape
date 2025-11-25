@@ -1,0 +1,14 @@
+
+    URL: https://x.com/RyanChandlerTV/status/1783197539824468403
+    Title: ['Ryan Chandler on X: "It’s chaos now. DPS riot troopers forcefully dispersing protesters, making contact, at least one arrest https://t.co/bQqRqWyzUO" / X']
+    Author: ['Ryan Chandler']
+    Publication Date: ['9:13 PM · Apr 24, 2024']
+    Content: 
+    '''
+    ['It’s chaos now. DPS riot troopers forcefully dispersing protesters, making contact, at least one arrest']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

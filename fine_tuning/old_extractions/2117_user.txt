@@ -1,0 +1,14 @@
+
+    URL: https://x.com/AbuLocation/status/1861431831444226331
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Abu Location أبو لوكيشن', '@AbuLocation', "Geolocation #109: IDP Shelter at 'Al Hurrya (Freedom) Boys Elementary School' was struck today killing 11 Palestinians including children and injuring others. Location: Al Awameed St., Zeitoun Quarter, Gaza city. 31.499273, 34.460322", 'Quote', 'المركز الفلسطيني للإعلام', '@PalinfoAr', '·', 'تغطية صحفية: 11 شهيــداً وعشرات المصابين في قصف مدرسة الحرية التي تؤوي نازحين بحي الزيتون جنوبي مدينة غزة', '·', '1,751', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: ['Abu Location أبو لوكيشن']
+    Publication Date: ['Nov 26, 2024', '5:28 PM · Nov 26, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Abu Location أبو لوكيشن', '@AbuLocation', "Geolocation #109: IDP Shelter at 'Al Hurrya (Freedom) Boys Elementary School' was struck today killing 11 Palestinians including children and injuring others. Location: Al Awameed St., Zeitoun Quarter, Gaza city. 31.499273, 34.460322", 'Quote', 'المركز الفلسطيني للإعلام', '@PalinfoAr', '·', 'تغطية صحفية: 11 شهيــداً وعشرات المصابين في قصف مدرسة الحرية التي تؤوي نازحين بحي الزيتون جنوبي مدينة غزة', '·', '1,751', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

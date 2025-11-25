@@ -1,0 +1,14 @@
+
+    URL: https://x.com/AbuLocation/status/1848119454980288647
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Abu Location أبو لوكيشن', '@AbuLocation', "Geolocation: Burning Hamad School, Beit Lahia, Northern Gaza after being torched by IDF 432 Battalion's soldiers. This is the same shelter near Indonesian Hospital from which IDP were checked and ordered to evacuate after being surrounded by IDF. 31.536736, 34.508615", 'Quote', 'Younis Tirawi | يونس', '@ytirawi', '·', 'Jabalia this evening | Israeli soldiers from the 432 battalion shares a picture showing them torching a Palestinian school near Indonesi Hospital in Jabalia', '·', '36.8K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: ['Abu Location أبو لوكيشن']
+    Publication Date: ['Oct 20, 2024', '12:49 AM · Oct 21, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Abu Location أبو لوكيشن', '@AbuLocation', "Geolocation: Burning Hamad School, Beit Lahia, Northern Gaza after being torched by IDF 432 Battalion's soldiers. This is the same shelter near Indonesian Hospital from which IDP were checked and ordered to evacuate after being surrounded by IDF. 31.536736, 34.508615", 'Quote', 'Younis Tirawi | يونس', '@ytirawi', '·', 'Jabalia this evening | Israeli soldiers from the 432 battalion shares a picture showing them torching a Palestinian school near Indonesi Hospital in Jabalia', '·', '36.8K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

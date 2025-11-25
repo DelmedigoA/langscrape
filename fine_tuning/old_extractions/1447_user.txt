@@ -1,0 +1,16 @@
+
+    URL: https://twitter.com/i/broadcasts/1MYGNorgjgLJw
+    Title: ['Listen in as an IDF Spokesperson @jconricus provides a situational update on all fronts, as the war against Hamas continues. / X']
+    Author: []
+    Publication Date: 
+    Content: 
+    '''
+    JavaScript is not available.
+
+We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

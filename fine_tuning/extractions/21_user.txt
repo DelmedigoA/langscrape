@@ -1,0 +1,308 @@
+
+    URL: https://edition.cnn.com/audio/podcasts/tug-of-war/episodes/0e6112dc-ae58-11ee-8bd1-6f9c6607fa1d
+    Title: ['How a Gaza Food Convoy Became an Israeli Target']
+    Author: []
+    Publication Date: 
+    Content: 
+    '''
+    Episode Transcript
+
+David Rind
+
+00:00:00
+
+I want you to think about just how easy it is for most of us to get food. You find the nearest bodega or grocery store walk in, and you have pretty much everything you could ever want right at your fingertips.
+
+Man
+
+00:00:12
+
+My children, they want some sweets, some sweets. I couldn't provide some sweets for my children by little by little girl two years old. To has asked me many things, but I couldn't provide.
+
+David Rind
+
+00:00:26
+
+Well in Gaza right now. So many Palestinians have basically nothing at their fingertips. A handful of bread passes for a full meal these days. Some have reportedly resorted to eating grass and drinking dirty water. The pure hunger is just that extreme in some areas.
+
+Child
+
+00:00:44
+
+No food, no water, no medicine. Our message to the world, shame on you. How dare you food your children? While we we eat animals food? Are you waiting our death?
+
+David Rind
+
+00:01:01
+
+Getting humanitarian aid into the enclave has been a slow, arduous process, mostly because of Israel. It says it strictly supervises the deliveries to make sure nothing harmful to Israel's security makes its way to Hamas. That means every truck that is allowed in is critical, and it's critical that it can move safely once inside. So why, then, did one of these trucks recently come under fire from Israeli forces?
+
+Katie Polglase
+
+00:01:30
+
+'They had agreed this route in advance, this particular path up al-Rashid road. And that was really key, because it meant that this road was the route this convoy was meant to be on.
+
+David Rind
+
+00:01:41
+
+Today, a CNN investigation into just how dangerous it is to deliver anything in Gaza from CNN. This is Tug of War, I'm David Rind. Katie Polglase is here with us today. She's an investigative producer with CNN, and, Katie, you've brought us a new investigation. Where does this start?
+
+Katie Polglase
+
+00:02:04
+
+So basically on February 5th, UNWRA, which is the largest of UN's relief agencies in Gaza, posted online that one of their aid trucks carrying vital food for northern Gaza had been attacked. And it seemed pretty clear to me from the start that there were some very concerning elements. First of all, there was the direct risk to aid workers. Then the UN said that because of this specific attack, they were no longer sending any aid trucks to northern Gaza at all, because this was emblematic of how risky this was. And then this is, of course, against the backdrop of these really alarming statistics we're seeing on famine. So firing on a food truck seems particularly egregious. Yeah. And then you add the fact that it's heading north as well. This is a part of Gaza which is really receiving no food, no water at all. We've heard statistics already saying that 16.2% of children in the north of Gaza are acutely malnourished. So this kind of food is their only lifeline, really. And then you layer that upon the fact that the International Court of Justice had said, crucially, that Israel must start taking effective measures to start providing humanitarian assistance to Gaza. So all of these put together seemed that this instance was very worthy of investigation.
+
+David Rind
+
+00:03:17
+
+Yeah. And so what did you find?
+
+Katie Polglase
+
+00:03:20
+
+'Well, the first thing I looked at is because I have a specialism in open source intelligence, which is looking through publicly available information. So the first things I looked at, what we could see already online, we could see these photos from the UN. So the first thing to confirm was this location. They posted photos of this truck parked up on a street, and we then decided to geo locate this image. That means confirming where it is based on all the visual elements you can see in that image. And it confirmed that it was on al-Rashid road, which is the main coastal path up the west coast of the Gaza Strip, and it very visibly had a very large hole in the side of the truck. Contents of that truck were pouring out, and because we are geolocated where that was, we could also identify that the hole was therefore on the left hand side of the truck, facing outwards towards the sea. And that was important because the UN had said that it had been hit by IDF naval gunfire. And so because this was on the coastal road, there was there was literally no other land.
+
+David Rind
+
+00:04:19
+
+Oh, it's only the boats that were out at sea.
+
+Katie Polglase
+
+00:04:21
+
+Exactly. Yeah. And so what we then looked at is satellite imagery. And that is a bit of hidden mess. Because the key thing, obviously with satellites is that you need the satellite to have tasked and taken an image of that area at the exact moment you need. And we were lucky that Planet Labs had actually taken an image that morning, two hours after the attack. Now it's quite a far out image, but you can visibly see boats in the area, in the sea, and we measured the boats in those images and they match the IDF boats. So looking at those boats and looking at where the truck was located and the direction of fire, we started to piece together a picture of what had happened that morning. But the crucial next step really was to see what the two parties who had decided to send out this convoy and the IDF had discussed in advance. And that was the key final element. And I obtained exclusively some correspondence between COGAT, which is Israel's agency overseeing efforts in Gaza, and Unwra, showing that they had agreed to this route in advance. This particular path up Al Rashid Road. And that was really key because it meant that this road was the route this convoy was meant to be on.
+
+David Rind
+
+00:05:31
+
+So Israel had said, you guys, this is the route. You can go ahead.
+
+Katie Polglase
+
+00:05:34
+
+Yeah.
+
+David Rind
+
+00:05:35
+
+So why did it fire out in anyway?
+
+Katie Polglase
+
+00:05:37
+
+Well, that's the crucial question.
+
+Katie Polglase
+
+00:05:42
+
+So let's talk about those authorizations for this particular journey on the 5th of February. Did you discuss this journey with the Israeli authorities before it started?
+
+Juliet Touma
+
+00:05:53
+
+For every move that Unwra does to reach the northern parts of Gaza, we do what we call a deconfliction process with the Israeli army.
+
+Katie Polglase
+
+00:06:05
+
+So I spoke to Juliet Touma, who is the director of communications for Unwra for this peace. And she was very clear, very simple.
+
+Juliet Touma
+
+00:06:12
+
+And only when the Israeli army gives us the okay, the green light, does UNWRA move? We don't move without that coordination.
+
+Katie Polglase
+
+00:06:22
+
+These convoys do not go ahead if they don't get the green light. It's as simple as that. And it's for the safety of their team as well as the purpose of the mission. They want to ensure that this aid gets to the place it needs to get to.
+
+Juliet Touma
+
+00:06:34
+
+And what I know from staff and teams who have traveled to the north, is the northern you go, the more difficult it becomes to drive, whether it's because of debris, whether it's because of destruction, whether it's because of wires that are all over the place...
+
+Katie Polglase
+
+00:06:51
+
+And so talking to the IDF mission to discuss how they're going to get there and ensuring there is a safe route is essential.
+
+Juliet Touma
+
+00:06:59
+
+And what we call for is for approvals for our convoys to reach the north, for United Nations convoys, including UNWRA convoys to reach the north. Because the clock is ticking and it's ticking very fast towards famine in that part of Gaza.
+
+Katie Polglase
+
+00:07:17
+
+One of the key elements of this route was that it's set off really, really early in the morning. It was something that it surprised me when I first looked into it. Why would you leave in the middle of the night? And unfortunately, it's another layer of how desperate this story is. They set off at three in the morning, four in the morning, the early hours, because they know there are not going to be many people on the streets, and that means they can keep going.
+
+Nats
+
+00:07:41
+
+Nats
+
+Katie Polglase
+
+00:07:43
+
+Is that when there were people on the streets, people are starving, people are desperate, and they raid these trucks. And unfortunately, it means as these convoys continue on and start heading towards the north, they get to this checkpoint and the truck is empty.
+
+David Rind
+
+00:08:01
+
+So it got mobbed. And then the original mission is kind of, you know, out the door because these people grabbed it before it could even get there.
+
+Katie Polglase
+
+00:08:08
+
+And you can't blame them for taking it, right? They don't know when they're next going to receive aid. One of the other really key issues with this, I've seen a lot of reporting from the UN on this is that when you have a humanitarian crisis like this, the key thing with aid is regularity, ensuring that it's coming frequently, often to stop people panicking that the convoy they're seeing is the very last one they're ever going to see. But because of all of these issues, these obstacles, these attacks, people don't know that they're going to get any other aid ever, really. And there's another final detail that we mentioned on our reporting that maybe we should talk about, which is that this truck was stationary. It was sitting on this road. It was one of ten trucks sitting on this road. It was sitting because it was waiting at an IDF holding point. You can imagine how visible that is. These are very large trucks. There were two U.N. cars with marked insignia on either side of them. Looking at that, there was no way you can't see that that isn't an aid convoy. And so explaining how this happened, any justification for this is looking incredibly difficult.
+
+David Rind
+
+00:09:11
+
+And so what does Israel have to say about all this?
+
+Katie Polglase
+
+00:09:13
+
+Well, we've submitted multiple requests for comment to them day by day in this investigation. On the very day it happened. They said they were looking into it. But that's all we've got for now. We're waiting to see if they publish any more information. Any more evidence, about what happened. But for now, that's all we've got.
+
+David Rind
+
+00:09:35
+
+More with Katie in just a bit.
+
+David Rind
+
+00:09:47
+
+We're back with Tug of War and my conversation with CNN's Katie Paul Glaze. So you mentioned the possible legal element of this. Like this is something that the International Court of Justice, as they were kind of looking into these claims of genocide from South Africa, this could be something that they consider as they go about that investigation.
+
+Katie Polglase
+
+00:10:07
+
+It's definitely a very key case study of what is happening right now in Gaza. This is a pattern that we are seeing emerging of convoys of aid getting attacked while they are en routes through Gaza. And attacking aid is something that is considered, in many cases, a war crime.
+
+Katie Polglase
+
+00:10:23
+
+What possible reason could there be for them attacking this convoy?
+
+Janina Dill
+
+00:10:28
+
+It's very hard to speculate. It certainly reduces the chance that this is just human error. If the IDF knew in advance that this was the route taken, and that they even potentially recommended that route.
+
+Katie Polglase
+
+00:10:40
+
+I spoke to you, Nina Dill, who is an expert in this at Oxford University in the UK, and she made a very important point that this is not only very difficult to see any justification for in terms of targeting a humanitarian aid convoy, but also the contents of this convoy is key.
+
+Janina Dill
+
+00:10:56
+
+If the argument was that Israel attacked these trucks because they potentially thought that some of the supplies were diverted to Hamas, but this wouldn't actually be a justification for attacking the food supply, because food supplies that have the status is indispensable for the survival of the civilian population. Really can only be attacked in extremely limited circumstances, for instance.
+
+Katie Polglase
+
+00:11:17
+
+We're talking about famine. We're talking about these areas that don't get any aid at all. And one of the other phrases that I kept hearing from experts that was really interesting, really important, is the idea of the war crime of starvation.
+
+Janina Dill
+
+00:11:30
+
+That is not something that the International Court of Justice can look at. But one way in which the war, crime, or starvation can be committed is through the arbitrary, impeding of humanitarian access.
+
+Katie Polglase
+
+00:11:41
+
+So blocking that you're not just depriving humanitarian aid, which is not allowed under conditions of war anyway, but also these areas need food. And we know these areas are starving. Many are at risk of imminent famine, and so depriving them of food is at risk of collectively starving a population. And that's another thing that I think international humanitarian lawyers will be looking at.
+
+David Rind
+
+00:12:04
+
+So you've done a lot of these open source investigations for this conflict in Israel and Gaza and the war in Ukraine. Like how do you do this job?
+
+Katie Polglase
+
+00:12:14
+
+Yeah, it's a lot of it's it's a lot of imagery is a lot of videos. I think you have to be a bit of a nerd to be interested in all that kind of data and checking that goes into it. I mean, I think, look, with Ukraine as well, one of the key things was trying to understand quite clearly what was actually going on behind all of this messaging, the state messaging that we were getting. Russia was saying one thing, and we wanted to check what they were really saying. I think it's the same case here, is that there's a lot of information that is getting bombarded and a lot of people in this, and the crucial point is trying to get to the truth, what really matters here and where possible, uncover wrongdoing. But it's also trying to be as transparent as possible in your methodology. You know, where possible, using completely publicly available information so that if someone wants to go check.
+
+David Rind
+
+00:13:01
+
+Right it's out there.
+
+Katie Polglase
+
+00:13:01
+
+Yeah, they can go check. They can go check how we did it, and they can match up and find that they get to the same conclusions. I think the other thing really is that, you know, open source journalism, looking through videos, looking through imagery, it's about verification. And unfortunately, sometimes deliberately, sometimes accidentally, people report things that are inaccurate or they're misleading. And it's getting to the truth of what's actually happened, particularly when something is being disseminated so quickly online.
+
+David Rind
+
+00:13:27
+
+Right. And you see the rise of AI as well and manipulated images, things like that.
+
+Katie Polglase
+
+00:13:31
+
+Yeah, absolutely.
+
+David Rind
+
+00:13:32
+
+Well, thanks for the work, Katie, and thanks for sharing it with us. Appreciate it.
+
+Katie Polglase
+
+00:13:35
+
+Thanks so much for having me.
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

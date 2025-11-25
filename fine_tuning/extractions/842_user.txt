@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ytirawi/status/1801978091654279226
+    Title: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Younis Tirawi | يونس', '@ytirawi', 'Rafah | Lingerie doesn’t stop. Israel soldiers from the Givati brigade playing around with the underwear of displaced/killed Palestinian women in the city. The footage is from this month.', '·', '279.9K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Author: ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Younis Tirawi | يونس', '@ytirawi', 'Rafah | Lingerie doesn’t stop. Israel soldiers from the Givati brigade playing around with the underwear of displaced/killed Palestinian women in the city. The footage is from this month.', '·', '279.9K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    Publication Date: ['5:00 PM · Jun 15, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Younis Tirawi | يونس', '@ytirawi', 'Rafah | Lingerie doesn’t stop. Israel soldiers from the Givati brigade playing around with the underwear of displaced/killed Palestinian women in the city. The footage is from this month.', '·', '279.9K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

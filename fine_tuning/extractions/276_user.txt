@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ytirawi/status/1767698980127838474
+    Title: ['G', 'a', 'z', 'a', '', 'c', 'i', 't', 'y', '', '|', '', 'T', 'o', 'r', 'c', 'h', 'i', 'n', 'g', '', 'S', 'h', 'u', 'j', 'j', 'a', 'i', 'y', 'a', '', 'I', 's', 'r', 'a', 'e', 'l', 'i', '', 's', 'o', 'l', 'd', 'i', 'e', 'r', 's', '', 'f', 'r', 'o', 'm', '', 't', 'h', 'e', '', 'G', 'i', 'v', 'a', 't', 'i', '', 'B', 'r', 'i', 'g', 'a', 'd', 'e', '', 'i', 'n', '', 'S', 'h', 'u', 'j', 'j', 'a', 'i', 'y', 'a', '', 'N', 'e', 'i', 'g', 'h', 'b', 'o', 'r', 'h', 'o', 'o', 'd', '', 'l', 'a']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['1:47 AM · Mar 13, 2024']
+    Content: 
+    '''
+    ["Gaza city | Torching Shujjaiya Israeli soldiers from the Givati Brigade in Shujjaiya Neighborhood last December. “BUTTERFLY STATIONS, THIS IS COMMAND. WE'RE SETTING OUT TO OPERATION 8TH CANDLE OF HANUKKAH. THE BURNING OF SHAJAIYYA NEIGHBORHOOD…WE WILL ANNIHILATE THEM TO DUST”"]
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

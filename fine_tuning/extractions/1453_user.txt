@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/ofercass/status/1783896320933036133
+    Title: ["The Kahanist militia (a.k.a. the police) has invaded the Hadash party's club in Nazareth. It is engaged in vandalising artworks and displays for the 1 May demonstration, which will be held tomorrow. As can be seen in the attached video, their excuses for doing this are pathetic and delusional. Two party members were detained. We won't let the fascists silence us! Come tomorrow in massive numbers to the demonstration, to raise a loud and clear voice against the criminal massacre in Gaza, against the ethnic cleansing of the Occupied West Bank and East Jerusalem, against the raging tide of fascism and in support of justice for all, before it's too late! The order of the day - unite against fascism!"]
+    Author: ['Ofer Cassif עופר כסיף عوفر كسيف']
+    Publication Date: ['7:30 PM · Apr 26, 2024']
+    Content: 
+    '''
+    ["The Kahanist militia (a.k.a. the police) has invaded the Hadash party's club in Nazareth. It is engaged in vandalising artworks and displays for the 1 May demonstration, which will be held tomorrow. As can be seen in the attached video, their excuses for doing this are pathetic and delusional. Two party members were detained. We won't let the fascists silence us! Come tomorrow in massive numbers to the demonstration, to raise a loud and clear voice against the criminal massacre in Gaza, against the ethnic cleansing of the Occupied West Bank and East Jerusalem, against the raging tide of fascism and in support of justice for all, before it's too late! The order of the day - unite against fascism!"]
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

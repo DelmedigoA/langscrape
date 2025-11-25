@@ -1,0 +1,14 @@
+
+    URL: https://twitter.com/Eliyahu_a/status/1772645094295830643
+    Title: ['🇮🇱עמיחי אליהו - Amichay Eliyahu on X: ""מי שיטבח בנו, נקח את אדמתו. נקודה!" התיישבתי לראיון ושיח עם Clarissa Ward - מהכתבות הבכירות ב- Cnn. בין השאלות שלה נסיתי לברר איתה את נקודת המבט שלה - בשאלות. א. מדוע זה לא מוסרי לקחת את הבית למי שאנס ורצח את הילדים שלנו? אם זה מה שמרתיע את האויב? ב. מדוע העולם המערבי מוכן https://t.co/r5b8f737ua" / X']
+    Author: ['עמיחי אליהו - Amichay Eliyahu']
+    Publication Date: ['5:21 PM · Mar 26, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Post', 'עמיחי אליהו - Amichay Eliyahu', '@Eliyahu_a', '"מי שיטבח בנו, נקח את אדמתו. נקודה!" התיישבתי לראיון ושיח עם Clarissa Ward - מהכתבות הבכירות ב- Cnn. בין השאלות שלה נסיתי לברר איתה את נקודת המבט שלה - בשאלות. א. מדוע זה לא מוסרי לקחת את הבית למי שאנס ורצח את הילדים שלנו? אם זה מה שמרתיע את האויב? ב. מדוע העולם המערבי מוכן שנהרוג מחבלים ולא מוכן שנמנע מהרג ע"י התיישבות יהודית בעזה? ג. מה ההבדל המוסרי שמוכן להצדיק את כיבוש מלחמת השחרור ומתקשה לקבל את החזרה שלנו לארץ אבותינו במלחמת ששת הימים? תשובות ברורות לא קבלתי. אבל היה מעניין.', '·', '128.3K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', 'Terms of Service', '|', 'Privacy Policy', '|', 'Cookie Policy', '|', 'Accessibility', '|', 'Ads info', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

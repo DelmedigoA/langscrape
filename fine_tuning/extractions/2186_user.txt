@@ -1,0 +1,14 @@
+
+    URL: https://x.com/DropSiteNews/status/1848819280730853559
+    Title: ['Drop Site on X: "The IDF and COGAT claimed in a joint announcement—along with videos and photos of aid trucks stationed near the border—that over 230* trucks carrying aid have entered northern Gaza since last Monday. Palestinian journalists (see below) report “no aid” has reached besieged areas https://t.co/mFKkiya1OC" / X']
+    Author: ['Drop Site']
+    Publication Date: ['Oct 22, 2024', '11:10 PM · Oct 22, 2024']
+    Content: 
+    '''
+    ['Don’t miss what’s happening', 'People on X are the first to know.', 'Log in', 'Sign up', 'Drop Site', '@DropSiteNews', 'The IDF and COGAT claimed in a joint announcement—along with videos and photos of aid trucks stationed near the border—that over 230* trucks carrying aid have entered northern Gaza since last Monday. Palestinian journalists (see below) report “no aid” has reached besieged areas in the north, where Israel is actively starving 200,000+ people by blocking all shipments of food, water, and medical care for the last 22 days. *The U.S. had called for at least 350 trucks a day in a letter to Israel last week.', 'Quote', 'حسام شبات', '@HossamShabat', '·', 'I’m a reporter on the ground in North Gaza, and I’m here to tell you that no aid has entered the besieged area for the past 21 days. The Israeli and American governments are spreading inaccurate information.', '·', '53.8K', '', 'Views', 'New to X?', 'Sign up now to get your own personalized timeline!', 'Create account', 'Terms of Service', 'Privacy Policy', 'Cookie Use.', 'Something went wrong. Try reloading.', '|', '|', '|', '|', '|', '© 2025 X Corp.']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

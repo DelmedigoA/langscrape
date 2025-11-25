@@ -1,0 +1,14 @@
+
+    URL: https://x.com/ytirawi/status/1794826941209702699
+    Title: ['Younis Tirawi | يونس on X: "Exclusive 🧵 to the [@CIJ_ICJ] (!): disturbing language Israeli military commanders and officers calling to “kill civilians”, “kill children”, “starve Gazans to death”, “erase Gaza”, &amp; “spread diseases among civilians”. 1. Commander &amp; Major. Avinoam Goelman, 98 divsion -&gt;&gt; https://t.co/VOGbu7VizO" / X']
+    Author: ['Younis Tirawi | يونس']
+    Publication Date: ['11:24 PM · May 26, 2024']
+    Content: 
+    '''
+    ['Exclusive', 'to the [', '@CIJ_ICJ', '] (!): disturbing language Israeli military commanders and officers calling to “kill civilians”, “kill children”, “starve Gazans to death”, “erase Gaza”, & “spread diseases among civilians”. 1. Commander & Major. Avinoam Goelman, 98 divsion ->>']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    

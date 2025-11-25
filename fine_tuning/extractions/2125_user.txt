@@ -1,0 +1,14 @@
+
+    URL: https://x.com/AbujomaaGaza/status/1854403068655292467
+    Title: ['Motasem A Dalloul on X: "My cousin, Rana Dalloul, 35.. 👉🏼She obeyed the orders of israeli occupation forces, left her house in #Gaza_City and moved to the alleged safe zones in the south! 👉🏼She has lost 2 little sons in #israeli_bombing of Al Nuseirat School two weeks ago! 👉🏼She had her left arm https://t.co/Lmlakzdy6j" / X']
+    Author: ['Motasem A Dalloul']
+    Publication Date: ['7:58 AM · Nov 7, 2024']
+    Content: 
+    '''
+    ['My cousin, Rana Dalloul, 35..', 'She obeyed the orders of israeli occupation forces, left her house in', 'and moved to the alleged safe zones in the south!', 'She has lost 2 little sons in', 'of Al Nuseirat School two weeks ago!', 'She had her left arm amputated!', 'She has been suffering dangerous injuries in multiple places in her body!', 'Her house in', 'was destroyed!', 'She needs urgent proper healthcare in any hospital abroad!']
+    '''
+    
+    Please analyze carefully and return the JSON according to the system instructions.
+    - All values must be in **English only**, even if the source text is in another language (e.g., Hebrew, French, Arabic).
+    - Return your final answer **only** inside a fenced code block using the `json` language 
+    
